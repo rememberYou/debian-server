@@ -1,0 +1,16 @@
+\begin{thebibliography}{1}
+
+\bibitem{website:commentcamarche}
+{\sc Gelbmann, M.}
+\newblock {Ubuntu became the most popular Linux distribution for web servers,
+  Site, [en ligne]}.
+\newblock
+  \href{https://w3techs.com/blog/entry/ubuntu_became_the_most_popular_linux_distribution_for_web_servers}{http://www.w3techs.com},
+  (consulté le 15 février 2017).
+
+\bibitem{latex}
+{\sc LaTeX}.
+\newblock A document preparation system.
+\newblock (consulté le 15 février 2017).
+
+\end{thebibliography}

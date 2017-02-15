@@ -1,0 +1,85 @@
+\documentclass[a4paper, 12pt]{report}
+% Forces PDF version 1.7
+\pdfminorversion=7
+% Allows writing the document in english.
+\usepackage[utf8]{inputenc}
+\usepackage[francais]{babel}
+% Allows to use images.
+\usepackage{graphicx}
+% Provides hyperlinks within the document.
+\usepackage{enumitem}
+% Adds space between paragraphs.
+\usepackage{parskip}
+% Supports Text Companion fonts (necessary for gensymb).
+\usepackage{textcomp}
+\usepackage{array}
+\usepackage{multicol}
+% Better tabular
+\usepackage{tabularx}
+% Allows to use colors.
+\usepackage{xcolor}
+\usepackage[margin=4cm]{geometry}
+\usepackage{varwidth}
+% Euro
+\usepackage{eurosym}
+\usepackage{amsmath}
+
+\usepackage[
+    type={CC},
+    modifier={by-nc-nd},
+    version={4.0},
+]{doclicense}
+
+\usepackage[colorlinks=true,urlcolor=black,linkcolor=black]{hyperref}
+% New columns types
+% Left
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+% Center
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+% Right
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+
+% Add more space before and after table
+\newenvironment{centerspace}{\setlength{\topsep}{1ex}\center}{\endcenter}
+% Sets the color of gray.
+\newcommand{\gray}{\rowcolor[gray]{.90}}
+% Allows to draw lines.
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+% Uses the arabic numerals for sections.
+\renewcommand{\thesection}{\arabic{section}}
+
+% Width of text.
+\addtolength{\textwidth}{2cm}
+% Odd page left margin.
+\addtolength{\oddsidemargin}{-1cm}
+% Height of main text.
+\addtolength{\textheight}{2cm}
+% Removes indentation.
+\setlength\parindent{0pt}
+% Indicates overflow words.
+\setlength{\overfullrule}{10pt}
+% Height of items.
+\setitemize{itemsep=1em}
+
+% Starts roman numbering (trick to not numbering the first pages).
+\pagenumbering{roman}
+
+\begin{document}
+\renewcommand{\bibname}{Références}
+\input{src/flyleaf}
+\newpage
+\input{src/blank}
+\newpage
+\input{src/license}
+\newpage
+\pagenumbering{arabic}
+\tableofcontents
+\newpage
+\input{src/installation}
+\newpage
+\input{src/gestion}
+\newpage
+\input{src/references}
+\newpage
+\input{src/blank}
+\end{document}
