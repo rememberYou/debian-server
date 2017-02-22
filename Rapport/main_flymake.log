@@ -1,10 +1,13 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.12.13)  15 FEB 2017 19:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.12.13)  22 FEB 2017 14:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/someone/Desktop/Rapport/main_flymake.tex
-(/home/someone/Desktop/Rapport/main_flymake.tex
+**"/home/someone/Documents/Repositories/GitHub/Debian Server/Rapport/main_flyma
+ke.tex"
+
+(/home/someone/Documents/Repositories/GitHub/Debian Server/Rapport/main_flymake
+.tex
 LaTeX2e <2016/03/31> patch level 3
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 (/usr/share/texmf-dist/tex/latex/base/report.cls
@@ -1108,15 +1111,212 @@ l.74 \newpage
 ] (./src/installation.tex [2
 
 ]
-<textures/images/installation/distributions.pdf, id=37, 441.14813pt x 290.58563
+<textures/images/installation/DebianVsUbuntu.pdf, id=46, 670.505pt x 329.23pt>
+File: textures/images/installation/DebianVsUbuntu.pdf Graphic file (type pdf)
+
+<use textures/images/installation/DebianVsUbuntu.pdf>
+Package pdftex.def Info: textures/images/installation/DebianVsUbuntu.pdf used o
+n input line 50.
+(pdftex.def)             Requested size: 234.68027pt x 115.23222pt.
+
+<textures/images/installation/distributions.pdf, id=47, 441.14813pt x 290.58563
 pt>
 File: textures/images/installation/distributions.pdf Graphic file (type pdf)
  <use textures/images/installation/distributions.pdf>
 Package pdftex.def Info: textures/images/installation/distributions.pdf used on
- input line 66.
-(pdftex.def)             Requested size: 426.79134pt x 281.14055pt.
- [3]) [4]
-(./src/gestion.tex) [5
+ input line 74.
+(pdftex.def)             Requested size: 286.74287pt x 188.87842pt.
+ [3]
+./src/installation.tex:116: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.116   \end{tabularx}
+                      
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+./src/installation.tex:116: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.116   \end{tabularx}
+                      
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+./src/installation.tex:116: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.116   \end{tabularx}
+                      
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+./src/installation.tex:116: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.116   \end{tabularx}
+                      
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+./src/installation.tex:116: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.116   \end{tabularx}
+                      
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+./src/installation.tex:116: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.116   \end{tabularx}
+                      
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+./src/installation.tex:116: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.116   \end{tabularx}
+                      
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+./src/installation.tex:116: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.116   \end{tabularx}
+                      
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+./src/installation.tex:116: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.116   \end{tabularx}
+                      
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+./src/installation.tex:116: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.116   \end{tabularx}
+                      
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+./src/installation.tex:116: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.116   \end{tabularx}
+                      
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+./src/installation.tex:116: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.116   \end{tabularx}
+                      
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+./src/installation.tex:116: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.116   \end{tabularx}
+                      
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+./src/installation.tex:116: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.116   \end{tabularx}
+                      
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+./src/installation.tex:116: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.116   \end{tabularx}
+                      
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+./src/installation.tex:116: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.116   \end{tabularx}
+                      
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+./src/installation.tex:116: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.116   \end{tabularx}
+                      
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+./src/installation.tex:116: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.116   \end{tabularx}
+                      
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+./src/installation.tex:116: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.116   \end{tabularx}
+                      
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+./src/installation.tex:116: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.116   \end{tabularx}
+                      
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+./src/installation.tex:116: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.116   \end{tabularx}
+                      
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+) [4] (./src/gestion.tex) [5
 
 ] (./src/references.tex
 No file main_flymake.bbl.
@@ -1133,22 +1333,25 @@ Package rerunfilecheck Warning: File `main_flymake.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `main_flymake.out':
-(rerunfilecheck)             Before: 377E0FC84F70FA1C02CAE6D20EFE296A;272
-(rerunfilecheck)             After:  6C0159C6F1947816E33A3EE5820D297B;325.
+(rerunfilecheck)             Before: 6C0159C6F1947816E33A3EE5820D297B;325
+(rerunfilecheck)             After:  EA4FD9B59B2579F9EB1D3103B850DAC6;393.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 10523 strings out of 493013
- 150194 string characters out of 6139316
- 272653 words of memory out of 5000000
- 13837 multiletter control sequences out of 15000+600000
+ 10545 strings out of 493013
+ 150704 string characters out of 6139316
+ 276653 words of memory out of 5000000
+ 13846 multiletter control sequences out of 15000+600000
  13244 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,6n,37p,831b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,8n,37p,869b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 pdfTeX warning: \pdfdraftmode enabled, not changing output pdf
 
 PDF statistics:
- 59 PDF objects out of 1000 (max. 8388607)
- 18 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 79 PDF objects out of 1000 (max. 8388607)
+ 30 named destinations out of 1000 (max. 500000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

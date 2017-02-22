@@ -4,12 +4,16 @@
 \section{Sauvegardes}
 \label{sec:sauvegardes}
 
-Dans le milieu d'entreprise, deux types de sauvegarde sont utilisées :
+Dans le milieu de l'entreprise, deux types de sauvegarde sont utilisées :
 incrémentielle et différentielle.
 
-La méthode de sauvegarde choisie est l'incrémentielle, afin d'utiliser moins
-d'espace de stockage par rapport à la sauvegarde différentielle. Par contre, la
-restauration des données prendra un temps plus important.
+La méthode de sauvegarde choisie est la différentielle, afin de restaurer les
+données plus rapidement par rapport à la sauvegarde incrémentielle. De plus,
+cette méthode est plus fiable, car seule la sauvegarde complète est nécessaire
+pour reconstituer les données sauvegardées.
 
-Nous estimons que le stockage prime sur la vitesse de restauration de données
-selon nos besoins.
+Il est à remarqué que la sauvegarde incrémentielle est plus économe en terme de
+stockage.
+
+Pour terminer, nous prévoyons d'effectuer une sauvegarde complète une fois
+toutes les semaines.

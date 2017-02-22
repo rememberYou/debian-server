@@ -93,6 +93,53 @@ modules. En effet, celui-ci facilite l'ajout et la suppression de modules à
 chaud. Ces modules, pas toujours indispensables, peuvent être la source de
 failles et de bugs.
 
+\subsection{Partitionnement}
+\label{sec:partitionnement}
+
+RAID
+
+\begin{center}
+  \begin{tabularx}{\linewidth}{|C|C|C|C|}
+    \hline
+    Label & Type & Taille (Mo) & Format \\
+    \hline
+    \hline
+    /boot & primary & 512 & ext4 \\
+    \hline
+    VolGroup & logical & 21Gb & lvm \\
+    \hline
+  \end{tabularx}
+\end{center}
+
+\begin{center}
+  \begin{tabularx}{\linewidth}{|C|C|C|C|}
+    \hline
+    Label & Type & Taille (Mo) & Format \\
+    \hline
+    \hline
+    /boot & primary & 512 & ext4 \\
+    \hline
+    VolGroup & logical & 21Gb & lvm \\
+    \hline
+  \end{tabularx}
+\end{center}
+
+\begin{center}
+  \begin{tabularx}{\linewidth}{|C|C|C|C|}
+    \hline
+    /var & lvm & 512 & ext4 \\
+    \hline
+    /home & lvm & 2048 & ext4 \\
+    \hline
+    /root & lvm & 2048 & ext4 \\
+    \hline
+    /usr & lvm & 2048 & ext4 \\
+    \hline
+    swap & lvm & 4096 & swap \\
+    \hline
+    \end{tabularx}
+\end{center}
+
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: t
