@@ -96,8 +96,6 @@ failles et de bugs.
 \subsection{Partitionnement}
 \label{sec:partitionnement}
 
-RAID
-
 \begin{center}
   \begin{tabularx}{\linewidth}{|C|C|C|C|}
     \hline
@@ -106,7 +104,9 @@ RAID
     \hline
     /boot & primary & 512 & ext4 \\
     \hline
-    VolGroup & logical & 21Gb & lvm \\
+    /usr & primary & 512 & ext4 \\
+    \hline
+    VolGroup & logical & 24576 & lvm \\
     \hline
   \end{tabularx}
 \end{center}
@@ -114,26 +114,11 @@ RAID
 \begin{center}
   \begin{tabularx}{\linewidth}{|C|C|C|C|}
     \hline
-    Label & Type & Taille (Mo) & Format \\
-    \hline
-    \hline
-    /boot & primary & 512 & ext4 \\
-    \hline
-    VolGroup & logical & 21Gb & lvm \\
-    \hline
-  \end{tabularx}
-\end{center}
-
-\begin{center}
-  \begin{tabularx}{\linewidth}{|C|C|C|C|}
-    \hline
-    LVvar (/var) & lvm & 512 & ext4 \\
+    LVvar (/var) & lvm & reste & ext4 \\
     \hline
     LVhome (/home) & lvm & 2048 & ext4 \\
     \hline
     LVroot (/root) & lvm & 2048 & ext4 \\
-    \hline
-    LVusers (/usr) & lvm & 2048 & ext4 \\
     \hline
     LVswap & lvm & 4096 & swap \\
     \hline
