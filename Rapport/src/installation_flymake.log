@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.12.13)  24 FEB 2017 08:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.12.13)  15 MAR 2017 09:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2863,49 +2863,40 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 96--98
 []
  []
 
-Missing character: There is no R in font nullfont!
-Missing character: There is no A in font nullfont!
-Missing character: There is no I in font nullfont!
-Missing character: There is no D in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 99--100
-[] 
- []
-
-
-Overfull \hbox (20.0pt too wide) in paragraph at lines 101--101
+Overfull \hbox (20.0pt too wide) in paragraph at lines 99--99
 [] 
  []
 
 
 /home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:102: LaTeX Error: Environment tabularx undefined.
+ion_flymake.tex:100: LaTeX Error: Environment tabularx undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.102   \begin{tabularx}
+l.100   \begin{tabularx}
                         {\linewidth}{|C|C|C|C|}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 /home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:102: Missing number, treated as zero.
+ion_flymake.tex:100: Missing number, treated as zero.
 <to be read again> 
                    }
-l.102   \begin{tabularx}{\linewidth}
+l.100   \begin{tabularx}{\linewidth}
                                     {|C|C|C|C|}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
 /home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:102: Illegal unit of measure (pt inserted).
+ion_flymake.tex:100: Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.102   \begin{tabularx}{\linewidth}
+l.100   \begin{tabularx}{\linewidth}
                                     {|C|C|C|C|}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -2924,10 +2915,10 @@ Missing character: There is no | in font nullfont!
 Missing character: There is no C in font nullfont!
 Missing character: There is no | in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:103: Misplaced \noalign.
+ion_flymake.tex:101: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.103     \hline
+l.101     \hline
                 
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2938,8 +2929,8 @@ Missing character: There is no b in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no l in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:104: Misplaced alignment tab character &.
-l.104     Label &
+ion_flymake.tex:102: Misplaced alignment tab character &.
+l.102     Label &
                   Type & Taille (Mo) & Format \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2953,8 +2944,8 @@ Missing character: There is no y in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no e in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:104: Misplaced alignment tab character &.
-l.104     Label & Type &
+ion_flymake.tex:102: Misplaced alignment tab character &.
+l.102     Label & Type &
                          Taille (Mo) & Format \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2974,8 +2965,8 @@ Missing character: There is no M in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no ) in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:104: Misplaced alignment tab character &.
-l.104     Label & Type & Taille (Mo) &
+ion_flymake.tex:102: Misplaced alignment tab character &.
+l.102     Label & Type & Taille (Mo) &
                                        Format \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2991,19 +2982,19 @@ Missing character: There is no m in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no t in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:105: Misplaced \noalign.
+ion_flymake.tex:103: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.105     \hline
+l.103     \hline
                 
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 /home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:106: Misplaced \noalign.
+ion_flymake.tex:104: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.106     \hline
+l.104     \hline
                 
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -3014,8 +3005,8 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no t in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:107: Misplaced alignment tab character &.
-l.107     /boot &
+ion_flymake.tex:105: Misplaced alignment tab character &.
+l.105     /boot &
                   primary & 512 & ext4 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -3032,8 +3023,8 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no y in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:107: Misplaced alignment tab character &.
-l.107     /boot & primary &
+ion_flymake.tex:105: Misplaced alignment tab character &.
+l.105     /boot & primary &
                             512 & ext4 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -3046,8 +3037,8 @@ Missing character: There is no 5 in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no 2 in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:107: Misplaced alignment tab character &.
-l.107     /boot & primary & 512 &
+ion_flymake.tex:105: Misplaced alignment tab character &.
+l.105     /boot & primary & 512 &
                                   ext4 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -3061,10 +3052,10 @@ Missing character: There is no x in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no 4 in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:108: Misplaced \noalign.
+ion_flymake.tex:106: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.108     \hline
+l.106     \hline
                 
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -3078,9 +3069,9 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no p in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:109: Misplaced alignment tab character &.
-l.109     VolGroup &
-                     logical & 21Gb & lvm \\
+ion_flymake.tex:107: Misplaced alignment tab character &.
+l.107     VolGroup &
+                     logical & 20958 & lvm \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3096,9 +3087,9 @@ Missing character: There is no c in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no l in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:109: Misplaced alignment tab character &.
-l.109     VolGroup & logical &
-                               21Gb & lvm \\
+ion_flymake.tex:107: Misplaced alignment tab character &.
+l.107     VolGroup & logical &
+                               20958 & lvm \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3107,13 +3098,14 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 Missing character: There is no 2 in font nullfont!
-Missing character: There is no 1 in font nullfont!
-Missing character: There is no G in font nullfont!
-Missing character: There is no b in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no 8 in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:109: Misplaced alignment tab character &.
-l.109     VolGroup & logical & 21Gb &
-                                      lvm \\
+ion_flymake.tex:107: Misplaced alignment tab character &.
+l.107     VolGroup & logical & 20958 &
+                                       lvm \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3125,63 +3117,63 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no v in font nullfont!
 Missing character: There is no m in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:110: Misplaced \noalign.
+ion_flymake.tex:108: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.110     \hline
+l.108     \hline
                 
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 
 /home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:111: LaTeX Error: \begin{center} on input line 101 ended by \en
-d{tabularx}.
+ion_flymake.tex:109: LaTeX Error: \begin{center} on input line 99 ended by \end
+{tabularx}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.111   \end{tabularx}
+l.109   \end{tabularx}
                       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 114--114
+Overfull \hbox (20.0pt too wide) in paragraph at lines 112--112
 [] 
  []
 
 
 /home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:115: LaTeX Error: Environment tabularx undefined.
+ion_flymake.tex:113: LaTeX Error: Environment tabularx undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.115   \begin{tabularx}
+l.113   \begin{tabularx}
                         {\linewidth}{|C|C|C|C|}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 /home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:115: Missing number, treated as zero.
+ion_flymake.tex:113: Missing number, treated as zero.
 <to be read again> 
                    }
-l.115   \begin{tabularx}{\linewidth}
+l.113   \begin{tabularx}{\linewidth}
                                     {|C|C|C|C|}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
 /home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:115: Illegal unit of measure (pt inserted).
+ion_flymake.tex:113: Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.115   \begin{tabularx}{\linewidth}
+l.113   \begin{tabularx}{\linewidth}
                                     {|C|C|C|C|}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -3200,59 +3192,29 @@ Missing character: There is no | in font nullfont!
 Missing character: There is no C in font nullfont!
 Missing character: There is no | in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:116: Misplaced \noalign.
+ion_flymake.tex:114: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.116     \hline
+l.114     \hline
                 
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 Missing character: There is no L in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no l in font nullfont!
-/home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:117: Misplaced alignment tab character &.
-l.117     Label &
-                  Type & Taille (Mo) & Format \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-Missing character: There is no T in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no e in font nullfont!
-/home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:117: Misplaced alignment tab character &.
-l.117     Label & Type &
-                         Taille (Mo) & Format \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-Missing character: There is no T in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no e in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no v in font nullfont!
 Missing character: There is no ( in font nullfont!
-Missing character: There is no M in font nullfont!
-Missing character: There is no o in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no v in font nullfont!
 Missing character: There is no ) in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:117: Misplaced alignment tab character &.
-l.117     Label & Type & Taille (Mo) &
-                                       Format \\
+ion_flymake.tex:115: Misplaced alignment tab character &.
+l.115     LVsrv (/srv) &
+                         lvm & 6144 & ext4 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3260,21 +3222,113 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-Missing character: There is no F in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no r in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no v in font nullfont!
 Missing character: There is no m in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no t in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:118: Misplaced \noalign.
+ion_flymake.tex:115: Misplaced alignment tab character &.
+l.115     LVsrv (/srv) & lvm &
+                               6144 & ext4 \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no 4 in font nullfont!
+/home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
+ion_flymake.tex:115: Misplaced alignment tab character &.
+l.115     LVsrv (/srv) & lvm & 6144 &
+                                      ext4 \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no s in font nullfont!
+/home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
+ion_flymake.tex:117: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.118     \hline
+l.117     \hline
                 
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
+Missing character: There is no L in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no ) in font nullfont!
+/home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
+ion_flymake.tex:118: Misplaced alignment tab character &.
+l.118     LVswap (/swap) &
+                           lvm & 4096 & swap \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+Missing character: There is no l in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no m in font nullfont!
+/home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
+ion_flymake.tex:118: Misplaced alignment tab character &.
+l.118     LVswap (/swap) & lvm &
+                                 4096 & swap \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no 6 in font nullfont!
+/home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
+ion_flymake.tex:118: Misplaced alignment tab character &.
+l.118     LVswap (/swap) & lvm & 4096 &
+                                        swap \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+Missing character: There is no s in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
 ion_flymake.tex:119: Misplaced \noalign.
 \hline ->\noalign 
@@ -3284,33 +3338,23 @@ l.119     \hline
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
-Missing character: There is no / in font nullfont!
-Missing character: There is no b in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no h in font nullfont!
 Missing character: There is no o in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no t in font nullfont!
-/home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:120: Misplaced alignment tab character &.
-l.120     /boot &
-                  primary & 512 & ext4 \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-Missing character: There is no p in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no i in font nullfont!
 Missing character: There is no m in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no y in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ) in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
 ion_flymake.tex:120: Misplaced alignment tab character &.
-l.120     /boot & primary &
-                            512 & ext4 \\
+l.120     LVhome (/home) &
+                           lvm & 2048 & ext4 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3318,13 +3362,28 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-Missing character: There is no 5 in font nullfont!
-Missing character: There is no 1 in font nullfont!
-Missing character: There is no 2 in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no m in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
 ion_flymake.tex:120: Misplaced alignment tab character &.
-l.120     /boot & primary & 512 &
-                                  ext4 \\
+l.120     LVhome (/home) & lvm &
+                                 2048 & ext4 \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no 8 in font nullfont!
+/home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
+ion_flymake.tex:120: Misplaced alignment tab character &.
+l.120     LVhome (/home) & lvm & 2048 &
+                                        ext4 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3345,51 +3404,23 @@ l.121     \hline
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
+Missing character: There is no L in font nullfont!
 Missing character: There is no V in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no G in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no o in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no p in font nullfont!
-/home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:122: Misplaced alignment tab character &.
-l.122     VolGroup &
-                     logical & 21Gb & lvm \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-Missing character: There is no l in font nullfont!
 Missing character: There is no o in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no l in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ) in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
 ion_flymake.tex:122: Misplaced alignment tab character &.
-l.122     VolGroup & logical &
-                               21Gb & lvm \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-Missing character: There is no 2 in font nullfont!
-Missing character: There is no 1 in font nullfont!
-Missing character: There is no G in font nullfont!
-Missing character: There is no b in font nullfont!
-/home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:122: Misplaced alignment tab character &.
-l.122     VolGroup & logical & 21Gb &
-                                      lvm \\
+l.122     LVroot (/root) &
+                           lvm & 2048 & ext4 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3401,6 +3432,36 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no v in font nullfont!
 Missing character: There is no m in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
+ion_flymake.tex:122: Misplaced alignment tab character &.
+l.122     LVroot (/root) & lvm &
+                                 2048 & ext4 \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no 8 in font nullfont!
+/home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
+ion_flymake.tex:122: Misplaced alignment tab character &.
+l.122     LVroot (/root) & lvm & 2048 &
+                                        ext4 \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no 4 in font nullfont!
+/home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
 ion_flymake.tex:123: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
@@ -3409,77 +3470,130 @@ l.123     \hline
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
-
+Missing character: There is no L in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no ) in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:124: LaTeX Error: \begin{center} on input line 114 ended by \en
-d{tabularx}.
+ion_flymake.tex:124: Misplaced alignment tab character &.
+l.124     LVusr (/usr) &
+                         lvm & 2048 & ext4 \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.124   \end{tabularx}
-                      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Overfull \hbox (20.0pt too wide) in paragraph at lines 127--127
-[] 
- []
-
-
+Missing character: There is no l in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no m in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:128: LaTeX Error: Environment tabularx undefined.
+ion_flymake.tex:124: Misplaced alignment tab character &.
+l.124     LVusr (/usr) & lvm &
+                               2048 & ext4 \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.128   \begin{tabularx}
-                        {\linewidth}{|C|C|C|C|}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no 8 in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:128: Missing number, treated as zero.
-<to be read again> 
-                   }
-l.128   \begin{tabularx}{\linewidth}
-                                    {|C|C|C|C|}
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
+ion_flymake.tex:124: Misplaced alignment tab character &.
+l.124     LVusr (/usr) & lvm & 2048 &
+                                      ext4 \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
 
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no 4 in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:128: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   }
-l.128   \begin{tabularx}{\linewidth}
-                                    {|C|C|C|C|}
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-Missing character: There is no | in font nullfont!
-Missing character: There is no C in font nullfont!
-Missing character: There is no | in font nullfont!
-Missing character: There is no C in font nullfont!
-Missing character: There is no | in font nullfont!
-Missing character: There is no C in font nullfont!
-Missing character: There is no | in font nullfont!
-Missing character: There is no C in font nullfont!
-Missing character: There is no | in font nullfont!
-/home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:129: Misplaced \noalign.
+ion_flymake.tex:125: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.129     \hline
+l.125     \hline
+                
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+Missing character: There is no L in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ) in font nullfont!
+/home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
+ion_flymake.tex:126: Misplaced alignment tab character &.
+l.126     LVopt (/opt) &
+                         lvm & 2048 & ext4 \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+Missing character: There is no l in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no m in font nullfont!
+/home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
+ion_flymake.tex:126: Misplaced alignment tab character &.
+l.126     LVopt (/opt) & lvm &
+                               2048 & ext4 \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no 8 in font nullfont!
+/home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
+ion_flymake.tex:126: Misplaced alignment tab character &.
+l.126     LVopt (/opt) & lvm & 2048 &
+                                      ext4 \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no 4 in font nullfont!
+/home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
+ion_flymake.tex:127: Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
+l.127     \hline
                 
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -3496,9 +3610,73 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no ) in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
+ion_flymake.tex:128: Misplaced alignment tab character &.
+l.128     LVvar (/var) &
+                         lvm & 1024 & ext4 \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+Missing character: There is no l in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no m in font nullfont!
+/home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
+ion_flymake.tex:128: Misplaced alignment tab character &.
+l.128     LVvar (/var) & lvm &
+                               1024 & ext4 \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 4 in font nullfont!
+/home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
+ion_flymake.tex:128: Misplaced alignment tab character &.
+l.128     LVvar (/var) & lvm & 1024 &
+                                      ext4 \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no 4 in font nullfont!
+/home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
+ion_flymake.tex:129: Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
+l.129     \hline
+                
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+Missing character: There is no L in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no ) in font nullfont!
+/home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
 ion_flymake.tex:130: Misplaced alignment tab character &.
-l.130     LVvar (/var) &
-                         lvm & 512 & ext4 \\
+l.130     LVtmp (/tmp) &
+                         lvm & 1024 & ext4 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3511,8 +3689,8 @@ Missing character: There is no v in font nullfont!
 Missing character: There is no m in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
 ion_flymake.tex:130: Misplaced alignment tab character &.
-l.130     LVvar (/var) & lvm &
-                               512 & ext4 \\
+l.130     LVtmp (/tmp) & lvm &
+                               1024 & ext4 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3520,13 +3698,14 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-Missing character: There is no 5 in font nullfont!
 Missing character: There is no 1 in font nullfont!
+Missing character: There is no 0 in font nullfont!
 Missing character: There is no 2 in font nullfont!
+Missing character: There is no 4 in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
 ion_flymake.tex:130: Misplaced alignment tab character &.
-l.130     LVvar (/var) & lvm & 512 &
-                                     ext4 \\
+l.130     LVtmp (/tmp) & lvm & 1024 &
+                                      ext4 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3547,273 +3726,16 @@ l.131     \hline
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
-Missing character: There is no L in font nullfont!
-Missing character: There is no V in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no ) in font nullfont!
-/home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:132: Misplaced alignment tab character &.
-l.132     LVhome (/home) &
-                           lvm & 2048 & ext4 \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-Missing character: There is no l in font nullfont!
-Missing character: There is no v in font nullfont!
-Missing character: There is no m in font nullfont!
-/home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:132: Misplaced alignment tab character &.
-l.132     LVhome (/home) & lvm &
-                                 2048 & ext4 \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-Missing character: There is no 2 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no 8 in font nullfont!
-/home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:132: Misplaced alignment tab character &.
-l.132     LVhome (/home) & lvm & 2048 &
-                                        ext4 \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-Missing character: There is no e in font nullfont!
-Missing character: There is no x in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no 4 in font nullfont!
-/home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:133: Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.133     \hline
-                
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-Missing character: There is no L in font nullfont!
-Missing character: There is no V in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no ) in font nullfont!
-/home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:134: Misplaced alignment tab character &.
-l.134     LVroot (/root) &
-                           lvm & 2048 & ext4 \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-Missing character: There is no l in font nullfont!
-Missing character: There is no v in font nullfont!
-Missing character: There is no m in font nullfont!
-/home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:134: Misplaced alignment tab character &.
-l.134     LVroot (/root) & lvm &
-                                 2048 & ext4 \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-Missing character: There is no 2 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no 8 in font nullfont!
-/home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:134: Misplaced alignment tab character &.
-l.134     LVroot (/root) & lvm & 2048 &
-                                        ext4 \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-Missing character: There is no e in font nullfont!
-Missing character: There is no x in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no 4 in font nullfont!
-/home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:135: Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.135     \hline
-                
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-Missing character: There is no L in font nullfont!
-Missing character: There is no V in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no ) in font nullfont!
-/home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:136: Misplaced alignment tab character &.
-l.136     LVusers (/usr) &
-                           lvm & 2048 & ext4 \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-Missing character: There is no l in font nullfont!
-Missing character: There is no v in font nullfont!
-Missing character: There is no m in font nullfont!
-/home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:136: Misplaced alignment tab character &.
-l.136     LVusers (/usr) & lvm &
-                                 2048 & ext4 \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-Missing character: There is no 2 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no 8 in font nullfont!
-/home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:136: Misplaced alignment tab character &.
-l.136     LVusers (/usr) & lvm & 2048 &
-                                        ext4 \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-Missing character: There is no e in font nullfont!
-Missing character: There is no x in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no 4 in font nullfont!
-/home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:137: Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.137     \hline
-                
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-Missing character: There is no L in font nullfont!
-Missing character: There is no V in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no w in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no p in font nullfont!
-/home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:138: Misplaced alignment tab character &.
-l.138     LVswap &
-                   lvm & 4096 & swap \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-Missing character: There is no l in font nullfont!
-Missing character: There is no v in font nullfont!
-Missing character: There is no m in font nullfont!
-/home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:138: Misplaced alignment tab character &.
-l.138     LVswap & lvm &
-                         4096 & swap \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no 9 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-/home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:138: Misplaced alignment tab character &.
-l.138     LVswap & lvm & 4096 &
-                                swap \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-Missing character: There is no s in font nullfont!
-Missing character: There is no w in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no p in font nullfont!
-/home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:139: Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.139     \hline
-                
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
 
 /home/someone/Documents/Repositories/GitHub/Debian-server/Rapport/src/installat
-ion_flymake.tex:140: LaTeX Error: \begin{center} on input line 127 ended by \en
+ion_flymake.tex:132: LaTeX Error: \begin{center} on input line 112 ended by \en
 d{tabularx}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.140     \end{tabularx}
+l.132     \end{tabularx}
                         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3829,7 +3751,7 @@ or  <return>  to continue without it.
 Here is how much of TeX's memory you used:
  17 strings out of 493013
  514 string characters out of 6139316
- 55632 words of memory out of 5000000
+ 54632 words of memory out of 5000000
  3658 multiletter control sequences out of 15000+600000
  3640 words of font info for 14 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
