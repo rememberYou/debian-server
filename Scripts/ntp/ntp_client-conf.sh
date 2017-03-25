@@ -1,35 +1,32 @@
 #!/bin/bash
 
-# Installation of ntp.
+# Installation of NTP.
 apt-get install ntp -y
 
 # Installation of ntpdate.
 apt-get install ntpdate -y
 
-# Stop ntp.
+# Stop NTP.
 systemctl stop ntp
 
 # Adjust time server
 ntpdate 1.be.pool.ntp.org
 
-# Start ntp.
+# Start NTP.
 systemctl start ntp
 
 # Create a backup of the configuration file.
 cp /etc/ntp.conf /etc/ntp.bk
 
-# Delete the initial configuration file.
-#rm -f /etc/ntp.conf
-
 # Create the configuration file.
 echo "###### NTP CLIENT CONFIGURATION ######" > /etc/ntp.conf
 echo " " >> /etc/ntp.conf
 
-echo "# Fichier contenant la deviation moyenne" >> /etc/ntp.conf
+echo "# File containing the average deviation." >> /etc/ntp.conf
 echo "driftfile /var/lib/ntp/ntp.drift" >> /etc/ntp.conf
 echo " " >> /etc/ntp.conf
 
-echo "# Statistiques desirees" >> /etc/ntp.conf
+echo "# Desired Statistics" >> /etc/ntp.conf
 echo "statistics loopstats peerstats clockstats" >> /etc/ntp.conf
 echo "filegen loopstats file loopstats type day enable" >> /etc/ntp.conf
 echo "filegen peerstats file peerstats type day enable" >> /etc/ntp.conf
@@ -42,6 +39,5 @@ echo "server 1.be.pool.ntp.org iburst" >> /etc/ntp.conf
 echo "server 3.europe.pool.ntp.org" >> /etc/ntp.conf
 echo "server 2.europe.pool.ntp.org" >> /etc/ntp.conf
 
-
-# Restart ntp.
+# Restart NTP.
 systemctl restart ntp
