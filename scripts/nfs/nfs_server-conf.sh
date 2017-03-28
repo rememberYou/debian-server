@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Installation of NFS.
-apt-get install nfs-kernel-server nfs-common
+apt-get install nfs-kernel-server nfs-common -y
 
 # Create a backup of the configuration file.
 if [ ! -f /etc/exports.bk ]; then
