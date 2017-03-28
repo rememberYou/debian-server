@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# SEE: https://www.linode.com/docs/databases/mariadb/mariadb-setup-debian7
+
 # Ensure that your system’s package database is up to date and that
 # all installed software is running at the latest version.
 apt-get update
@@ -32,3 +34,15 @@ apt-get update
 
 # Install MariaDB.
 apt-get install mariadb-server -y
+
+# Secure the MariaDB server.
+#
+# Answer 'yes' to every questions.
+#
+# Do not be concerned about the find_mysql_client: not found message. This is a
+# known bug as described in this MariaDB mailing list. Also, unlike MySQL,
+# MariaDB does not install a test database by default, so you can ignore this error
+# message:
+#
+# ERROR 1008 (HY000) at line 1: Can't drop database 'test'; database doesn't exist
+mysql_secure_installation
