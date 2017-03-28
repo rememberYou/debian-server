@@ -13,7 +13,9 @@ systemctl stop ntp
 ntpdate 1.be.pool.ntp.org
 
 # Create a backup of the configuration file.
-cp /etc/ntp.conf /etc/ntp.bk
+if [ ! -f /etc/exports.bk ]; then
+    cp /etc/ntp.conf /etc/ntp.bk
+fi
 
 # Delete the initial configuration file.
 #rm -f /etc/ntp.conf
