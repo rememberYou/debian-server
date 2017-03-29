@@ -3,7 +3,7 @@
 # SEE: https://www.howtoforge.com/tutorial/debian-samba-server/
 
 # Installation of Samba.
-apt-get install libcups2 samba samba-common cups
+apt-get install libcups2 samba samba-common cups -y
 
 # Create a backup of the configuration file.
 if [ ! -f /etc/samba/smb.conf.bak ]; then
@@ -23,7 +23,7 @@ echo "security = user" >> /etc/samba/smb.conf
 echo "map to guest = bad user" >> /etc/samba/smb.conf
 echo "dns proxy = no" >> /etc/samba/smb.conf
 
-mkdir -p /srv/samba
+mkdir -p /srv/samba/users/
 chown -R root:users /srv/samba/users/
 chmod -R 775 /srv/samba/users/
 

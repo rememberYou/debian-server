@@ -7,7 +7,7 @@ normal=$(tput sgr0)
 function create_user() {
     useradd $username -m -G users -s /bin/bash
     echo -e "$password\n$password" | (passwd $username)
-    smbpasswd -a tom
+    smbpasswd -a $username
     create_website $username
 
     echo -e "$username user has been successfully added."
@@ -32,43 +32,92 @@ function create_website() {
 
 # Creates a DNS for a specific user.
 function create_dns() {
-    echo "zone $username IN {"
-    echo "\t type master;"
-    echo "\t file VH_$username.net.fwd;"
-    echo "\t allow-query { any };"
-    echo "};"
+    apt-get install bind9 -y
+
+    # Create a backup of the configuration file.
+    if [ ! -f /etc/bind/named.conf.options.bak ]; then
+        cp /etc/bind/named.conf.options /etc/bind/named.conf.options.bak
+    fi
+    echo "options {" > "/etc/bind/named.conf.options"
+    echo "        directory "/var/cache/bind";" >> "/etc/bind/named.conf.options"
+    echo "        auth-nxdomain no;" >> "/etc/bind/named.conf.options"
+    echo "        listen-on-v6 { any; };" >> "/etc/bind/named.conf.options"
+    echo "        statistics-file \"/var/cache/bind/named.stats\";" >> "/etc/bind/named.conf.options"
+    echo "        rrset-order {order cyclic;};" >> "/etc/bind/named.conf.options"
+    echo "    allow-transfer { 127.0.0.1; };" >> "/etc/bind/named.conf.options"
+    echo "};" >> "/etc/bind/named.conf.options"
+    echo "logging {" >> "/etc/bind/named.conf.options"
+    echo "        channel b_query {" >> "/etc/bind/named.conf.options"
+    echo "                file "/var/log/bind9/query.log" versions 2 size 1m;" >> "/etc/bind/named.conf.options"
+    echo "                print-time yes;" >> "/etc/bind/named.conf.options"
+    echo "                severity info;" >> "/etc/bind/named.conf.options"
+    echo "        };" >> "/etc/bind/named.conf.options"
+    echo "        category queries { b_query; };" >> "/etc/bind/named.conf.options"
+    echo "};" >> "/etc/bind/named.conf.options"
+    
+    mkdir /var/log/bind9
+    chown bind:bind /var/log/bind9    
+
+    # Create a backup of the configuration file.
+    if [ ! -f /etc/bind/named.conf.bak ]; then
+        cp /etc/bind/named.conf /etc/bind/named.conf.bak
+    fi
+
+    echo "zone $username {" > "/etc/bind/zones/$username.conf";
+    echo -e "\t type master;" >> "/etc/bind/zones/$username.conf";
+    echo -e "\t file \" /etc/bind/zones/$username.db" >> "/etc/bind/zones/$username.conf";
+    echo "};" >> "/etc/bind/zones/$username.conf";
 }
 
 function create_file_dns() {
-    echo "$TTL 1D" >>
-    echo "@ IN SOA ns1.$username.be. admin.$username.be. {"
-    echo -e "\t 0 ; serial"
-    echo -e "\t 1D ; refresh"
-    echo -e "\t 1H ; refresh"
-    echo -e "\t 1W ; refresh"
-    echo -e "\t 3H ) ; refresh"
-    echo "}"
-    echo ""
-    echo "IN NS ns1.$username.be. ; name server"
-    echo "www IN A <IP_SERVER>. ; Link to www.$username.be"
-    echo "@ IN A <IP_SERVER> ; Link to www.$username.be"
+    echo "$TTL    86400" > "/etc/bind/zones/$username.db";
+    echo "@   IN  SOA ns1.$username.com. root.$username.com. (" >> "/etc/bind/zones/$username.db";
+    echo "        2014100801  ; Serial" >> "/etc/bind/zones/$username.db";
+    echo "        43200       ; Refresh" >> "/etc/bind/zones/$username.db";
+    echo "        3600        ; Retry" >> "/etc/bind/zones/$username.db";
+    echo "        1209600     ; Expire" >> "/etc/bind/zones/$username.db";
+    echo "        180 )       ; Minimum TTL" >> "/etc/bind/zones/$username.db";
+
+    echo " " >>  "/etc/bind/zones/$username.db";
+    echo "; Nameservers" >> "/etc/bind/zones/$username.db";
+    echo "IN  NS  ns1.$username.com." >> "/etc/bind/zones/$username.db";
+
+    echo " " >>  "/etc/bind/zones/$username.db";
+    echo "; Root site" >>  "/etc/bind/zones/$username.db";
+    echo "IN  A   192.168.30.161" >>  "/etc/bind/zones/$username.db";
+
+    echo " " >>  "/etc/bind/zones/$username.db";
+    echo "; Hostname records" >>  "/etc/bind/zones/$username.db";
+    echo "*   IN  A   192.168.30.161" >>  "/etc/bind/zones/$username.db";
+
+    echo " " >>  "/etc/bind/zones/$username.db";
+    echo "; Aliases" >>  "/etc/bind/zones/$username.db";
+    echo "www IN  CNAME   $username.com." >>  "/etc/bind/zones/$username.db";
+
+    echo " " >>  "/etc/bind/zones/$username.db";
+    echo "; MX records" >>  "/etc/bind/zones/$username.db";
+    echo "@   IN  MX  1   aspmx.l.google.com." >>  "/etc/bind/zones/$username.db";
 }
 
 echo -e "Enter the name of the website (without the www): "
 read username
-echo -e "Enter the password associted with this account: "
-read password
-
-create_user $username $password
-echo -e "$name user has been successfully added."
-echo -e "\t Quotas have been imposed on this user: "
-echo -e "The ${bold}www${normal} folder of the $name user has been succesfully created."
-echo -e "\t The index.html page was created."
-
-echo -e "Starting the Apache service..."
-#/etc/init.d/apache2 start
-
-echo -e "Virtual Host has been successfully create."
-echo -e "Starting the BIND service...."
-echo -e "Loading named:"
-echo -e "The site is now available at the following address: "
+if id "$username" >/dev/null 2>&1; then
+    echo "user already exists!"
+else
+    echo -e "Enter the password associted with this account: "
+    read password
+    
+    create_user $username $password
+    echo -e "$name user has been successfully added."
+    echo -e "\t Quotas have been imposed on this user: "
+    echo -e "The ${bold}www${normal} folder of the $name user has been succesfully created."
+    echo -e "\t The index.html page was created."
+    
+    echo -e "Starting the Apache service..."
+    #/etc/init.d/apache2 start
+    
+    echo -e "Virtual Host has been successfully create."
+    echo -e "Starting the BIND service...."
+    echo -e "Loading named:"
+    echo -e "The site is now available at the following address: www.$username.lan"
+fi
