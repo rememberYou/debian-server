@@ -2,7 +2,7 @@
 Setting up a Debian server
 
 ## TODO list [1/14]
-   - [ ] NFS share
+   - [x] NFS share
    - [ ] Samba share
    - [ ] Web server
    - [ ] FTP server
