@@ -15,10 +15,10 @@ mkdir /srv/nfs
 echo "###### NFS SERVER CONFIGURATION ######" > /etc/exports
 echo " " >> /etc/exports
 
-echo "/srv/nfs	10.1.0.0/16(rw,root_squash,no_subtree_check)" >> /etc/exportfs
+echo "/srv/nfs	10.1.0.0/16(rw,root_squash,no_subtree_check)" >> /etc/export
 
 # Update the table of exported file systems.
-exports -a
+exportfs -av
 
 # Restart NFS.
 /etc/init.d/nfs-kernel-server reload

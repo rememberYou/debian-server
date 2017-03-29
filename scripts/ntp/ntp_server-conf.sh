@@ -46,11 +46,12 @@ echo " " >> /etc/ntp.conf
 
 echo "# Local users may interrogate the ntp server more closely." >> /etc/ntp.conf
 echo "restrict 127.0.0.1" >> /etc/ntp.conf
+echo "restrict 10.1.0.0 mask 255.255.0.0 nomodify notrap nopeer" >> /etc/ntp.conf
 echo "restrict ::1" >> /etc/ntp.conf
 echo " " >> /etc/ntp.conf
 
 echo "# To provide time to the local subnet." >> /etc/ntp.conf
-echo "broadcast 10.1.214.184" >> /etc/ntp.conf
+echo "broadcast 10.1.255.255" >> /etc/ntp.conf
 echo " " >> /etc/ntp.conf
 
 # Restart ntp.

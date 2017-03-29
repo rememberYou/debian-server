@@ -37,9 +37,6 @@ echo " " >> /etc/ntp.conf
 
 echo "# You do need to talk to an NTP server or two (or three)." >> /etc/ntp.conf
 echo "server 10.1.214.184 prefer" >> /etc/ntp.conf
-echo "server 1.be.pool.ntp.org iburst" >> /etc/ntp.conf
-echo "server 3.europe.pool.ntp.org" >> /etc/ntp.conf
-echo "server 2.europe.pool.ntp.org" >> /etc/ntp.conf
 
 # Restart NTP.
 systemctl restart ntp

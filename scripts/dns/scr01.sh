@@ -32,10 +32,26 @@ function create_website() {
 
 # Creates a DNS for a specific user.
 function create_dns() {
-    echo "$username IN {"
+    echo "zone $username IN {"
     echo "\t type master;"
-    echo "\t file VH_$username.be;"
+    echo "\t file VH_$username.net.fwd;"
+    echo "\t allow-query { any };"
     echo "};"
+}
+
+function create_file_dns() {
+    echo "$TTL 1D" >>
+    echo "@ IN SOA ns1.$username.be. admin.$username.be. {"
+    echo -e "\t 0 ; serial"
+    echo -e "\t 1D ; refresh"
+    echo -e "\t 1H ; refresh"
+    echo -e "\t 1W ; refresh"
+    echo -e "\t 3H ) ; refresh"
+    echo "}"
+    echo ""
+    echo "IN NS ns1.$username.be. ; name server"
+    echo "www IN A <IP_SERVER>. ; Link to www.$username.be"
+    echo "@ IN A <IP_SERVER> ; Link to www.$username.be"
 }
 
 echo -e "Enter the name of the website (without the www): "

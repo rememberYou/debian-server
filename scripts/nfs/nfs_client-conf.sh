@@ -29,15 +29,15 @@ echo "/dev/mapper/VolGroup-LVswap none            swap    sw              0     
 echo "/dev/sr0        /media/cdrom0   udf,iso9660 user,noauto     0       0" >> /etc/fstab
 echo "10.1.215.223:/srv/nfs     /mnt/nfs     defaults        0       0" >> /etc/fstab
 
+# Restart NFS
+/etc/init.d/nfs-kernel-server reload
+
 # Mount the /srv/nfs directory from the <10.1.0.0> server to the /mnt/nfs
 # directory of the client.
 #
 # Be careful to change the server IP address or/and the repository
 # directory if needed.
 mount -t nfs 10.1.215.223:/srv/nfs /mnt/nfs
-
-# Restart NFS
-/etc/init.d/nfs-kernel-server reload
 
 ######################## AutoFS Configuration ########################
 
