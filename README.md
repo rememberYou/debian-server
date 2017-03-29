@@ -10,7 +10,6 @@ Setting up a Debian server
    - [ ] DNS server
    - [x] NTP
    - [ ] SSH
-   - [ ] Disable Telnet
    - [ ] iptables
    - [ ] Secure bootloader
    - [ ] Configuration scripts

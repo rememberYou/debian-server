@@ -5,8 +5,9 @@ normal=$(tput sgr0)
 
 # Creates an user.
 function create_user() {
-    useradd -m -g users -s /bin/bash $username
+    useradd $username -m -G users -s /bin/bash
     echo -e "$password\n$password" | (passwd $username)
+    smbpasswd -a tom
     create_website $username
 
     echo -e "$username user has been successfully added."
@@ -17,8 +18,7 @@ function create_user() {
 
 # Deletes an user.
 function delete_user() {
-    userdel $username
-    rm -r /home/$username
+    deluser --remove-home $username users
 }
 
 # Creates a website for a specific user.
