@@ -9,7 +9,7 @@ Setting up a Debian server
    - [ ] MySQL server
    - [ ] DNS server
    - [x] NTP
-   - [ ] SSH
+   - [x] SSH
    - [ ] iptables
    - [ ] Secure bootloader
    - [ ] Configuration scripts

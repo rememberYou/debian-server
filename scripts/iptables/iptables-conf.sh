@@ -37,13 +37,13 @@ iptables -A INPUT -i eth0 -p tcp -m multiport --dports 80,443 \
 iptables -A OUTPUT -o eth0 -p tcp -m multiport --sports 80,443 \
 	 -m state --state ESTABLISHED -j ACCEPT
 
-# Allow incoming SSH (22).
-iptables -A INPUT -i eth0 -p tcp --dport 22 \
+# Allow incoming SSH (62000).
+iptables -A INPUT -i eth0 -p tcp --dport 62000 \
          -m state --state NEW,ESTABLISHED -j ACCEPT
-iptables -A OUTPUT -o eth0 -p tcp --sport 22 \
+iptables -A OUTPUT -o eth0 -p tcp --sport 62000 \
          -m state --state ESTABLISHED -j ACCEP
 
-# Allow outgoing SSH (22).
+# Allow outgoing SSH (62000).
 iptables -A OUTPUT -o eth0 -p tcp --dport 22 \
          -m state --state NEW,ESTABLISHED -j ACCEPT
 iptables -A INPUT -i eth0 -p tcp --sport 22 \
