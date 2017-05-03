@@ -44,15 +44,19 @@ iptables -A OUTPUT -o eth0 -p tcp --sport 62000 \
          -m state --state ESTABLISHED -j ACCEP
 
 # Allow outgoing SSH (62000).
-iptables -A OUTPUT -o eth0 -p tcp --dport 22 \
+iptables -A OUTPUT -o eth0 -p tcp --dport 62000 \
          -m state --state NEW,ESTABLISHED -j ACCEPT
-iptables -A INPUT -i eth0 -p tcp --sport 22 \
+iptables -A INPUT -i eth0 -p tcp --sport 62000 \
          -m state --state ESTABLISHED -j ACCEPT
 
-# Allow outcoming NTP (123)
+# Allow outcoming NTP (123).
 iptables -A OUTPUT -p udp --dport 123 -j ACCEPT
 iptables -A INPUT -p udp --sport 123 -j ACCEPT
 
-# Allow incoming NTP (123)
+# Allow incoming NTP (123).
 iptables -A INPUT -p udp --dport 123 -j ACCEPT
 iptables -A OUTPUT -p udp --sport 123 -j ACCEPT
+
+# Allow Samba (TCP: 139, 445 | UDP: 137, 138).
+iptables -A INPUT -s 10.1.0.0/16 -p tcp -m multiport --dport 139,445 -j ACCEPT
+iptables -A INPUT -s 10.1.0.0/16 -p udp -m multiport --dport 137,138 -j ACCEPT
