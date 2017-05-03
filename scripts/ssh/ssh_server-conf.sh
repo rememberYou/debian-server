@@ -60,5 +60,20 @@ echo " " >> /etc/ssh/sshd_config
 echo "# Placement of the banner" >> /etc/ssh/sshd_config
 echo "Banner /etc/ssh-banner/banner" >> /etc/ssh/sshd_config
 
+# Create the banner.
+mkdir -p /etc/ssh-banner/banner
+
+echo -e "
+  ************************************************************************************** \n
+  *   The debianThink server is for authorized personnel only.                         * \n
+  *   WARNING! Access to this device is restricted to those individuals with specific  * \n
+  *   Permissions. If you are not an authorized user, disconnect now.                  * \n
+  *   Any attempts to gain unauthorized access will be prosecuted to                   * \n
+  *   the fullest extent of the law                                                    * \n
+  *                                                                                    * \n
+  *   All access and use may (not will) be monitored and/or recorded.                  * \n
+  **************************************************************************************
+  " >> /etc/ssh-banner/banner
+
 # Restart SSH.
 systemctl restart sshd
