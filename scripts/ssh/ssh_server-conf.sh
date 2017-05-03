@@ -14,8 +14,8 @@ fi
 echo "###### SSH SERVER CONFIGURATION ######" > /etc/ssh/sshd_config
 echo " " >> /etc/ssh/sshd_config
 
-echo "# Using port number 4200" >> /etc/ssh/sshd_config
-echo "Port 4200" >> /etc/ssh/sshd_config
+echo "# Using port number 62000" >> /etc/ssh/sshd_config
+echo "Port 62000" >> /etc/ssh/sshd_config
 echo " " >> /etc/ssh/sshd_config
 
 echo "# Using Protocol 2 of SSH" >> /etc/ssh/sshd_config
