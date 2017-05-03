@@ -1,9 +1,9 @@
 # Debian-server
 Setting up a Debian server
 
-## TODO list [1/14]
+## TODO list [3/14]
    - [x] NFS share
-   - [ ] Samba share
+   - [x] Samba share
    - [ ] Web server
    - [ ] FTP server
    - [ ] MySQL server
