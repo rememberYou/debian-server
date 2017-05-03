@@ -6,8 +6,8 @@
 apt-get install libcups2 samba samba-common cups -y
 
 # Create a backup of the configuration file.
-if [ ! -f /etc/samba/smb.conf.bak ]; then
-    cp /etc/samba/smb.conf /etc/samba/smb.conf.bak
+if [ ! -f /etc/samba/smb.conf.bk ]; then
+    cp /etc/samba/smb.conf /etc/samba/smb.conf.bk
 fi
 
 # Create the configuration file.
