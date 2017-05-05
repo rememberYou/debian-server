@@ -22,7 +22,9 @@ if [ ! -f /etc/auto.nfs.bk ]; then
 fi
 
 # Create the configuration file.
-echo "/srv/    /etc/auto.nfs    --timeout=2,sync,nodev,nosuid" > /etc/auto.master
+echo "/srv/    /etc/auto.nfs    --timeout=60 --ghost,sync,nodev,nosuid" 
+> 
+/etc/auto.master
 
 # Main AutoFS file.
 echo  "nfs    -fstype=nfs,rw,inter    10.1.215.223:/srv/nfs" > /etc/auto.nfs
