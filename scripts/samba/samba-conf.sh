@@ -3,11 +3,11 @@
 # SEE: https://www.howtoforge.com/tutorial/debian-samba-server/
 
 # Installation of Samba.
-apt-get install libcups2 samba samba-common cups -y
+apt-get install libcups2 samba samba-common cups
 
 # Create a backup of the configuration file.
-if [ ! -f /etc/samba/smb.conf.bk ]; then
-    cp /etc/samba/smb.conf /etc/samba/smb.conf.bk
+if [ ! -f /etc/samba/smb.conf.bak ]; then
+    cp /etc/samba/smb.conf /etc/samba/smb.conf.bak
 fi
 
 # Create the configuration file.
@@ -23,15 +23,15 @@ echo "security = user" >> /etc/samba/smb.conf
 echo "map to guest = bad user" >> /etc/samba/smb.conf
 echo "dns proxy = no" >> /etc/samba/smb.conf
 
-mkdir -p /srv/samba/users/
-chown -R root:users /srv/samba/users/
-chmod -R 775 /srv/samba/users/
+mkdir -p /srv/share/users/
+chown -R root:users /srv/share/users/
+chmod -R 775 /srv/share/users/
 
 # Share that is accessible and writable for all members of "users" group.
 echo " " >> /etc/samba/smb.conf
 echo "[users]" >> /etc/samba/smb.conf
 echo "comment = All Users" >> /etc/samba/smb.conf
-echo "path = /srv/samba/users" >> /etc/samba/smb.conf
+echo "path = /srv/share/users" >> /etc/samba/smb.conf
 echo "valid users = @users" >> /etc/samba/smb.conf
 echo "force group = users" >> /etc/samba/smb.conf
 echo "create mask = 0660" >> /etc/samba/smb.conf

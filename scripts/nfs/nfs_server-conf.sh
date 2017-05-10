@@ -4,21 +4,21 @@
 apt-get install nfs-kernel-server nfs-common -y
 
 # Create a backup of the configuration file.
-if [ ! -f /etc/exports.bak ]; then
-    cp /etc/exports /etc/exports.bak
+if [ ! -f /etc/exports.bk ]; then
+    cp /etc/exports /etc/exports.bk
 fi
 
-# Create the sharing directory.
-mkdir /srv/nfs
-
-# Give rights to the folder.
-chmod 777 /srv/nfs
+# Create the sharing directory if doesn't exist yet.
+if [[ ! -d /srv/share ]]; then
+    mkdir /srv/share
+    chmod 777 /srv/share
+fi
 
 # Create the configuration file.
 echo "###### NFS SERVER CONFIGURATION ######" > /etc/exports
 echo " " >> /etc/exports
 
-echo "/srv/nfs	10.1.0.0/16(rw,root_squash,no_subtree_check)" >> /etc/exports
+echo "/srv/share  192.168.0.0/16(rw,no_subtree_check,root_squash)" >> /etc/exports
 
 # Update the table of exported file systems.
 exportfs -av

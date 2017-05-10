@@ -3,8 +3,11 @@
 # Install NFS
 apt-get install nfs-common -y
 
-# Create the NFS directory
-mkdir -p /mnt/nfs
+# Create the share directory if doesn't exist yet.
+if [[ ! -d /mnt/share/users ]]; then
+    mkdir /mnt/share/users
+    chmod 777 /mnt/share/users
+fi
 
 ######################## AutoFS Configuration ########################
 
@@ -22,12 +25,10 @@ if [ ! -f /etc/auto.nfs.bk ]; then
 fi
 
 # Create the configuration file.
-echo "/srv/    /etc/auto.nfs    --timeout=60 --ghost,sync,nodev,nosuid" 
-> 
-/etc/auto.master
+echo "/mnt/share    /etc/auto.nfs    --ghost,timeout=30" > /etc/auto.master
 
 # Main AutoFS file.
-echo  "nfs    -fstype=nfs,rw,inter    10.1.215.223:/srv/nfs" > /etc/auto.nfs
+echo  "users    -noexec,nosuid,rw,ghost    192.168.77.131:/srv/share/users" > /etc/auto.nfs
 
 # Restart AutoFS.
 /etc/init.d/autofs restart
