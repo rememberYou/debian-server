@@ -3,6 +3,7 @@
 # Creates the ACL of clients that we want to resolve request
 # to avoid the DNS amplification attack.
 function create_acl_group() {
+
     # Create a backup of the configuration file.
     if [ ! -f /etc/bind/named.conf.options.bak ]; then
         cp /etc/bind/named.conf.options /etc/bind/named.conf.options.bak
