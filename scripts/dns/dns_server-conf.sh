@@ -3,8 +3,6 @@
 # Creates the ACL of clients that we want to resolve request
 # to avoid the DNS amplification attack.
 function create_acl_group() {
-    apt-get install bind9 bind9utils bind9-doc -y
-
     # Create a backup of the configuration file.
     if [ ! -f /etc/bind/named.conf.options.bak ]; then
         cp /etc/bind/named.conf.options /etc/bind/named.conf.options.bak
@@ -19,10 +17,6 @@ function create_acl_group() {
 
 # Creates a Cache and Forward DNS
 function create_dns() {
-    apt-get install bind9 bind9utils bind9-doc -y
-
-    create_acl_group
-
     echo "" >> "/etc/bind/named.conf.options"
 
     echo "options {" >> "/etc/bind/named.conf.options"
@@ -56,4 +50,7 @@ function create_dns() {
     systemctl restart bind9
 }
 
+apt-get install bind9 bind9utils bind9-doc -y
+
+create_acl_group
 create_dns
