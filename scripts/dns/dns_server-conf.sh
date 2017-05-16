@@ -26,7 +26,7 @@ function create_dns() {
     echo "" >> "/etc/bind/named.conf.options"
 
     echo "options {" >> "/etc/bind/named.conf.options"
-    echo "        directory /var/cache/bind;" >> "/etc/bind/named.conf.options"
+    echo "        directory \"/var/cache/bind\";" >> "/etc/bind/named.conf.options"
 
     echo "" >> "/etc/bind/named.conf.options"
 
@@ -39,16 +39,12 @@ function create_dns() {
     echo "                8.8.8.8;" >> "/etc/bind/named.conf.options"
     echo "                8.8.4.4;" >> "/etc/bind/named.conf.options"
     echo "        };" >> "/etc/bind/named.conf.options"
-    echo "        forward onlny" >> "/etc/bind/named.conf.options"
+    echo "        forward only;" >> "/etc/bind/named.conf.options"
 
     echo "" >> "/etc/bind/named.conf.options"
 
-    echo "        dnssec-enable yes" >> "/etc/bind/named.conf.options"
+    echo "        dnssec-enable yes;" >> "/etc/bind/named.conf.options"
     echo "        dnssec-validation yes;" >> "/etc/bind/named.conf.options"
-
-    echo "" >> "/etc/bind/named.conf.options"
-
-    echo "        dnssec-validation auto;" >> "/etc/bind/named.conf.options"
 
     echo "" >> "/etc/bind/named.conf.options"
 
@@ -57,5 +53,7 @@ function create_dns() {
     echo "        listen-on-v6 { any; };" >> "/etc/bind/named.conf.options"
     echo "};" >> "/etc/bind/named.conf.options"
 
-    sudo systemctl restart bind9
+    systemctl restart bind9
 }
+
+create_dns
