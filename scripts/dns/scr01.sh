@@ -30,43 +30,76 @@ function create_website() {
     echo "</VirtualHost>" >> "/etc/apache2/sites-enabled/$username.conf"
 }
 
-# Creates a DNS for a specific user.
-function create_dns() {
-    apt-get install bind9 -y
+# Creates a Cache DNS
+function create_cache_dns() {
+    
+}
 
+# Creates the ACL of clients that we want to resolve request
+# to avoid the DNS amplification attack.
+function create_acl_group() {
+    apt-get install bind9 bind9utils bind9-doc -y
+    
     # Create a backup of the configuration file.
     if [ ! -f /etc/bind/named.conf.options.bak ]; then
         cp /etc/bind/named.conf.options /etc/bind/named.conf.options.bak
     fi
-    echo "options {" > "/etc/bind/named.conf.options"
-    echo "        directory "/var/cache/bind";" >> "/etc/bind/named.conf.options"
+    
+    echo "acl goodclients {" > "/etc/bind/named.conf.options"
+    echo "        10.1.0.0/16;" >> "/etc/bind/named.conf.options"
+    echo "        localhost;" >> "/etc/bind/named.conf.options"
+    echo "        localnets;" >> "/etc/bind/named.conf.options"
+    echo "};" >> "/etc/bind/named.conf.options" 
+}
+
+# Creates a Cache and Forward DNS
+function create_dns() {
+    echo "" >> "/etc/bind/named.conf.options"
+    
+    echo "options {" >> "/etc/bind/named.conf.options"
+    echo "        directory /var/cache/bind;" >> "/etc/bind/named.conf.options"
+    
+    echo "" >> "/etc/bind/named.conf.options"
+    
+    echo "        recursion yes;" >> "/etc/bind/named.conf.options"
+    echo "        allow-query { goodclients; };" >> "/etc/bind/named.conf.options"
+    
+    echo "" >> "/etc/bind/named.conf.options"
+    
+    echo "        forwarders {" >> "/etc/bind/named.conf.options"
+    echo "                8.8.8.8;" >> "/etc/bind/named.conf.options"
+    echo "                8.8.4.4;" >> "/etc/bind/named.conf.options"
+    echo "        };" >> "/etc/bind/named.conf.options"
+    echo "        forward onlny" >> "/etc/bind/named.conf.options"
+
+    echo "" >> "/etc/bind/named.conf.options"
+    
+    echo "        dnssec-enable yes" >> "/etc/bind/named.conf.options"
+    echo "        dnssec-validation yes;" >> "/etc/bind/named.conf.options"
+    
+    echo "" >> "/etc/bind/named.conf.options"
+    
+    echo "        dnssec-validation auto;" >> "/etc/bind/named.conf.options"
+
+    echo "" >> "/etc/bind/named.conf.options"
+    
+    echo "        # Conform to RFC1035" >> "/etc/bind/named.conf.options"
     echo "        auth-nxdomain no;" >> "/etc/bind/named.conf.options"
     echo "        listen-on-v6 { any; };" >> "/etc/bind/named.conf.options"
-    echo "        statistics-file \"/var/cache/bind/named.stats\";" >> "/etc/bind/named.conf.options"
-    echo "        rrset-order {order cyclic;};" >> "/etc/bind/named.conf.options"
-    echo "    allow-transfer { 127.0.0.1; };" >> "/etc/bind/named.conf.options"
     echo "};" >> "/etc/bind/named.conf.options"
-    echo "logging {" >> "/etc/bind/named.conf.options"
-    echo "        channel b_query {" >> "/etc/bind/named.conf.options"
-    echo "                file "/var/log/bind9/query.log" versions 2 size 1m;" >> "/etc/bind/named.conf.options"
-    echo "                print-time yes;" >> "/etc/bind/named.conf.options"
-    echo "                severity info;" >> "/etc/bind/named.conf.options"
-    echo "        };" >> "/etc/bind/named.conf.options"
-    echo "        category queries { b_query; };" >> "/etc/bind/named.conf.options"
-    echo "};" >> "/etc/bind/named.conf.options"
-    
-    mkdir /var/log/bind9
-    chown bind:bind /var/log/bind9    
+
+    #   mkdir /var/log/bind9
+    #    chown bind:bind /var/log/bind9    
 
     # Create a backup of the configuration file.
-    if [ ! -f /etc/bind/named.conf.bak ]; then
-        cp /etc/bind/named.conf /etc/bind/named.conf.bak
-    fi
+    #   if [ ! -f /etc/bind/named.conf.bak ]; then
+    #	cp /etc/bind/named.conf /etc/bind/named.conf.bak
+	# fi
 
-    echo "zone $username {" > "/etc/bind/zones/$username.conf";
-    echo -e "\t type master;" >> "/etc/bind/zones/$username.conf";
-    echo -e "\t file \" /etc/bind/zones/$username.db" >> "/etc/bind/zones/$username.conf";
-    echo "};" >> "/etc/bind/zones/$username.conf";
+	# echo "zone $username {" > "/etc/bind/zones/$username.conf";
+    # echo -e "\t type master;" >> "/etc/bind/zones/$username.conf";
+    # echo -e "\t file \" /etc/bind/zones/$username.db" >> "/etc/bind/zones/$username.conf";
+    # echo "};" >> "/etc/bind/zones/$username.conf";
 }
 
 function create_file_dns() {
