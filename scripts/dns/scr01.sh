@@ -30,10 +30,6 @@ function create_website() {
     echo "</VirtualHost>" >> "/etc/apache2/sites-enabled/$username.conf"
 }
 
-# Creates a Cache DNS
-function create_cache_dns() {
-    
-}
 
 # Creates the ACL of clients that we want to resolve request
 # to avoid the DNS amplification attack.
