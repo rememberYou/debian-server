@@ -11,8 +11,8 @@ apt-get upgrade
 apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xcbcb082a1bb943db
 
 # Create a backup of the configuration file.
-if [ ! -f /etc/apt/sources.list.bk ]; then
-    cp /etc/apt/sources.list /etc/apt/sources.list.bk
+if [ ! -f /etc/apt/sources.list.bak ]; then
+    cp /etc/apt/sources.list /etc/apt/sources.list.bak
 fi
 
 echo "deb http://ftp.belnet.be/debian/ jessie main" > /etc/apt/sources.list

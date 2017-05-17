@@ -15,13 +15,13 @@ fi
 apt-get install AutoFS
 
 # Create a backup of the configuration file.
-if [ ! -f /etc/auto.master.bk ]; then
-    cp /etc/auto.master /etc/auto.master.bk
+if [ ! -f /etc/auto.master.bak ]; then
+    cp /etc/auto.master /etc/auto.master.bak
 fi
 
 # Create a backup of the configuration file.
-if [ ! -f /etc/auto.nfs.bk ]; then
-    cp /etc/auto.nfs /etc/auto.nfs.bk
+if [ ! -f /etc/auto.nfs.bak ]; then
+    cp /etc/auto.nfs /etc/auto.nfs.bak
 fi
 
 # Create the configuration file.
