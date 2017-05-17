@@ -45,7 +45,7 @@ function configure_event_module() {
 
     echo "# event MPM" > /etc/apache2/mods-available/mpm_event.conf
     echo "# StartServers: initial number of server processes to start" >> /etc/apache2/mods-available/mpm_event.conf
-    echo "# MinSpareThreads: minimum number of worker threads which are kept spare" >> >> /etc/apache2/mods-available/mpm_event.conf
+    echo "# MinSpareThreads: minimum number of worker threads which are kept spare" >> /etc/apache2/mods-available/mpm_event.conf
     echo "# MaxSpareThreads: maximum number of worker threads which are kept spare" >> /etc/apache2/mods-available/mpm_event.conf
     echo "# ThreadsPerChild: constant number of worker threads in each server process" >> /etc/apache2/mods-available/mpm_event.conf
     echo "# MaxRequestWorkers: maximum number of worker threads" >> /etc/apache2/mods-available/mpm_event.conf
@@ -73,9 +73,9 @@ function configure_apache() {
     echo "     ServerAdmin webmaster@example.lan" >> /etc/apache2/sites-available/example.lan.conf
     echo "     ServerName example.lan" >> /etc/apache2/sites-available/example.lan.conf
     echo "     ServerAlias www.example.lan" >> /etc/apache2/sites-available/example.lan.conf
-    echo "     DocumentRoot /srv/web/example/www" >> /etc/apache2/sites-available/example.lan.conf
-    echo "     ErrorLog /srv/web/example.lan/logs/error.log" >> /etc/apache2/sites-available/example.lan.conf
-    echo "     CustomLog /srv/web/$username.lan/logs/access.log combined" >> /etc/apache2/sites-available/example.lan.conf
+    echo "     DocumentRoot /srv/www/example/www" >> /etc/apache2/sites-available/example.lan.conf
+    echo "     ErrorLog /srv/www/example.lan/logs/error.log" >> /etc/apache2/sites-available/example.lan.conf
+    echo "     CustomLog /srv/www/example.lan/logs/access.log combined" >> /etc/apache2/sites-available/example.lan.conf
     echo "</VirtualHost>" >> /etc/apache2/sites-available/example.lan.confb
 }
 
