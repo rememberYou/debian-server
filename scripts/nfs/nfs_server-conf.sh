@@ -4,8 +4,8 @@
 apt-get install nfs-kernel-server nfs-common -y
 
 # Create a backup of the configuration file.
-if [ ! -f /etc/exports.bk ]; then
-    cp /etc/exports /etc/exports.bk
+if [ ! -f /etc/exports.bak ]; then
+    cp /etc/exports /etc/exports.bak
 fi
 
 # Create the sharing directory if doesn't exist yet.

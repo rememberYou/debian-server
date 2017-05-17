@@ -10,7 +10,7 @@ systemctl enable vsftpd
 systemctl start vsftpd
 
 # Create a backup of the main configuration file.
-cp /etc/vsftpd.conf /etc/vsftpd.bk
+cp /etc/vsftpd.conf /etc/vsftpd.bak
 n
 # Delete the initial configuration file.
 rm -f /etc/vsftpd.conf

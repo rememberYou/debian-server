@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Create a backup of the main configuration file.
-cp /etc/pam.d/vsftpd /etc/pam.d/vsftpd.bk
+cp /etc/pam.d/vsftpd /etc/pam.d/vsftpd.bak
 
 # Create the configuration file.
 echo "################ PAM VSFTPD CONFIGURATION ################" >> /etc/pam.d/vsftpd

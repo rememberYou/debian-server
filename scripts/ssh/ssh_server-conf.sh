@@ -4,8 +4,8 @@
 apt-get install openssh-server -y
 
 # Create a backup of the configuration file.
-if [ ! -f /etc/ssh/sshd_config.bk ]; then
-    cp /etc/ssh/sshd_config /etc/ssh/sshd_config.bk
+if [ ! -f /etc/ssh/sshd_config.bak ]; then
+    cp /etc/ssh/sshd_config /etc/ssh/sshd_config.bak
 fi
 
 ######################## SSH Configuration ########################

@@ -16,8 +16,8 @@ ntpdate 1.be.pool.ntp.org
 systemctl start ntp
 
 # Create a backup of the configuration file.
-if [ ! -f /etc/exports.bk ]; then
-    cp /etc/ntp.conf /etc/ntp.bk
+if [ ! -f /etc/exports.bak ]; then
+    cp /etc/ntp.conf /etc/ntp.bak
 fi
 
 # Create the configuration file.
