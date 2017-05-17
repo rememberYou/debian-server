@@ -2,6 +2,8 @@
 
 # See: https://www.linode.com/docs/web-servers/apache/apache-web-server-debian-8
 
+# Be careful to launch the script before create the users.
+
 # Configure the Multi-Processing Module
 function configure_multi_processing() {
     # Create a backup of the configuration file.
@@ -67,14 +69,14 @@ function configure_apache() {
     # Disable the default Apache virtual host.
     sudo a2dissite 000-default.conf
 
-    echo "<VirtualHost *:80>" > /etc/apache2/sites-available/example.com.conf
-    echo "     ServerAdmin webmaster@example.com" >> /etc/apache2/sites-available/example.com.conf
-    echo "     ServerName example.com" >> /etc/apache2/sites-available/example.com.conf
-    echo "     ServerAlias www.example.com" >> /etc/apache2/sites-available/example.com.conf
-    echo "     DocumentRoot /var/www/example.com/public_html/" >> /etc/apache2/sites-available/example.com.conf
-    echo "     ErrorLog /var/www/example.com/logs/error.log" >> /etc/apache2/sites-available/example.com.conf
-    echo "     CustomLog /var/www/example.com/logs/access.log combined" >> /etc/apache2/sites-available/example.com.conf
-    echo "     </VirtualHost>" >> /etc/apache2/sites-available/example.com.conf
+    echo "<VirtualHost *:80>" > /etc/apache2/sites-available/example.lan.conf
+    echo "     ServerAdmin webmaster@example.lan" >> /etc/apache2/sites-available/example.lan.conf
+    echo "     ServerName example.lan" >> /etc/apache2/sites-available/example.lan.conf
+    echo "     ServerAlias www.example.lan" >> /etc/apache2/sites-available/example.lan.conf
+    echo "     DocumentRoot /srv/web/example/www" >> /etc/apache2/sites-available/example.lan.conf
+    echo "     ErrorLog /srv/web/example.lan/logs/error.log" >> /etc/apache2/sites-available/example.lan.conf
+    echo "     CustomLog /srv/web/$username.lan/logs/access.log combined" >> /etc/apache2/sites-available/example.lan.conf
+    echo "</VirtualHost>" >> /etc/apache2/sites-available/example.lan.confb
 }
 
 # Installation of Apache 2.
@@ -104,12 +106,12 @@ configure_apache
 min_info
 
 # Create directories for the websites.
-sudo mkdir -p /var/www/example.com/public_html
+sudo mkdir -p /var/www/example.lan/public_html
 # Create directories for the websites'logs.
-sudo mkdir /var/www/example.com/logs
+sudo mkdir /var/www/example.lan/logs
 
 # Enable the website.
-sudo a2ensite example.com.conf
+sudo a2ensite example.lan.conf
 
 # Restart Apache.
 sudo systemctl restart apache2
