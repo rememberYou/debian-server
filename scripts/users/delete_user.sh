@@ -2,7 +2,7 @@
 
 # Deletes an user.
 function delete_user() {
-    deluser --remove-home $username users
+    deluser –remove-all-files $username
 
     rm -rf /etc/apache2/sites-enabled/$username.lan.conf
 }
