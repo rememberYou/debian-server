@@ -90,6 +90,7 @@ configure_multi_processing
 # disabled, and the prefork module enabled.
 a2dismod mpm_event
 a2enmod mpm_prefork
+a2enmod userdir
 
 # Restart Apache.
 systemctl restart apache2
