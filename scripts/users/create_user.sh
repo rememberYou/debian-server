@@ -23,6 +23,8 @@ function create_website() {
     echo -e "\tErrorLog /srv/web/$username.lan/logs/error.log" >> "/etc/apache2/sites-enabled/$username.lan.conf"
     echo -e "\tCustomLog /srv/web/$username.lan/logs/access.log combined" >> "/etc/apache2/sites-enabled/$username.lan.conf"
     echo "</VirtualHost>" >> "/etc/apache2/sites-enabled/$username.lan.conf"
+
+    mkdir -p "/srv/web/$username/www"
 }
 
 echo -e "Enter the name of the user: "

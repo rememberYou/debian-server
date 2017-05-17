@@ -88,16 +88,16 @@ configure_multi_processing
 
 # On Debian 8, the event module is enabled by default. This will need to be
 # disabled, and the prefork module enabled.
-sudo a2dismod mpm_event
-sudo a2enmod mpm_prefork
+a2dismod mpm_event
+a2enmod mpm_prefork
 
 # Restart Apache.
-sudo systemctl restart apache2
+systemctl restart apache2
 
 configure_event_module
 
 # Restart Apache.
-sudo systemctl restart apache2
+systemctl restart apache2
 
 # Configure Apache.
 configure_apache
@@ -106,15 +106,15 @@ configure_apache
 min_info
 
 # Create directories for the websites.
-sudo mkdir -p /var/www/example.lan/public_html
+mkdir -p /srv/web/example.lan/public_html
 # Create directories for the websites'logs.
-sudo mkdir /var/www/example.lan/logs
+mkdir /srv/web/example.lan/logs
 
 # Enable the website.
-sudo a2ensite example.lan.conf
+a2ensite example.lan.conf
 
 # Restart Apache.
-sudo systemctl restart apache2
+systemctl restart apache2
 
 # Install PHP support.
-sudo apt-get install php5 php-pear -y
+apt-get install php5 php-pear -y
