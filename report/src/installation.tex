@@ -97,44 +97,47 @@ failles et de bugs.
 \subsection{Partitionnement}
 \label{sec:partitionnement}
 
-\begin{center}
-  \begin{tabularx}{\linewidth}{|C|C|C|C|}
-    \hline
-    Label & Type & Taille (Mo) & Format \\
-    \hline
-    \hline
-    /boot & primary & 512 & ext4 \\
-    \hline
-    VolGroup & logical & 20958 & lvm \\
-    \hline
-  \end{tabularx}
-\end{center}
+Nous avons partitionné le disque de cette manière, avec un partition racine,
+\textit{/boot}, et un groupe de volume LVM, \textit{VolGroup} : \\
 
 \begin{center}
     \begin{table}[h]
-    \begin{tabularx}{\linewidth}{|C|C|C|C|}
-        \hline
-        LVsrv (/srv) & lvm & 6144 & ext4 \\
-        %web et nfs
-        \hline
-        LVswap (/swap) & lvm & 4096 & swap \\
-        \hline
-        LVhome (/home) & lvm & 2048 & ext4 \\
-        \hline
-        LVroot (/root) & lvm & 2048 & ext4 \\
-        \hline
-        LVusr (/usr) & lvm & 2048 & ext4 \\
-        \hline
-        LVopt (/opt) & lvm & 2048 & ext4 \\
-        \hline
-        LVvar (/var) & lvm & 1024 & ext4 \\
-        \hline
-        LVtmp (/tmp) & lvm & 1024 & ext4 \\
-        \hline
-    \end{tabularx}
-    \caption{Tableau du partitionnement \textit{(avec LVM)}}
-    \label{tab:tableau-partitionnement}
-\end{table}
+        \begin{tabularx}{\linewidth}{|C|C|C|C|}
+            \hline
+            Label & Type & Taille (Mo) & Format \\
+            \hline
+            \hline
+            /boot & primary & 512 & ext4 \\
+            \hline
+            VolGroup & logical & 20958 & lvm \\
+            \hline
+        \end{tabularx}
+
+        \vskip .5cm
+
+        \begin{tabularx}{\linewidth}{|C|C|C|C|}
+            \hline
+            LVsrv (/srv) & lvm & 6144 & ext4 \\
+            %web et nfs
+            \hline
+            LVswap (/swap) & lvm & 4096 & swap \\
+            \hline
+            LVhome (/home) & lvm & 2048 & ext4 \\
+            \hline
+            LVroot (/root) & lvm & 2048 & ext4 \\
+            \hline
+            LVusr (/usr) & lvm & 2048 & ext4 \\
+            \hline
+            LVopt (/opt) & lvm & 2048 & ext4 \\
+            \hline
+            LVvar (/var) & lvm & 1024 & ext4 \\
+            \hline
+            LVtmp (/tmp) & lvm & 1024 & ext4 \\
+            \hline
+        \end{tabularx}
+        \caption{Tableau du partitionnement \textit{(avec LVM)}}
+        \label{tab:tableau-partitionnement}
+    \end{table}
 \end{center}
 
 %%% Local Variables:
