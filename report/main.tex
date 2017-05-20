@@ -1,10 +1,6 @@
 \documentclass[a4paper, 12pt]{report}
-% Forces PDF version 1.7
-\pdfminorversion=7
 % Allows writing the document in english.
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage[english]{babel}
+\usepackage[francais]{babel}
 % Allows to use images.
 \usepackage{graphicx}
 % Provides hyperlinks within the document.
@@ -24,7 +20,27 @@
 % Euro
 \usepackage{eurosym}
 \usepackage{amsmath}
+\usepackage{fontspec}
+\usepackage[T1]{fontenc} 
+\usepackage{lmodern} 
 
+
+\usepackage{gensymb}
+
+% Default fixed font does not support bold face
+\DeclareFixedFont{\ttb}{T1}{txtt}{bx}{n}{12} % for bold
+\DeclareFixedFont{\ttm}{T1}{txtt}{m}{n}{12}  % for normal
+
+\setcounter{tocdepth}{3}
+
+% Custom colors
+\usepackage{color}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+
+\usepackage{listings}
+\usepackage{subfigure}
 \usepackage[
     type={CC},
     modifier={by-nc-nd},
@@ -62,24 +78,83 @@
 % Height of items.
 \setitemize{itemsep=1em}
 
+%%%%********************************************************************
+% fancy quotes
+\definecolor{quotemark}{gray}{0.7}
+\makeatletter
+\def\fquote{%
+    \@ifnextchar[{\fquote@i}{\fquote@i[]}%]
+           }%
+\def\fquote@i[#1]{%
+    \def\tempa{#1}%
+    \@ifnextchar[{\fquote@ii}{\fquote@ii[]}%]
+                 }%
+\def\fquote@ii[#1]{%
+    \def\tempb{#1}%
+    \@ifnextchar[{\fquote@iii}{\fquote@iii[]}%]
+                      }%
+\def\fquote@iii[#1]{%
+    \def\tempc{#1}%
+    \vspace{1em}%
+    \noindent%
+    \begin{list}{}{%
+         \setlength{\leftmargin}{0.1\textwidth}%
+         \setlength{\rightmargin}{0.1\textwidth}%
+                  }%
+         \item[]%
+         \begin{picture}(0,0)%
+         \put(-15,-5){\makebox(0,0){\scalebox{3}{\textcolor{quotemark}{``}}}}%
+         \end{picture}%
+         \begingroup\itshape}%
+ %%%%********************************************************************
+ \def\endfquote{%
+ \endgroup\par%
+ \makebox[0pt][l]{%
+ \hspace{0.8\textwidth}%
+ \begin{picture}(0,0)(0,0)%
+ \put(15,15){\makebox(0,0){%
+ \scalebox{3}{\color{quotemark}''}}}%
+ \end{picture}}%
+ \ifx\tempa\empty%
+ \else%
+    \ifx\tempc\empty%
+       \hfill\rule{100pt}{0.5pt}\\\mbox{}\hfill\tempa,\ \emph{\tempb}%
+   \else%
+       \hfill\rule{100pt}{0.5pt}\\\mbox{}\hfill\tempa,\ \emph{\tempb},\ \tempc%
+   \fi\fi\par%
+   \vspace{0.5em}%
+ \end{list}%
+ }%
+ \makeatother
+
+ %%%% ********************************************************************
+
 % Starts roman numbering (trick to not numbering the first pages).
 \pagenumbering{roman}
 
 \begin{document}
 \renewcommand{\bibname}{Références}
+\input{src/flyleaf_bw}
+\newpage
+\input{src/blank}
 \input{src/flyleaf}
 \newpage
 \input{src/blank}
+%\newpage
+%\input{src/thanks}
 \newpage
 \input{src/license}
 \newpage
 \pagenumbering{arabic}
 \tableofcontents
 \newpage
+\input{src/presentation}
+\newpage
 \input{src/installation}
 \newpage
 \input{src/gestion}
 \newpage
+\phantomsection
 \input{src/references}
 \newpage
 \input{src/blank}

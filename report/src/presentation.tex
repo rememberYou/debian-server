@@ -1,0 +1,67 @@
+\section{Présentation générale du projet}
+\label{sec:pres-gener-du}
+
+
+\subsection{Introduction}
+\label{sec:introduction}
+
+Dans le cadre de ce projet, il nous a été demandé d'administrer un serveur sous
+Linux. \\
+Le choix de la distribution ainsi que la gestion des sauvegardes est libre et
+devra être justifié. \\
+
+Le serveur devra contenir :
+
+\begin{itemize}
+    \item un partage \textbf{NFS} qui permettra aux utilisateurs du réseaux local d'y stocker des fichiers;
+    \item un partage \textbf{Samba} permettra aux utilisateurs Windows d'accéder à ce même partage;
+    \item un serveur \textbf{Web}, \textbf{FTP}, \textbf{MySQL} et \textbf{DNS} qui permettra un hébergement multi-utilisateurs;
+    \begin{itemize}
+        \item[$\bullet$] le FTP permettra à chaque utilisateur d'accéder à son dossier Web;
+        \item[$\bullet$] il faudra créer une zone dans le DNS pour nos sites;
+        \item[$\bullet$] le DNS fera également office de DNS cache pour le réseau local;
+    \end{itemize}
+    \item un \textbf{serveur de temps} pour que les machines du
+    réseau local puissent se synchroniser;
+    \item une connexion en \textbf{SSH} au serveur.
+\end{itemize}
+
+
+\newpage
+
+
+\subsection{Déontologie}
+\label{sec:déontologie}
+
+En tant qu'administrateurs du serveur, nous serons tenus de suivre de nombreuses
+règles telles que :
+
+\begin{itemize}
+    \item la documentation des actions entreprises sur le serveur;
+    \item l'automatisation des installations et configurations au travers de scripts;
+    \item la sécurité : mise en place de mots de passe forts, du SSH, etc.
+    \item la vigilance et la prévoyance, par exemple par la mise en place de
+    sauvegardes avant et après chaque changements sur le serveur;
+    \item le contrôle du bon fonctionnement de chaque élément.
+\end{itemize}
+
+
+\subsection{Sécurité}
+\label{sec:securite}
+
+Du côté de la sécurité, nous avons quelques contraintes reprises ci-dessous :
+
+\begin{itemize}
+    \item mise en place d'une politique utilisateur;
+    \item mise en place de quotas;
+    \item partitionnement et gestion du disque \textit{(\textbf{LVM} et
+    \textbf{RAID})};
+    \item mise en place d'une stratégie de sauvegarde;
+    \item désactivation des éléments inutiles et des mises à jours;
+    \item mise en place d'un antivirus, d'un firewall, etc.
+\end{itemize}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

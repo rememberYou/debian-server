@@ -1,5 +1,21 @@
 \begin{thebibliography}{1}
 
+\bibitem{website:justincoutarel}
+{\sc Coutarel, J.}
+\newblock {Installation du serveur Web Apache sur un serveur dédié Kimsufi
+  sous Ubuntu Server 14.04 LTS, Site, [en ligne]}.
+\newblock
+  \href{https://justincoutarel.fr/2014/05/installation-du-serveur-web-apache-sur-un-serveur-dedie-kimsufi-sous-ubuntu-server-14-04-lts/}{https://justincoutarel.fr},
+  (consulté le 17 mai 2017).
+
+\bibitem{website:ducea}
+{\sc Ducea, M.}
+\newblock {Apache Tips \& Tricks: Hide Apache Software Version, Site, [en
+  ligne]}.
+\newblock
+  \href{http://www.ducea.com/2006/06/15/apache-tips-tricks-hide-apache-software-version/}{http://www.ducea.com},
+  (consulté le 17 mai 2017).
+
 \bibitem{website:commentcamarche}
 {\sc Gelbmann, M.}
 \newblock {Ubuntu became the most popular Linux distribution for web servers,
@@ -8,8 +24,15 @@
   \href{https://w3techs.com/blog/entry/ubuntu_became_the_most_popular_linux_distribution_for_web_servers}{http://www.w3techs.com},
   (consulté le 15 février 2017).
 
+\bibitem{website:linode}
+{\sc Krout, E.}
+\newblock {Apache Web Server on Debian 8 (Jessie), Site, [en ligne]}.
+\newblock
+  \href{https://www.linode.com/docs/web-servers/apache/apache-web-server-debian-8/}{https://www.linode.com},
+  (consulté le 17 mai 2017).
+
 \bibitem{latex}
-{\sc LaTeX}.
+{\sc \LaTeX}.
 \newblock A document preparation system.
 \newblock (consulté le 15 février 2017).
 
