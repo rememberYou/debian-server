@@ -5,7 +5,7 @@
 \newblock {Installation du serveur Web Apache sur un serveur dédié Kimsufi
   sous Ubuntu Server 14.04 LTS, Site, [en ligne]}.
 \newblock
-  \href{https://justincoutarel.fr/2014/05/installation-du-serveur-web-apache-sur-un-serveur-dedie-kimsufi-sous-ubuntu-server-14-04-lts/}{https://justincoutarel.fr},
+  \\\href{https://justincoutarel.fr/2014/05/installation-du-serveur-web-apache-sur-un-serveur-dedie-kimsufi-sous-ubuntu-server-14-04-lts/}{https://justincoutarel.fr},
   (consulté le 17 mai 2017).
 
 \bibitem{website:ducea}
@@ -53,7 +53,7 @@
 \bibitem{website:ntp2}
 {\sc {The Debian Community}}.
 \newblock {NTP, Site, [en ligne]}.
-\newblock \href{https://wiki.debian.org/NTP}{https://wiki.debian.org/NTP},
+\newblock \\\href{https://wiki.debian.org/NTP}{https://wiki.debian.org/NTP},
   (consulté le 23 mars 2017).
 
 \bibitem{website:ntp3}
