@@ -36,4 +36,31 @@
 \newblock A document preparation system.
 \newblock (consulté le 15 février 2017).
 
+\bibitem{website:ntp4}
+{\sc {meuh}}.
+\newblock {NTP - Clock is not syncing to low stratum server, Site, [en ligne]}.
+\newblock
+  \href{http://stackoverflow.com/questions/32483443/ntp-clock-is-not-syncing-to-low-stratum-server}{http://stackoverflow.com},
+  (consulté le 28 mars 2017).
+
+\bibitem{website:ntp1}
+{\sc {ruchi}}.
+\newblock {NTP Server and Client Configuration in debian, Site, [en ligne]}.
+\newblock
+  \href{http://www.debianadmin.com/ntp-server-and-client-configuration-in-debian.html}{http://www.debianadmin.com},
+  (consulté le 23 mars 2017).
+
+\bibitem{website:ntp2}
+{\sc {The Debian Community}}.
+\newblock {NTP, Site, [en ligne]}.
+\newblock \href{https://wiki.debian.org/NTP}{https://wiki.debian.org/NTP},
+  (consulté le 23 mars 2017).
+
+\bibitem{website:ntp3}
+{\sc {The Debian Support}}.
+\newblock {Configuration serveur NTP, Site, [en ligne]}.
+\newblock
+  \href{https://www.debian-fr.org/t/configuration-serveur-ntp/18439}{https://www.debian-fr.org},
+  (consulté le 23 mars 2017).
+
 \end{thebibliography}

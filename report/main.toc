@@ -8,5 +8,6 @@
 \contentsline {subsection}{\numberline {2.2}Langue}{6}{subsection.0.2.2}
 \contentsline {subsection}{\numberline {2.3}Noyau}{6}{subsection.0.2.3}
 \contentsline {subsection}{\numberline {2.4}Partitionnement}{6}{subsection.0.2.4}
-\contentsline {section}{\numberline {3}Sauvegardes}{7}{section.0.3}
-\contentsline {section}{Références}{8}{section*.4}
+\contentsline {section}{\numberline {3}NTP}{7}{section.0.3}
+\contentsline {section}{\numberline {4}Sauvegardes}{8}{section.0.4}
+\contentsline {section}{Références}{9}{section*.4}

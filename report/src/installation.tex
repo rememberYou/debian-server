@@ -97,8 +97,10 @@ failles et de bugs.
 \subsection{Partitionnement}
 \label{sec:partitionnement}
 
-Nous avons partitionné le disque de cette manière, avec un partition racine,
-\textit{/boot}, et un groupe de volume LVM, \textit{VolGroup} : \\
+Afin de posséder assez d'espace de stockage, nous avons choisi d'utiliser deux
+disques de 20 Go en RAID 1. \\
+Nous avons alors partitionné le disque de cette manière, avec un partition racine,
+\textit{/boot}, et un groupe de volume LVM nommé \textit{VolGroup} : \\
 
 \begin{center}
     \begin{table}[h]

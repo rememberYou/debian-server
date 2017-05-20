@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.4.29)  20 MAY 2017 15:09
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.4.29)  20 MAY 2017 16:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1172,29 +1172,43 @@ File: textures/images/installation/DebianVsUbuntu.pdf Graphic file (type QTm)
 File: textures/images/installation/distributions.pdf Graphic file (type QTm)
 
 <use  "textures/images/installation/distributions.pdf" > [5]
-Underfull \hbox (badness 10000) in paragraph at lines 100--102
+Underfull \hbox (badness 10000) in paragraph at lines 100--104
 
  []
 
-) [6] (./src/gestion.tex) [7
+) [6] (./src/ntp.tex
+Missing character: There is no ́ in font ec-lmr12!
+) [7] (./src/gestion.tex) [8
 
-] (./src/references.tex (./main.bbl)) [8
+] (./src/references.tex
+(./main.bbl
+Underfull \hbox (badness 6461) in paragraph at lines 54--58
+[]\T1/lmr/m/sc/12 The De-bian Com-mu-nity\T1/lmr/m/n/12 .  NTP, Site, [en ligne
+].  [][]https ://-
+ []
 
-]
-(./src/blank.tex [0])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 164.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 164.
+
+Underfull \hbox (badness 1946) in paragraph at lines 60--65
+[]\T1/lmr/m/sc/12 The De-bian Sup-port\T1/lmr/m/n/12 .  Confi-gu-ra-tion ser-ve
+ur NTP, Site, [en ligne].
+ []
+
+)) [9
+
+] (./src/blank.tex [0])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 166.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 166.
  (./main.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 164.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 164.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 166.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 166.
  ) 
 Here is how much of TeX's memory you used:
- 23358 strings out of 493068
- 417800 string characters out of 6135636
- 522697 words of memory out of 5000000
- 26975 multiletter control sequences out of 15000+600000
+ 23366 strings out of 493068
+ 417892 string characters out of 6135636
+ 522859 words of memory out of 5000000
+ 26980 multiletter control sequences out of 15000+600000
  74029 words of font info for 52 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
  37i,10n,45p,10368b,435s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (14 pages).
+Output written on main.pdf (15 pages).
