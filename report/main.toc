@@ -9,6 +9,9 @@
 \contentsline {subsection}{\numberline {2.3}Noyau}{6}{subsection.0.2.3}
 \contentsline {subsection}{\numberline {2.4}Partitionnement}{6}{subsection.0.2.4}
 \contentsline {section}{\numberline {3}NTP}{7}{section.0.3}
-\contentsline {subsection}{\numberline {3.1}e}{7}{subsection.0.3.1}
-\contentsline {section}{\numberline {4}Sauvegardes}{8}{section.0.4}
-\contentsline {section}{Références}{9}{section*.4}
+\contentsline {subsection}{\numberline {3.1}n}{7}{subsection.0.3.1}
+\contentsline {section}{\numberline {4}SSH}{8}{section.0.4}
+\contentsline {subsection}{\numberline {4.1}Choix de l'authentification}{8}{subsection.0.4.1}
+\contentsline {subsection}{\numberline {4.2}Mise en place}{8}{subsection.0.4.2}
+\contentsline {section}{\numberline {5}Sauvegardes}{9}{section.0.5}
+\contentsline {section}{Références}{10}{section*.4}

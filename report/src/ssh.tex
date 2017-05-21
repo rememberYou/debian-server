@@ -1,0 +1,29 @@
+\section{SSH}
+\label{sec:ssh}
+
+Le \textbf{SSH}, ou \textit{\textbf{Secure Shell}}, est un protocole de
+communication sécurisé. Il impose un échange de clés de chiffrement en début de
+connexion.
+
+
+\subsection{Choix de l'authentification}
+\label{subsec:choix-authentification}
+
+Il y a plusieurs façons de s'authentifier sur le serveur via SSH. \\
+Les deux plus utilisées sont :
+\begin{itemize}
+    \item l'authentification par mot de passe;
+    \item l'authentification par clés publique et privée du client. \\
+\end{itemize}
+
+Nous avons décidé de mettre en place une \textbf{identification automatique par
+clés}. Ainsi on évite d'entrer le mot de passe à chaque connexion à distance. \\
+Cette méthode est plus complexe à mettre en place, mais elle surtout plus
+pratique. \\
+
+On remarque rapidement son utilité si on se connecte fréquemment au serveur, car
+plus aucun mot de passe n'est demandé.
+
+
+\subsection{Mise en place}
+\label{subsec:mise-en-place}
