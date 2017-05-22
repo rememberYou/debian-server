@@ -15,5 +15,7 @@
 \contentsline {section}{\numberline {4}SSH}{8}{section.0.4}
 \contentsline {subsection}{\numberline {4.1}Type d'authentification}{8}{subsection.0.4.1}
 \contentsline {subsection}{\numberline {4.2}Mise en place}{8}{subsection.0.4.2}
-\contentsline {section}{\numberline {5}Sauvegardes}{9}{section.0.5}
-\contentsline {section}{Références}{10}{section*.4}
+\contentsline {section}{\numberline {5}NFS}{9}{section.0.5}
+\contentsline {section}{\numberline {6}Samba}{10}{section.0.6}
+\contentsline {section}{\numberline {7}Sauvegardes}{11}{section.0.7}
+\contentsline {section}{Références}{12}{section*.4}
