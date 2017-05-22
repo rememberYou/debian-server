@@ -9,9 +9,11 @@
 \contentsline {subsection}{\numberline {2.3}Noyau}{6}{subsection.0.2.3}
 \contentsline {subsection}{\numberline {2.4}Partitionnement}{6}{subsection.0.2.4}
 \contentsline {section}{\numberline {3}NTP}{7}{section.0.3}
-\contentsline {subsection}{\numberline {3.1}n}{7}{subsection.0.3.1}
+\contentsline {subsection}{\numberline {3.1}Principe}{7}{subsection.0.3.1}
+\contentsline {subsection}{\numberline {3.2}Configuration du serveur}{7}{subsection.0.3.2}
+\contentsline {subsection}{\numberline {3.3}Configuration du client}{7}{subsection.0.3.3}
 \contentsline {section}{\numberline {4}SSH}{8}{section.0.4}
-\contentsline {subsection}{\numberline {4.1}Choix de l'authentification}{8}{subsection.0.4.1}
+\contentsline {subsection}{\numberline {4.1}Type d'authentification}{8}{subsection.0.4.1}
 \contentsline {subsection}{\numberline {4.2}Mise en place}{8}{subsection.0.4.2}
 \contentsline {section}{\numberline {5}Sauvegardes}{9}{section.0.5}
 \contentsline {section}{Références}{10}{section*.4}

@@ -6,5 +6,53 @@ avons utilisé afin de synchroniser les machines du réseau local avec l'horlog
 du serveur.
 
 
-\subsection{n}
-\label{subsec:n}
+\subsection{Principe}
+\label{subsec:principe}
+
+En effet, bien que tout équipement informatique dispose d'une horloge, celle-ci
+dérive comme toute montre ordinaire, ce qui peut amener des erreurs de
+synchronisation. \\
+La nécessité de synchroniser des équipements en réseau paraît alors évidente. \\
+
+Chaque machine peut être à la fois serveur et client.\\
+Elle sélectionnera un serveur de temps dans sa configuration, et récupérera
+l'heure, ainsi qu'un numéro de strate, \textit{\textbf{n}}, et se déclarera
+de strate \textit{\textbf{n+1}}.\\
+
+L'architecture du réseau est en arborescence, et divisée en trois couches :
+\begin{enumerate}
+
+    \item les sources les plus précises \textit{(horloges atomiques,
+    récepteurs GPS…)} sont de \textbf{strate 0};
+    \item les serveurs diffusant l'heure des sources sont de \textbf{strate 1};
+    \item les serveurs de \textbf{strate 2} sont généralement accessibles au public.
+
+\end{enumerate}
+
+
+\subsection{Configuration du serveur}
+\label{subsec:configuration-serveur}
+
+Voici les différentes étapes et options que nous avons effectuées :
+\begin{itemize}
+
+    \item[$\bullet$] activation des statistiques NTP;
+    \item[$\bullet$] ajout de trois serveurs \textit{(un belge et deux européens)};
+    \item[$\bullet$] activation de l'échange de l'heure avec tout le monde
+    \textit{(aucune modification n'est acceptée)};
+    \item[$\bullet$] activation de la synchronisation avec les machines du
+    réseau local.
+
+\end{itemize}
+
+
+\subsection{Configuration du client}
+\label{subsec:configuration-client}
+
+Sur le client, la configuration est beaucoup plus simple :
+\begin{itemize}
+
+    \item[$\bullet$] activation des statistiques NTP;
+    \item[$\bullet$] ajout du serveur local.
+
+\end{itemize}

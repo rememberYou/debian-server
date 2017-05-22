@@ -8,9 +8,11 @@
 \BOOKMARK [2][-]{subsection.0.2.3}{Noyau}{section.0.2}% 8
 \BOOKMARK [2][-]{subsection.0.2.4}{Partitionnement}{section.0.2}% 9
 \BOOKMARK [1][-]{section.0.3}{NTP}{}% 10
-\BOOKMARK [2][-]{subsection.0.3.1}{n}{section.0.3}% 11
-\BOOKMARK [1][-]{section.0.4}{SSH}{}% 12
-\BOOKMARK [2][-]{subsection.0.4.1}{Choix\040de\040l'authentification}{section.0.4}% 13
-\BOOKMARK [2][-]{subsection.0.4.2}{Mise\040en\040place}{section.0.4}% 14
-\BOOKMARK [1][-]{section.0.5}{Sauvegardes}{}% 15
-\BOOKMARK [1][-]{section*.4}{Références}{}% 16
+\BOOKMARK [2][-]{subsection.0.3.1}{Principe}{section.0.3}% 11
+\BOOKMARK [2][-]{subsection.0.3.2}{Configuration\040du\040serveur}{section.0.3}% 12
+\BOOKMARK [2][-]{subsection.0.3.3}{Configuration\040du\040client}{section.0.3}% 13
+\BOOKMARK [1][-]{section.0.4}{SSH}{}% 14
+\BOOKMARK [2][-]{subsection.0.4.1}{Type\040d'authentification}{section.0.4}% 15
+\BOOKMARK [2][-]{subsection.0.4.2}{Mise\040en\040place}{section.0.4}% 16
+\BOOKMARK [1][-]{section.0.5}{Sauvegardes}{}% 17
+\BOOKMARK [1][-]{section*.4}{Références}{}% 18
