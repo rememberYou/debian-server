@@ -50,7 +50,7 @@ echo "chroot_local_user=YES" >> /etc/vsftpd.conf
 echo " " >> /etc/vsftpd.conf
 
 echo "# Send virtual users into the default folder."  >> /etc/vsftpd.conf
-echo "local_root=/srv/web/" >> /etc/vsftpd.conf
+echo "local_root=/srv/www/" >> /etc/vsftpd.conf
 echo " " >> /etc/vsftpd.conf
 
 echo "# PAM manages the authentifications of the system." >> /etc/vsftpd.conf
