@@ -3,16 +3,16 @@
 # SEE: https://wiki.archlinux.org/index.php/full_system_backup_with_rsync
 
 # Installation of packages
-apt-get install -y rsync fcron
+apt-get install -y rsync cron
 
 # [ NOTE: You need to do that by yourself, otherwise the script will do that
 #         everytime we run it. We will need to check how do the fcron
 #         with the script only once time ]
 
-# fcron -e 0 2 * * * /usr/bin/backup_incremential-conf.sh
+cron -e 0 2 * * * /usr/bin/backup_incremential-conf.sh
 
-# Restart fcron
-# /etc/init.d/fcron restart
+# Restart cron
+/etc/init.d/cron restart
 
 # Create the backup differential directory if doesn't exist yet.
 if [[ ! -d /mnt/incremental ]]; then

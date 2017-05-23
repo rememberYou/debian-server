@@ -3,16 +3,16 @@
 # SEE: https://wiki.archlinux.org/index.php/full_system_backup_with_rsync
 
 # Installation of packages
-apt-get install -y rsync fcron
+apt-get install -y rsync cron
 
 # [ NOTE: You need to do that by yourself, otherwise the script will do that
 #         everytime we run it. We will need to check how do the fcron
 #         with the script only once time ]
 
-# fcron -e 0 2 * * 0 /usr/bin/backup_differential-conf.sh
+cron -e 0 2 * * 0 /usr/bin/backup_differential-conf.sh
 
-# Restart fcron
-# /etc/init.d/fcron restart
+# Restart cron
+/etc/init.d/cron restart
 
 # Create the backup differential directory if doesn't exist yet.
 if [[ ! -d /mnt/differential ]]; then
@@ -68,16 +68,16 @@ echo "/dev/sdaX    /             ext4      defaults                 0   1" >> /m
 
 grub-mkconfig -o /boot/grub/grub.cfg
 
-# Verify the new menu entry in /boot/grub/grub.cfg. Make sure the UUID is matching the new partition,
-# otherwise it could still boot the old system. Find the UUID of a partition as follows:
+ # Verify the new menu entry in /boot/grub/grub.cfg. Make sure the UUID is matching the new partition,
+ # otherwise it could still boot the old system. Find the UUID of a partition as follows:
 
-lsblk -no NAME,UUID /dev/sdb3
+ lsblk -no NAME,UUID /dev/sdb3
 
-# Where you substitute the desired partition for /dev/sdb3. To list the UUIDs of partitions grub
-# thinks it can boot, use grep:
+ # Where you substitute the desired partition for /dev/sdb3. To list the UUIDs of partitions grub
+ # thinks it can boot, use grep:
 
-grep UUID= /boot/grub/grub.cfg
+ grep UUID= /boot/grub/grub.cfg
 
-# Reboot the computer and select the right entry in the bootloader. This will load the system for the
-# first time. All peripherals should be detected and the empty folders in / will be populated.
-# Now you can re-edit /etc/fstab to add the previously removed partitions and mount points.
+ # Reboot the computer and select the right entry in the bootloader. This will load the system for the
+ # first time. All peripherals should be detected and the empty folders in / will be populated.
+ # Now you can re-edit /etc/fstab to add the previously removed partitions and mount points.
