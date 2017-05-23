@@ -5,8 +5,11 @@ normal=$(tput sgr0)
 
 # Creates an user.
 function create_user() {
-    useradd $username -m -G users,qhome,qshare -s /bin/bash
+    useradd $username -m -G users -s /bin/bash
     echo -e "$password\n$password" | (passwd $username)
+
+    quotatool -u $username -b -q 400M -l 500M /home
+    quotatool -u $username -b -q 400M -l 500M /srv/share
 
     smbpasswd -a $username
 
