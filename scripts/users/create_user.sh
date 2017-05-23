@@ -10,6 +10,15 @@ function create_user() {
 
     smbpasswd -a $username
 
+    # Each created users, will have their own database to avoid that one user
+    # can have access to every databases.
+    create database $username;
+    grant usage on *.* to $username@localhost identified by $username;
+    grant all privileges on $username.* to $username@localhost;
+
+    # Now you can connect to the database of the user with the following
+    # command:  mysql -u $username -p $password $username
+
     create_website $username
 }
 
