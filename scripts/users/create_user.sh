@@ -15,9 +15,9 @@ function create_user() {
 
     # Each created users, will have their own database to avoid that one user
     # can have access to every databases.
-    mysql -u root -p -e "create database $username";
-    mysql -u root -p -e "grant usage on *.* to $username@localhost identified by $username;"
-    mysql -u root -p -e "grant all privileges on $username.* to $username@localhost;"
+    mysql -h localhost -u root -p deepblue -e "CREATE USER '$username'@'localhost' IDENTIFIED BY '$password'";
+    mysql -h localhost -u root -p deepblue -e "GRANT SELECT PRIVILEGES ON * . * TO '$username'@'localhost'";
+    mysql -h localhost -u root -p deepblue -e "FLUSH PRIVILEGES";
 
     # Now you can connect to the database of the user with the following
     # command:  mysql -u $username -p $password $username
