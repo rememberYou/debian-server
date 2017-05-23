@@ -16,7 +16,7 @@ apt-get install -y rsync fcron
 
 # Create the backup differential directory if doesn't exist yet.
 if [[ ! -d /mnt/incremental ]]; then
-    mkdir /backup/incremental
+    mkdir /mnt/incremental
 fi
 
 # Run the following command as root to make sure that rsync can access all system files and preserve the ownership.
