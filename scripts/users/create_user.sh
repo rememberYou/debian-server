@@ -5,7 +5,7 @@ normal=$(tput sgr0)
 
 # Creates an user.
 function create_user() {
-    useradd $username -m -G users -s /bin/bash
+    useradd $username -m -G users,quota -s /bin/bash
     echo -e "$password\n$password" | (passwd $username)
 
     smbpasswd -a $username
