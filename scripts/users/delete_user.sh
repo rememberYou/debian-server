@@ -4,6 +4,9 @@
 function delete_user() {
     deluser --remove-home $username
 
+    mysql -u root -p
+    DROP DATABASE $username
+
     rm -rf /etc/apache2/sites-enabled/$username.lan.conf
 }
 

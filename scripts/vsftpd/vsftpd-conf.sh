@@ -10,10 +10,9 @@ systemctl enable vsftpd
 systemctl start vsftpd
 
 # Create a backup of the main configuration file.
-cp /etc/vsftpd.conf /etc/vsftpd.bak
-n
-# Delete the initial configuration file.
-rm -f /etc/vsftpd.conf
+if [ ! -f /etc/vsftpd.bak ]; then
+    cp /etc/vsftpd.conf /etc/vsftpd.bak
+fi
 
 # Create the vsftpd folder.
 mkdir /etc/vsftpd
@@ -22,7 +21,7 @@ mkdir /etc/vsftpd
 mkdir /srv/web
 
 # Create the configuration file.
-echo "################ VSFTPD CONFIGURATION ################" >> /etc/vsftpd.conf
+echo "################ VSFTPD CONFIGURATION ################" > /etc/vsftpd.conf
 echo " " >> /etc/vsftpd.conf
 
 echo "# Set vsftpd in standalone mode." >> /etc/vsftpd.conf
