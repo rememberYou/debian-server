@@ -46,3 +46,27 @@ apt-get install mariadb-server -y
 #
 # ERROR 1008 (HY000) at line 1: Can't drop database 'test'; database doesn't exist
 mysql_secure_installation
+
+echo "-- Copyright (c) 2017 Deep Blue" > /usr/bin/deepblue.sql
+echo "-- All rights reserved. This program and the accompanying materials" >> /usr/bin/deepblue.sql
+echo "-- are made available under the terms of the GNU Lesser Public License v2.1" >> /usr/bin/deepblue.sql
+echo "-- which accompanies this distribution, and is available at" >> /usr/bin/deepblue.sql
+echo "-- http://www.gnu.org/licenses/old-licenses/gpl-2.0.html" >> /usr/bin/deepblue.sql
+echo "--" >> /usr/bin/deepblue.sql
+echo "-- Contributors:" >> /usr/bin/deepblue.sql
+echo "--    Terencio Agozzino - initial API and implementation" >> /usr/bin/deepblue.sql
+echo "--    Alexandre Ducobu  - initial API and implementation" >> /usr/bin/deepblue.sql
+
+echo "CREATE DATABASE IF NOT EXISTS deepblue CHARACTER SET 'utf8' COLLATE utf8_general_ci;" >> /usr/bin/deepblue.sql
+
+echo "USE deepblue;" >> /usr/bin/deepblue.sql
+
+echo "CREATE TABLE IF NOT EXISTS users (" >> /usr/bin/deepblue.sql
+echo "\t id INT NOT NULL AUTO_INCREMENT," >> /usr/bin/deepblue.sql
+echo "\t username VARCHAR(30) NOT NULL," >> /usr/bin/deepblue.sql
+echo "\t created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP," >> /usr/bin/deepblue.sql
+echo "\t updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP," >> /usr/bin/deepblue.sql
+echo "CONSTRAINT pk_users PRIMARY KEY(id)" >> /usr/bin/deepblue.sql
+echo ") ENGINE=InnoDB;" >> /usr/bin/deepblue.sql
+
+mysql -h localhost -u root -p < /usr/bin/deepblue.sql
