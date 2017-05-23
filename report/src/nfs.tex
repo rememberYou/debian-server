@@ -6,6 +6,49 @@ permet à un ordinateur d'accéder à des fichiers distants via un réseau. \\
 Ce système de fichiers en réseau permet de partager des données principalement
 entre systèmes UNIX.
 
+
+\subsection{Constatation}
+\label{subsec:constatation}
+
+Avant de commencer, il est à remarquer que, quelle que soit sa version, NFS est
+a déployer dans un réseau local et n'a pas de vocation à être ouvert sur internet. \\
+En effet, les données qui circulent sur le réseau ne sont pas chiffrées et les
+droits d'accès sont accordés en fonction de l'adresse IP du client
+\textit{(qui peut être usurpée)}.
+
+
+\subsection{Configuration côté serveur}
+\label{subsec:config-serveur}
+
+Voici les différentes étapes et options que nous avons effectuées :
+\begin{itemize}
+
+    \item[$\bullet$] installation des différents services indispensables au NFS;
+    \item[$\bullet$] création du dossier de partage, et ajout de droits
+    spécifiques;
+    \item[$\bullet$] activation du partage sur le réseau local et configuration
+    dudit partage \textit{(autorise la lecture et l'écriture, retire les droit
+    \textbf{root} à distance et et désactivation de la vérification de sous-répertoires)};
+    \item[$\bullet$] mise à jour de la tables des systèmes de fichiers partagés.
+
+\end{itemize}
+
+
+\subsection{Configuration côté client}
+\label{subsec:config-client}
+
+Sur le client, la configuration est similaire :
+\begin{itemize}
+
+    \item[$\bullet$] installation des différents services indispensables au NFS;
+    \item[$\bullet$] création du dossier de partage, et ajout de droits
+    spécifiques;
+    \item[$\bullet$] installation d'\textit{AutoFS};
+    \item[$\bullet$] configuration d'AutoFS \textit{(création d'un point de
+    montage lors de l'accès au répertoire, durée d'activité après le dernier
+    accès au dossier partagé $\Rightarrow$ au moins 30 secondes pour un partage samba, etc.)}.
+
+\end{itemize}
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: t

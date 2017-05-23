@@ -1,6 +1,31 @@
 \section{Samba}
 \label{sec:samba}
 
+\textbf{Samba} est un outil permettant de partager des dossiers et des
+imprimantes à travers un réseau local. Son utilisation est conseillée pour
+partager de manière simple des ressources entre plusieurs ordinateurs  \\
+Il est compatible avec les systèmes d'exploitation suivants :
+\textit{\textbf{Windows}}, \textit{\textbf{macOS}}, ainsi que des systèmes \textit{\textbf{GNU/Linux}},
+\textit{\textbf{*BSD}} et \textit{\textbf{Solaris}} dans lesquels une implémentation de Samba est
+installée.
+
+
+\subsection{Configuration}
+\label{subsec:configuration}
+
+La configuration du serveur Samba se déroule en trois parties, mais tout d'abord,
+il faut créer le dossier de partage et lui donner les droits appropriés. \\
+
+\begin{enumerate}
+
+    \item configuration de Samba \textit{(désignation du \textbf{workgroup},
+    choix du nom de \textbf{netbios}, etc.)};
+    \item configuration du partage pour le groupe \og \textit{users} \fg
+    \textit{(désignation du chemin, des droits, etc.)};
+    \item configuration du partage du dossier \og \textit{home} \fg des utilisateurs
+    \textit{(désignation des droits, vérification de l'identité, etc.)};
+
+\end{enumerate}
 
 %%% Local Variables:
 %%% mode: latex

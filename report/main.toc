@@ -16,6 +16,10 @@
 \contentsline {subsection}{\numberline {4.1}Type d'authentification}{8}{subsection.0.4.1}
 \contentsline {subsection}{\numberline {4.2}Mise en place}{8}{subsection.0.4.2}
 \contentsline {section}{\numberline {5}NFS}{9}{section.0.5}
+\contentsline {subsection}{\numberline {5.1}Constatation}{9}{subsection.0.5.1}
+\contentsline {subsection}{\numberline {5.2}Configuration côté serveur}{9}{subsection.0.5.2}
+\contentsline {subsection}{\numberline {5.3}Configuration côté client}{9}{subsection.0.5.3}
 \contentsline {section}{\numberline {6}Samba}{10}{section.0.6}
+\contentsline {subsection}{\numberline {6.1}Configuration}{10}{subsection.0.6.1}
 \contentsline {section}{\numberline {7}Sauvegardes}{11}{section.0.7}
 \contentsline {section}{Références}{12}{section*.4}
