@@ -9,7 +9,7 @@ apt-get install -y rsync cron
 #         everytime we run it. We will need to check how do the fcron
 #         with the script only once time ]
 
-cron -e 0 2 * * * /usr/bin/backup_incremential-conf.sh
+crontab -e 0 2 * * * /usr/bin/backup_incremential-conf.sh
 
 # Restart cron
 /etc/init.d/cron restart
