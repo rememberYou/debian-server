@@ -24,7 +24,7 @@ quotacheck -cagumv
 mount /dev/mapper/VolGroup-LVhome
 
 # Mount the srv/share partition.
-mount srv/share
+mount /srv/share
 
 # Activate quota
 quotaon -avug
