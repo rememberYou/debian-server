@@ -1,7 +1,6 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.4.29)  23 MAY 2017 12:46
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.4.29)  23 MAY 2017 16:54
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
 **main.tex
 (./main.tex
@@ -1211,7 +1210,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--18
 ) [10]) (./src/gestion.tex) [11
 
 ] (./src/references.tex (./main.bbl
-Underfull \hbox (badness 1946) in paragraph at lines 60--65
+Underfull \hbox (badness 1371) in paragraph at lines 75--80
 []\T1/lmr/m/sc/12 The De-bian Sup-port\T1/lmr/m/n/12 .  Confi-gu-ra-tion ser-ve
 ur NTP, Site, [en ligne].
  []
@@ -1226,10 +1225,10 @@ Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 173.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 173.
  ) 
 Here is how much of TeX's memory you used:
- 23396 strings out of 493068
- 418489 string characters out of 6135636
- 523377 words of memory out of 5000000
- 26997 multiletter control sequences out of 15000+600000
+ 23398 strings out of 493068
+ 418532 string characters out of 6135636
+ 523462 words of memory out of 5000000
+ 26999 multiletter control sequences out of 15000+600000
  74029 words of font info for 52 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
  37i,10n,45p,10368b,540s stack positions out of 5000i,500n,10000p,200000b,80000s
