@@ -15,12 +15,12 @@ function create_user() {
 
     # Each created users, will have the possibility to connect on the 'deepblue'
     # database and will can only make 'SELECT' request.
-    mysql -h localhost -u root -p deepblue -e "CREATE USER '$username'@'localhost' IDENTIFIED BY '$password'";
-    mysql -h localhost -u root -p deepblue -e "GRANT SELECT PRIVILEGES ON * . * TO '$username'@'localhost'";
-    mysql -h localhost -u root -p deepblue -e "FLUSH PRIVILEGES";
+    mysql -h localhost -u root -pihatemaria deepblue -e "CREATE USER '$username'@'localhost' IDENTIFIED BY '$password'";
+    mysql -h localhost -u root -pihatemaria deepblue -e "GRANT SELECT PRIVILEGES ON * . * TO '$username'@'localhost'";
+    mysql -h localhost -u root -pihatemaria deepblue -e "FLUSH PRIVILEGES";
 
     # Insert the username to the 'users' table of the 'deepblue' database.
-    mysql -h localhost -u root -p deepblue -e "INSERT INTO users(username, created_at, updated_at) VALUES (\"$username\", \"date +'%F %T'\", \"date +'%F %T'\")";
+    mysql -h localhost -u root -pihatemaria deepblue -e "INSERT INTO users(username, created_at, updated_at) VALUES (\"$username\", \"date +'%F %T'\", \"date +'%F %T'\")";
 
     # Now you can connect to the database of the user with the following
     # command:  mysql -u $username -p $password $username

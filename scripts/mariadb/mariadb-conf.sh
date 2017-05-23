@@ -56,17 +56,17 @@ echo "--" >> /usr/bin/deepblue.sql
 echo "-- Contributors:" >> /usr/bin/deepblue.sql
 echo "--    Terencio Agozzino - initial API and implementation" >> /usr/bin/deepblue.sql
 echo "--    Alexandre Ducobu  - initial API and implementation" >> /usr/bin/deepblue.sql
-
+echo " "
 echo "CREATE DATABASE IF NOT EXISTS deepblue CHARACTER SET 'utf8' COLLATE utf8_general_ci;" >> /usr/bin/deepblue.sql
-
+echo " " >> /usr/bin/deepblue.sql
 echo "USE deepblue;" >> /usr/bin/deepblue.sql
-
+echo " " >> /usr/bin/deepblue.sql
 echo "CREATE TABLE IF NOT EXISTS users (" >> /usr/bin/deepblue.sql
-echo "\t id INT NOT NULL AUTO_INCREMENT," >> /usr/bin/deepblue.sql
-echo "\t username VARCHAR(30) NOT NULL," >> /usr/bin/deepblue.sql
-echo "\t created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP," >> /usr/bin/deepblue.sql
-echo "\t updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP," >> /usr/bin/deepblue.sql
-echo "CONSTRAINT pk_users PRIMARY KEY(id)" >> /usr/bin/deepblue.sql
+echo -e "\t id INT NOT NULL AUTO_INCREMENT," >> /usr/bin/deepblue.sql
+echo -e "\t username VARCHAR(30) NOT NULL," >> /usr/bin/deepblue.sql
+echo -e "\t created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP," >> /usr/bin/deepblue.sql
+echo -e "\t updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP," >> /usr/bin/deepblue.sql
+echo -e "\t CONSTRAINT pk_users PRIMARY KEY(id)" >> /usr/bin/deepblue.sql
 echo ") ENGINE=InnoDB;" >> /usr/bin/deepblue.sql
 
-mysql -h localhost -u root -p < /usr/bin/deepblue.sql
+mysql -h localhost -u root -pihatemaria < /usr/bin/deepblue.sql
