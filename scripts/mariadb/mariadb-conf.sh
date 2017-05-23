@@ -69,4 +69,4 @@ echo -e "\t updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP," >> /usr/bin/deepblu
 echo -e "\t CONSTRAINT pk_users PRIMARY KEY(id)" >> /usr/bin/deepblue.sql
 echo ") ENGINE=InnoDB;" >> /usr/bin/deepblue.sql
 
-mysql -h localhost -u root -pihatemaria < /usr/bin/deepblue.sql
+mysql -h localhost -u root -ptest < /usr/bin/deepblue.sql
