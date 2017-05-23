@@ -7,6 +7,7 @@ Setting up a Debian server
    - [ ] Web server
    - [ ] FTP server
    - [ ] MySQL server
+   - [ ] Backups
    - [x] DNS server
    - [x] NTP
    - [x] SSH
