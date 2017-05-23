@@ -1,4 +1,11 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{website:astucesInfo}
+{\sc {astuces-info.com}}.
+\newblock {Debian : Ajouter des quotas sur le disque dur, Site, [en ligne]}.
+\newblock
+  \href{https://www.astuces-info.com/tag/quotatool/}{https://www.astuces-info.com},
+  (consulté le 23 mai 2017).
 
 \bibitem{website:justincoutarel}
 {\sc Coutarel, J.}
@@ -49,6 +56,14 @@
 \newblock
   \href{http://www.debianadmin.com/ntp-server-and-client-configuration-in-debian.html}{http://www.debianadmin.com},
   (consulté le 23 mars 2017).
+
+\bibitem{website:digitalOcean}
+{\sc Sverdlov, E.}
+\newblock {How To Create a New User and Grant Permissions in MySQL, Site, [en
+  ligne]}.
+\newblock
+  \href{https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql}{https://www.digitalocean.com},
+  (consulté le 23 mai 2017).
 
 \bibitem{website:ntp2}
 {\sc {The Debian Community}}.
