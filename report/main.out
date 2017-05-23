@@ -7,18 +7,10 @@
 \BOOKMARK [2][-]{subsection.0.2.2}{Langue}{section.0.2}% 7
 \BOOKMARK [2][-]{subsection.0.2.3}{Noyau}{section.0.2}% 8
 \BOOKMARK [2][-]{subsection.0.2.4}{Partitionnement}{section.0.2}% 9
-\BOOKMARK [1][-]{section.0.3}{NTP}{}% 10
-\BOOKMARK [2][-]{subsection.0.3.1}{Principe}{section.0.3}% 11
-\BOOKMARK [2][-]{subsection.0.3.2}{Configuration\040du\040serveur}{section.0.3}% 12
-\BOOKMARK [2][-]{subsection.0.3.3}{Configuration\040du\040client}{section.0.3}% 13
-\BOOKMARK [1][-]{section.0.4}{SSH}{}% 14
-\BOOKMARK [2][-]{subsection.0.4.1}{Type\040d'authentification}{section.0.4}% 15
-\BOOKMARK [2][-]{subsection.0.4.2}{Mise\040en\040place}{section.0.4}% 16
-\BOOKMARK [1][-]{section.0.5}{NFS}{}% 17
-\BOOKMARK [2][-]{subsection.0.5.1}{Constatation}{section.0.5}% 18
-\BOOKMARK [2][-]{subsection.0.5.2}{Configuration côté serveur}{section.0.5}% 19
-\BOOKMARK [2][-]{subsection.0.5.3}{Configuration côté client}{section.0.5}% 20
-\BOOKMARK [1][-]{section.0.6}{Samba}{}% 21
-\BOOKMARK [2][-]{subsection.0.6.1}{Configuration}{section.0.6}% 22
-\BOOKMARK [1][-]{section.0.7}{Sauvegardes}{}% 23
-\BOOKMARK [1][-]{section*.4}{Références}{}% 24
+\BOOKMARK [1][-]{section.0.3}{Services}{}% 10
+\BOOKMARK [2][-]{subsection.0.3.1}{NTP}{section.0.3}% 11
+\BOOKMARK [2][-]{subsection.0.3.2}{SSH}{section.0.3}% 12
+\BOOKMARK [2][-]{subsection.0.3.3}{NFS}{section.0.3}% 13
+\BOOKMARK [2][-]{subsection.0.3.4}{Samba}{section.0.3}% 14
+\BOOKMARK [1][-]{section.0.4}{Sauvegardes}{}% 15
+\BOOKMARK [1][-]{section*.13}{Références}{}% 16
