@@ -5,17 +5,12 @@
 # Installation of packages
 apt-get install -y rsync cron
 
-# [ NOTE: You need to do that by yourself, otherwise the script will do that
-#         everytime we run it. We will need to check how do the fcron
-#         with the script only once time ]
+# Create the incremental backup directory if doesn't exist yet.
+if [[ ! -d /mnt/incremental ]]; then
+    mkdir /mnt/incremental
+fi
 
-# EDITOR=`which nano` crontab -e
-# 0 2 * * 0 /usr/bin/differential_backup.sh
-
-# Restart cron
-/etc/init.d/cron restart
-
-# Create the backup differential directory if doesn't exist yet.
+# Create the differential backup directory if doesn't exist yet.
 if [[ ! -d /mnt/differential ]]; then
     mkdir /mnt/differential
 fi
@@ -29,11 +24,16 @@ fi
 #         With that configuration, we can create a crontab every day to make the incremental backup
 #         and also the differential backup with rsync the sunday. ]
 
+# [ NOTE: we will need to create the script to construct the script ]
+chmod 700 /usr/bin/backup-make.sh
 
-echo '# For the differential backup.' > /usr/bin/differential_backup.sh
-echo 'rsync -aAXH --delete --info=progress2 --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/srv/share"} / /mnt/differential' >> /usr/bin/differential_backup.sh
+# Create the crontab for the execution of the script.
+EDITOR=`which nano` crontab -e
+crontab -e 0 2 * * * /usr/bin/backup-make.sh -i
+crontab -e 0 2 * * 0 /usr/bin/backup-make.sh -d
 
-chmod 700 /usr/bin/differential_backup.sh
+# Restart cron
+/etc/init.d/cron restart
 
 # By using the -aAX set of options, the files are transferred in archive mode which
 # ensures that symbolic links, devices, permissions, ownerships, modification times,
@@ -71,16 +71,16 @@ echo "/dev/sdaX    /             ext4      defaults                 0   1" >> /m
 
 grub-mkconfig -o /boot/grub/grub.cfg
 
- # Verify the new menu entry in /boot/grub/grub.cfg. Make sure the UUID is matching the new partition,
- # otherwise it could still boot the old system. Find the UUID of a partition as follows:
+# Verify the new menu entry in /boot/grub/grub.cfg. Make sure the UUID is matching the new partition,
+# otherwise it could still boot the old system. Find the UUID of a partition as follows:
 
- lsblk -no NAME,UUID /dev/sdb3
+lsblk -no NAME,UUID /dev/sdb3
 
- # Where you substitute the desired partition for /dev/sdb3. To list the UUIDs of partitions grub
- # thinks it can boot, use grep:
+# Where you substitute the desired partition for /dev/sdb3. To list the UUIDs of partitions grub
+# thinks it can boot, use grep:
 
- grep UUID= /boot/grub/grub.cfg
+grep UUID= /boot/grub/grub.cfg
 
- # Reboot the computer and select the right entry in the bootloader. This will load the system for the
- # first time. All peripherals should be detected and the empty folders in / will be populated.
- # Now you can re-edit /etc/fstab to add the previously removed partitions and mount points.
+# Reboot the computer and select the right entry in the bootloader. This will load the system for the
+# first time. All peripherals should be detected and the empty folders in / will be populated.
+# Now you can re-edit /etc/fstab to add the previously removed partitions and mount points.

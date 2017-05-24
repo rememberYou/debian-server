@@ -1,4 +1,7 @@
 #!/bin/bash
 
-# Command to connect to MariaDB as the root user.
-mysql -u root -p
+# Allowed to do.
+mysql -u toto -ptoto deepblue -e < "SELECT * FROM users";
+
+# Not allowed to do.
+mysql -u toto -ptoto deepblue -e < "DELETE FROM users WHERE username='toto'";

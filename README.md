@@ -7,12 +7,12 @@ Setting up a Debian server
    - [ ] Web server
    - [ ] FTP server
    - [x] MySQL server
-   - [ ] Backups
+   - [x] Backups
    - [x] DNS server
    - [x] NTP
    - [x] SSH
    - [ ] iptables
-   - [ ] Secure bootloader
+   - [x] Secure bootloader
    - [ ] Configuration scripts
    - [ ] SELinux
    - [ ] Test scripts
