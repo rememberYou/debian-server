@@ -9,7 +9,8 @@ apt-get install -y rsync cron
 #         everytime we run it. We will need to check how do the fcron
 #         with the script only once time ]
 
-crontab -e 0 2 * * * /usr/bin/backup_incremential-conf.sh
+# EDITOR=`which nano` crontab -e
+# 0 2 * * * /usr/bin/incremental_backup.sh
 
 # Restart cron
 /etc/init.d/cron restart
@@ -28,9 +29,10 @@ fi
 #         With that configuration, we can create a crontab every day to make the incremental backup
 #         and also the differential backup with rsync the sunday. ]
 
+echo '# For the differential backup.' > /usr/bin/incremental_backup.sh
+echo 'rsync -aAXH --delete --info=progress2 --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/srv/share"} / /mnt/incremental' >> /usr/bin/incremental_backup.sh
 
-# For the differential backup.
-rsync -aAXH --delete --info=progress2 --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/srv/share"} / /mnt/incremental
+chmod 700 /usr/bin/incremental_backup.sh
 
 # By using the -aAX set of options, the files are transferred in archive mode which
 # ensures that symbolic links, devices, permissions, ownerships, modification times,
