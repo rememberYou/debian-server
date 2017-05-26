@@ -4,10 +4,10 @@
 function delete_user() {
     deluser --remove-home $username
 
-    mysql -u root -p
-    DROP DATABASE $username
+    mysql -h localhost -u root -ptest deepblue -e "DELETE FROM users WHERE username = '$username'";
 
-    rm -rf /etc/apache2/sites-enabled/$username.lan.conf
+    rm -rf /etc/apache2/sites-enabled/$username.conf
+
 }
 
 echo -e "Enter the username of the user to delete: "
