@@ -93,6 +93,7 @@ configure_multi_processing
 a2dismod mpm_event
 a2enmod mpm_prefork
 a2enmod userdir
+a2enmod rewrite
 
 # Restart Apache.
 systemctl restart apache2
