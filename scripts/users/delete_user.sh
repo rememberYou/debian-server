@@ -6,7 +6,7 @@ function delete_user() {
 
     mysql -h localhost -u root -ptest deepblue -e "DELETE FROM users WHERE username = '$username'";
 
-    rm -rf /etc/apache2/sites-enabled/$username.conf
+    rm -rf /etc/apache2/sites-enabled/$username.lan.conf
 
 }
 
