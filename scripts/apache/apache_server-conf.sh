@@ -76,7 +76,7 @@ function configure_apache() {
     echo "     DocumentRoot /srv/www/example/www" >> /etc/apache2/sites-available/example.lan.conf
     echo "     ErrorLog /srv/www/example.lan/logs/error.log" >> /etc/apache2/sites-available/example.lan.conf
     echo "     CustomLog /srv/www/example.lan/logs/access.log combined" >> /etc/apache2/sites-available/example.lan.conf
-    echo "</VirtualHost>" >> /etc/apache2/sites-available/example.lan.confb
+    echo "</VirtualHost>" >> /etc/apache2/sites-available/example.lan.conf
 }
 
 # Installation of Apache 2.
@@ -103,7 +103,7 @@ systemctl restart apache2
 # Configure Apache.
 configure_apache
 
-# Permit to not display the version of PHP for users.
+# Hide the version of PHP for users.
 min_info
 
 # Create directories for the websites.
@@ -119,3 +119,6 @@ systemctl restart apache2
 
 # Install PHP support.
 apt-get install php5 php-pear -y
+
+# To test the configuration
+apachectl configtest
