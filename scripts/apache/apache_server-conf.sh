@@ -30,9 +30,9 @@ function configure_multi_processing() {
 }
 
 function min_info() {
-    if [ grep -Fxq "ServerTokens ProductOnly" "/etc/apache2/apache2.conf" ]; then
-	echo "ServerTokens ProductOnly" >> /etc/apache2/apache2.conf
-	echo "ServerSignature Off" >> /etc/apache2/apache2.conf
+    if grep -Fxq "ServerTokens Prod" "/etc/apache2/apache2.conf"; then
+	    echo "ServerTokens Prod" >> /etc/apache2/apache2.conf
+        echo "ServerSignature Off" >> /etc/apache2/apache2.conf
     fi
 }
 
@@ -67,15 +67,17 @@ function configure_event_module() {
 # Configure Apache for Virtual Hosting
 function configure_apache() {
     # Disable the default Apache virtual host.
-    sudo a2dissite 000-default.conf
+    a2dissite 000-default.conf
+
+    mkdir -p /srv/web/example/www
 
     echo "<VirtualHost *:80>" > /etc/apache2/sites-available/example.lan.conf
     echo "     ServerAdmin webmaster@example.lan" >> /etc/apache2/sites-available/example.lan.conf
     echo "     ServerName example.lan" >> /etc/apache2/sites-available/example.lan.conf
     echo "     ServerAlias www.example.lan" >> /etc/apache2/sites-available/example.lan.conf
-    echo "     DocumentRoot /srv/www/example/www" >> /etc/apache2/sites-available/example.lan.conf
-    echo "     ErrorLog /srv/www/example.lan/logs/error.log" >> /etc/apache2/sites-available/example.lan.conf
-    echo "     CustomLog /srv/www/example.lan/logs/access.log combined" >> /etc/apache2/sites-available/example.lan.conf
+    echo "     DocumentRoot /srv/web/example/www" >> /etc/apache2/sites-available/example.lan.conf
+    echo "     ErrorLog /srv/web/example.lan/logs/error.log" >> /etc/apache2/sites-available/example.lan.conf
+    echo "     CustomLog /srv/web/example.lan/logs/access.log combined" >> /etc/apache2/sites-available/example.lan.conf
     echo "</VirtualHost>" >> /etc/apache2/sites-available/example.lan.conf
 }
 
