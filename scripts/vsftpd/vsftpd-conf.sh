@@ -7,7 +7,7 @@
 apt-get install vsftpd -y
 
 # Create a special user for 'ftp'
-useradd --sytem ftp
+useradd --system ftp
 
 # Optional : check that the server server boot and listenning to
 # the TCP port by default (you should see vsftpd as "Program name").
@@ -64,7 +64,7 @@ echo "# Create a default folder for users." >> /etc/vsftpd.conf
 echo "user_config_dir=/etc/vsftpd/vsftpd_conf_users" >> /etc/vsftpd.conf
 
 # Create a folder for the configuration of VsFTPD
-if [ -d "/etc/vsftpd" ]; then
+if [[ ! -d /mnt/incremental ]]; then
     mkdir /etc/vsftpd
 fi
 
@@ -75,12 +75,12 @@ listen_port=52152
 setproctitle_enable=YES
 
 # To have the list of users connected on the FTP
-ps -aef | grep vsftd
+# ps -aef | grep vsftd
 
 # Or... you can follow the connections
-watch -n 1 'ps ax | grep vsftpd | grep -v grep'
+# watch -n 1 'ps ax | grep vsftpd | grep -v grep'
 
-sudo tail -f /var/log/vsftpd.log
+# tail -f /var/log/vsftpd.log
 
 # Restart the VsFTPd daemon.
 /etc/init.d/vsftpd restart
