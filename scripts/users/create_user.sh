@@ -20,7 +20,7 @@ function create_user() {
     mysql -h localhost -u root -ptest deepblue -e "FLUSH PRIVILEGES";
 
     # Insert the username to the 'users' table of the 'deepblue' database.
-    mysql -h localhost -u root -ptest deepblue -e "INSERT INTO users(username, created_at, updated_at) VALUES (\"$username\", \"date +'%F %T'\", \"date +'%F %T'\")";
+    mysql -h localhost -u root -ptest deepblue -e "INSERT INTO users(username) VALUES (\"$username\")";
 
     # Now you can connect to the database of the user with the following
     # command:  mysql -u $username -p $password $username
