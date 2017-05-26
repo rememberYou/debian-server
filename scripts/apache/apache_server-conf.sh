@@ -69,15 +69,15 @@ function configure_apache() {
     # Disable the default Apache virtual host.
     a2dissite 000-default.conf
 
-    mkdir -p /srv/web/example/www
+    mkdir -p /srv/www/example/www
 
     echo "<VirtualHost *:80>" > /etc/apache2/sites-available/example.lan.conf
     echo "     ServerAdmin webmaster@example.lan" >> /etc/apache2/sites-available/example.lan.conf
     echo "     ServerName example.lan" >> /etc/apache2/sites-available/example.lan.conf
     echo "     ServerAlias www.example.lan" >> /etc/apache2/sites-available/example.lan.conf
-    echo "     DocumentRoot /srv/web/example/www" >> /etc/apache2/sites-available/example.lan.conf
-    echo "     ErrorLog /srv/web/example.lan/logs/error.log" >> /etc/apache2/sites-available/example.lan.conf
-    echo "     CustomLog /srv/web/example.lan/logs/access.log combined" >> /etc/apache2/sites-available/example.lan.conf
+    echo "     DocumentRoot /srv/www/example/www" >> /etc/apache2/sites-available/example.lan.conf
+    echo "     ErrorLog /srv/www/example.lan/logs/error.log" >> /etc/apache2/sites-available/example.lan.conf
+    echo "     CustomLog /srv/www/example.lan/logs/access.log combined" >> /etc/apache2/sites-available/example.lan.conf
     echo "</VirtualHost>" >> /etc/apache2/sites-available/example.lan.conf
 }
 
@@ -109,9 +109,9 @@ configure_apache
 min_info
 
 # Create directories for the websites.
-mkdir -p /srv/web/example.lan/public_html
+mkdir -p /srv/www/example.lan/public_html
 # Create directories for the websites'logs.
-mkdir /srv/web/example.lan/logs
+mkdir /srv/www/example.lan/logs
 
 # Enable the website.
 a2ensite example.lan.conf

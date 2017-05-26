@@ -38,9 +38,13 @@ function create_website() {
     echo -e "\tDocumentRoot /srv/www/$username/www" >> "/etc/apache2/sites-enabled/$username.lan.conf"
     echo -e "\tErrorLog /srv/www/$username.lan/logs/error.log" >> "/etc/apache2/sites-enabled/$username.lan.conf"
     echo -e "\tCustomLog /srv/www/$username.lan/logs/access.log combined" >> "/etc/apache2/sites-enabled/$username.lan.conf"
+    echo -e "\t<Directory /srv/www/$username/www>" >> "/etc/apache2/sites-enabled/$username.lan.conf"
+    echo -e "\t\tAllowOverride All" >> "/etc/apache2/sites-enabled/$username.lan.conf"
+    echo -e "\t</Directory>" >> "/etc/apache2/sites-enabled/$username.lan.conf"
     echo "</VirtualHost>" >> "/etc/apache2/sites-enabled/$username.lan.conf"
 
     mkdir -p "/srv/www/$username/www"
+    mkdir -p "/srv/www/$username.lan/logs/"
 }
 
 echo -e "Enter the name of the user: "
