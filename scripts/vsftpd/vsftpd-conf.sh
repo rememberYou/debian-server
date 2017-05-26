@@ -1,24 +1,25 @@
 #!/bin/bash
 
+# SEE: https://wiki.debian.org/fr/vsftpd
+#      https://doc.ubuntu-fr.org/vsftpd
+
 # Installation of vsftpd.
 apt-get install vsftpd -y
 
-# Enable vsftpd at startup.
-systemctl enable vsftpd
+# Create a special user for 'ftp'
+useradd --sytem ftp
 
-# Start vsftpd.
-systemctl start vsftpd
+# Optional : check that the server server boot and listenning to
+# the TCP port by default (you should see vsftpd as "Program name").
+netstat -npl
+
+# Stop the VsFTPd daemon for the configuration.
+/etc/init.d/vsftpd stop
 
 # Create a backup of the main configuration file.
 if [ ! -f /etc/vsftpd.bak ]; then
     cp /etc/vsftpd.conf /etc/vsftpd.bak
 fi
-
-# Create the vsftpd folder.
-mkdir /etc/vsftpd
-
-# Create the web folder.
-mkdir /srv/web
 
 # Create the configuration file.
 echo "################ VSFTPD CONFIGURATION ################" > /etc/vsftpd.conf
@@ -34,6 +35,8 @@ echo " " >> /etc/vsftpd.conf
 
 echo "# Allow the local connections" >> /etc/vsftpd.conf
 echo "local_enable=YES" >> /etc/vsftpd.conf
+echo "write_enable=YES" >> /etc/vsftpd.conf
+echo "local_umask=022" >> /etc/vsftpd.conf
 echo " " >> /etc/vsftpd.conf
 
 echo "# Allow connection for guests users." >> /etc/vsftpd.conf
@@ -60,5 +63,24 @@ echo " " >> /etc/vsftpd.conf
 echo "# Create a default folder for users." >> /etc/vsftpd.conf
 echo "user_config_dir=/etc/vsftpd/vsftpd_conf_users" >> /etc/vsftpd.conf
 
-# Restart vsftpd.
-systemctl restart vsftpd
+# Create a folder for the configuration of VsFTPD
+if [ -d "/etc/vsftpd" ]; then
+    mkdir /etc/vsftpd
+fi
+
+# Change the number of port to transmit:
+listen_port=52152
+
+# Basic monitoring
+setproctitle_enable=YES
+
+# To have the list of users connected on the FTP
+ps -aef | grep vsftd
+
+# Or... you can follow the connections
+watch -n 1 'ps ax | grep vsftpd | grep -v grep'
+
+sudo tail -f /var/log/vsftpd.log
+
+# Restart the VsFTPd daemon.
+/etc/init.d/vsftpd restart
