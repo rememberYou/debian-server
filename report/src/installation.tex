@@ -4,6 +4,7 @@
 \section{Choix}
 \label{sec:choix}
 
+
 \subsection{Distribution}
 \label{subsec:distribution}
 
@@ -42,6 +43,7 @@ leadership depuis des années.
 À titre d'information, depuis mai 2016, Ubuntu a les mêmes parts de marché que
 Debian.
 
+
 \begin{figure}[!h]
     \centering
     \includegraphics[scale=0.4]
@@ -78,6 +80,7 @@ de Red Hat et de Fedora qui, lui, est en chute libre.
 
 \newpage
 
+
 \subsection{Langue}
 \label{subsec:langue}
 
@@ -86,6 +89,7 @@ l'anglais vu que la majorité des documentations et forums sont disponibles dans
 cette langue. De plus, cela permet d'éviter une mauvaise traduction concernant
 les nouvelles mises à jour et de toucher un plus large public possible.
 
+
 \subsection{Noyau}
 \label{subsec:noyau}
 
@@ -93,6 +97,7 @@ Un noyau (monolithique) modulaire a été choisi afin de gérer les
 modules. En effet, celui-ci facilite l'ajout et la suppression de modules à
 chaud. Ces modules, pas toujours indispensables, peuvent être la source de
 failles et de bugs.
+
 
 \subsection{Partitionnement}
 \label{subsec:partitionnement}
@@ -120,7 +125,6 @@ Nous avons alors partitionné le disque de cette manière, avec un partition rac
         \begin{tabularx}{\linewidth}{|C|C|C|C|}
             \hline
             LVsrv (/srv) & lvm & 6144 & ext4 \\
-            %web et nfs
             \hline
             LVswap (/swap) & lvm & 4096 & swap \\
             \hline
@@ -139,8 +143,21 @@ Nous avons alors partitionné le disque de cette manière, avec un partition rac
         \end{tabularx}
         \caption{Tableau du partitionnement \textit{(avec LVM)}}
         \label{tab:tableau-partitionnement}
+
+        \vskip -1cm
     \end{table}
 \end{center}
+
+
+\subsection{Quotas}
+\label{subsec:quotas}
+
+Dans le but de mieux géreer l'espace personnel de chaque utilisateur, nous avons
+mis en place des quotas sur les partitions \textit{/home} et \textit{/share}. \\
+À la création de chaque utilisateur, un quota de 500 Mb lui sera attribué. \\
+
+Il sera prévenu lorsqu'il dépassera les 400 Mb.
+
 
 %%% Local Variables:
 %%% mode: latex
