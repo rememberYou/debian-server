@@ -24,5 +24,12 @@
 \contentsline {subsubsection}{Configuration}{10}{section*.10}
 \contentsline {subsection}{\numberline {3.5}Base de données}{11}{subsection.0.3.5}
 \contentsline {subsubsection}{Mise en place}{11}{section*.11}
-\contentsline {section}{\numberline {4}Sauvegardes}{12}{section.0.4}
-\contentsline {section}{Références}{13}{section*.13}
+\contentsline {subsection}{\numberline {3.6}Serveur Web}{12}{subsection.0.3.6}
+\contentsline {subsection}{\numberline {3.7}FTP}{13}{subsection.0.3.7}
+\contentsline {subsubsection}{Choix du serveur}{13}{section*.12}
+\contentsline {subsubsection}{Configuration}{13}{section*.13}
+\contentsline {subsection}{\numberline {3.8}DNS}{14}{subsection.0.3.8}
+\contentsline {subsubsection}{Sélection du DNS}{14}{section*.14}
+\contentsline {subsubsection}{Mise en place}{14}{section*.15}
+\contentsline {section}{\numberline {4}Sauvegardes}{15}{section.0.4}
+\contentsline {section}{Références}{16}{section*.17}

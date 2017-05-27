@@ -38,6 +38,61 @@
   \href{https://www.linode.com/docs/web-servers/apache/apache-web-server-debian-8/}{https://www.linode.com},
   (consulté le 17 mai 2017).
 
+\bibitem{website:wikimariadb}
+{\sc {La Communauté de Wikipédia}}.
+\newblock {MariaDB, Site, [en ligne]}.
+\newblock
+  \href{https://fr.wikipedia.org/wiki/MariaDB}{https://fr.wikipedia.org},
+  (consulté le 23 mai 2017).
+
+\bibitem{website:wikinfs}
+{\sc {La Communauté de Wikipédia}}.
+\newblock {Network File System, Site, [en ligne]}.
+\newblock
+  \href{https://fr.wikipedia.org/wiki/Network_File_System}{https://fr.wikipedia.org},
+  (consulté le 23 mai 2017).
+
+\bibitem{website:wikisamba}
+{\sc {La Communauté de Wikipédia}}.
+\newblock {Samba (informatique), Site, [en ligne]}.
+\newblock
+  \href{https://fr.wikipedia.org/wiki/Samba_(informatique)}{https://fr.wikipedia.org},
+  (consulté le 23 mai 2017).
+
+\bibitem{website:wikissh}
+{\sc {La Communauté de Wikipédia}}.
+\newblock {Secure Shell, Site, [en ligne]}.
+\newblock
+  \href{https://fr.wikipedia.org/wiki/Secure_Shell}{https://fr.wikipedia.org},
+  (consulté le 23 mai 2017).
+
+\bibitem{website:wikibind}
+{\sc {La Communauté de Wikipédia}}.
+\newblock {BIND, Site, [en ligne]}.
+\newblock \href{https://fr.wikipedia.org/wiki/BIND}{https://fr.wikipedia.org},
+  (consulté le 27 mai 2017).
+
+\bibitem{website:wikidns}
+{\sc {La Communauté de Wikipédia}}.
+\newblock {Domain Name System, Site, [en ligne]}.
+\newblock
+  \href{https://fr.wikipedia.org/wiki/Domain_Name_System}{https://fr.wikipedia.org},
+  (consulté le 27 mai 2017).
+
+\bibitem{website:wikiftp}
+{\sc {La Communauté de Wikipédia}}.
+\newblock {Serveur FTP, Site, [en ligne]}.
+\newblock
+  \href{https://fr.wikipedia.org/wiki/Serveur_FTP}{https://fr.wikipedia.org},
+  (consulté le 27 mai 2017).
+
+\bibitem{website:wikivsftpd}
+{\sc {La Communauté de Wikipédia}}.
+\newblock {VsFTPd, Site, [en ligne]}.
+\newblock
+  \href{https://fr.wikipedia.org/wiki/VsFTPd}{https://fr.wikipedia.org},
+  (consulté le 27 mai 2017).
+
 \bibitem{latex}
 {\sc \LaTeX}.
 \newblock A document preparation system.

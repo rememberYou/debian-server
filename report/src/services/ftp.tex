@@ -1,0 +1,38 @@
+\subsection{FTP}
+\label{subsec:ftp}
+
+Un serveur \textbf{FTP}, pour \textit{\textbf{File Transfer Protocol}}, permet
+de transférer des fichiers par Internet ou par le biais d'un réseau informatique
+local (intranet). \\
+Dans notre cas, il sera disponible au travers du réseau local.
+
+
+\subsubsection{Choix du serveur}
+\label{subsubsec:choix-serveur}
+
+Pour un maximum de sécurité, notre choix s'est porté sur \textbf{vsFTPd}, ou
+\textit{\textbf{Very Secure FTP Daemon}}.  \\
+Ce serveur FTP est fortement axé sécurité : c'est l'un des premiers logiciels
+serveurs à mettre en œuvre la séparation des privilèges, minimisant ainsi les
+risques de piratage. \\
+
+Dans sa configuration par défaut, VsFTPd est très restrictif :
+\begin{itemize}
+
+    \item Seul le compte anonyme est autorisé à se connecter au serveur, et en
+    lecture seule;
+    \item Les utilisateurs ne peuvent accéder qu'à leur compte.
+
+\end{itemize}
+
+
+\subsubsection{Configuration}
+\label{subsubsec:config}
+
+À terminer…
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

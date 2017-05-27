@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.4.29)  23 MAY 2017 20:30
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.4.29)  27 MAY 2017 21:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1218,17 +1218,72 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--25
 
  []
 
-) [11]) (./src/gestion.tex) [12
+) [11] (./src/services/srvWeb.tex) [12] (./src/services/ftp.tex
+Missing character: There is no œ in font ec-lmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--18
+
+ []
+
+Missing character: There is no … in font ec-lmr12!
+) [13] (./src/services/dns.tex
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 38.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 38.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 38.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 38.
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--40
+
+ []
+
+) [14]) (./src/gestion.tex) [15
 
 ] (./src/references.tex (./main.bbl
-Underfull \hbox (badness 1371) in paragraph at lines 75--80
+Underfull \hbox (badness 10000) in paragraph at lines 42--47
+[]\T1/lmr/m/sc/12 La Com-mu-nauté de Wi-ki-pé-dia\T1/lmr/m/n/12 .  Ma-riaDB, Si
+te, [en ligne].
+ []
+
+
+Underfull \hbox (badness 3792) in paragraph at lines 63--68
+[]\T1/lmr/m/sc/12 La Com-mu-nauté de Wi-ki-pé-dia\T1/lmr/m/n/12 .  Se-cure Shel
+l, Site, [en ligne].
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--74
+[]\T1/lmr/m/sc/12 La Com-mu-nauté de Wi-ki-pé-dia\T1/lmr/m/n/12 .  BIND, Site, 
+[en ligne].
+ []
+
+
+Underfull \hbox (badness 3219) in paragraph at lines 83--88
+[]\T1/lmr/m/sc/12 La Com-mu-nauté de Wi-ki-pé-dia\T1/lmr/m/n/12 .  Ser-veur FTP
+, Site, [en ligne].
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--95
+[]\T1/lmr/m/sc/12 La Com-mu-nauté de Wi-ki-pé-dia\T1/lmr/m/n/12 .  VsFTPd, Site
+, [en ligne].
+ []
+
+[16
+
+]
+Underfull \hbox (badness 1371) in paragraph at lines 130--135
 []\T1/lmr/m/sc/12 The De-bian Sup-port\T1/lmr/m/n/12 .  Confi-gu-ra-tion ser-ve
 ur NTP, Site, [en ligne].
  []
 
-)) [13
-
-] (./src/blank.tex [0])
+)) [17] (./src/blank.tex [0])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 173.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 173.
  (./main.aux)
@@ -1236,12 +1291,12 @@ Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 173.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 173.
  ) 
 Here is how much of TeX's memory you used:
- 23403 strings out of 493068
- 418611 string characters out of 6135636
- 523552 words of memory out of 5000000
- 27001 multiletter control sequences out of 15000+600000
- 74029 words of font info for 52 fonts, out of 8000000 for 9000
+ 23492 strings out of 493068
+ 419922 string characters out of 6135636
+ 524278 words of memory out of 5000000
+ 27064 multiletter control sequences out of 15000+600000
+ 92217 words of font info for 67 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
- 37i,10n,45p,10368b,540s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,10n,45p,10368b,567s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (19 pages).
+Output written on main.pdf (23 pages).
