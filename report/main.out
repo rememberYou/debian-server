@@ -9,14 +9,15 @@
 \BOOKMARK [2][-]{subsection.0.2.4}{Partitionnement}{section.0.2}% 9
 \BOOKMARK [2][-]{subsection.0.2.5}{Quotas}{section.0.2}% 10
 \BOOKMARK [1][-]{section.0.3}{Sauvegardes}{}% 11
-\BOOKMARK [1][-]{section.0.4}{Mise en œuvre}{}% 12
-\BOOKMARK [1][-]{section.0.5}{Services}{}% 13
-\BOOKMARK [2][-]{subsection.0.5.1}{NTP}{section.0.5}% 14
-\BOOKMARK [2][-]{subsection.0.5.2}{SSH}{section.0.5}% 15
-\BOOKMARK [2][-]{subsection.0.5.3}{NFS}{section.0.5}% 16
-\BOOKMARK [2][-]{subsection.0.5.4}{Samba}{section.0.5}% 17
-\BOOKMARK [2][-]{subsection.0.5.5}{Base de données}{section.0.5}% 18
-\BOOKMARK [2][-]{subsection.0.5.6}{Serveur\040Web}{section.0.5}% 19
-\BOOKMARK [2][-]{subsection.0.5.7}{FTP}{section.0.5}% 20
-\BOOKMARK [2][-]{subsection.0.5.8}{DNS}{section.0.5}% 21
-\BOOKMARK [1][-]{section*.17}{Références}{}% 22
+\BOOKMARK [2][-]{subsection.0.3.1}{Horaire\040de\040sauvegarde}{section.0.3}% 12
+\BOOKMARK [2][-]{subsection.0.3.2}{Mise en œuvre}{section.0.3}% 13
+\BOOKMARK [1][-]{section.0.4}{Services}{}% 14
+\BOOKMARK [2][-]{subsection.0.4.1}{NTP}{section.0.4}% 15
+\BOOKMARK [2][-]{subsection.0.4.2}{SSH}{section.0.4}% 16
+\BOOKMARK [2][-]{subsection.0.4.3}{NFS}{section.0.4}% 17
+\BOOKMARK [2][-]{subsection.0.4.4}{Samba}{section.0.4}% 18
+\BOOKMARK [2][-]{subsection.0.4.5}{Base de données}{section.0.4}% 19
+\BOOKMARK [2][-]{subsection.0.4.6}{Serveur\040Web}{section.0.4}% 20
+\BOOKMARK [2][-]{subsection.0.4.7}{FTP}{section.0.4}% 21
+\BOOKMARK [2][-]{subsection.0.4.8}{DNS}{section.0.4}% 22
+\BOOKMARK [1][-]{section*.17}{Références}{}% 23
