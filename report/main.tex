@@ -1,136 +1,93 @@
-\documentclass[a4paper, 12pt]{report}
-% Allows writing the document in english.
+\documentclass[a4paper, 12pt]{article}
+% Allows writing the document in French.
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
 \usepackage[francais]{babel}
+% Allows to change the margins of the pages.
+\usepackage[margin=2.5cm]{geometry}
+% Allows to change the line spacing.
+\renewcommand{\baselinestretch}{1.5}
+% Provides generic commands \degree, \celsius, etc.
+\usepackage{gensymb}
 % Allows to use images.
 \usepackage{graphicx}
-% Provides hyperlinks within the document.
+% Includes pseudocode or algorithms.
+\usepackage{listings, lstautogobble}
+% Allows change items properties
 \usepackage{enumitem}
 % Adds space between paragraphs.
 \usepackage{parskip}
 % Supports Text Companion fonts (necessary for gensymb).
 \usepackage{textcomp}
-\usepackage{array}
-\usepackage{multicol}
-% Better tabular
+% Allows to create better tables.
 \usepackage{tabularx}
+% Allows to draw.
+\usepackage{tikz}
+% Allows to color the raw of an array.
+\usepackage{colortbl}
 % Allows to use colors.
 \usepackage{xcolor}
-\usepackage[margin=4cm]{geometry}
-\usepackage{varwidth}
-% Euro
-\usepackage{eurosym}
-\usepackage{amsmath}
-\usepackage{fontspec}
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}
-
-
-\usepackage{gensymb}
-
-% Default fixed font does not support bold face
-\DeclareFixedFont{\ttb}{T1}{txtt}{bx}{n}{12} % for bold
-\DeclareFixedFont{\ttm}{T1}{txtt}{m}{n}{12}  % for normal
-
-\setcounter{tocdepth}{2}
-
-% Custom colors
-\usepackage{color}
-\definecolor{deepblue}{rgb}{0,0,0.5}
-\definecolor{deepred}{rgb}{0.6,0,0}
-\definecolor{deepgreen}{rgb}{0,0.5,0}
-
-\usepackage{listings}
-\usepackage{subfigure}
+% Allows hyperlinks within the document.
+\usepackage[colorlinks=true,urlcolor=black,linkcolor=black]{hyperref}
+% Allows to use copyright.
 \usepackage[
     type={CC},
     modifier={by-nc-nd},
     version={4.0},
-]{doclicense}
+    ]{doclicense}
 
-\usepackage[colorlinks=true,urlcolor=black,linkcolor=black]{hyperref}
+% Allows a better depth for the table of contents.
+\setcounter{tocdepth}{4}
+% Allows a better depth for the sections.
+\setcounter{secnumdepth}{4}
 
-% Replace Table by Tableau
-\addto\captionsfrench{\def\tablename{Tableau}}
-% New columns types
-% Left
+% New column type
 \newcolumntype{L}{>{\raggedright\arraybackslash}X}
-% Center
 \newcolumntype{C}{>{\centering\arraybackslash}X}
-% Right
 \newcolumntype{R}{>{\raggedleft\arraybackslash}X}
 
-% Add more space before and after table
-\newenvironment{centerspace}{\setlength{\topsep}{1ex}\center}{\endcenter}
-% Sets the color of gray.
-\newcommand{\gray}{\rowcolor[gray]{.90}}
-% Allows to draw lines.
-\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
-% Uses the arabic numerals for sections.
-\renewcommand{\thesection}{\arabic{section}}
+% Define colors for color scheme
+\definecolor{background}{HTML}{333333}
+\definecolor{currentLine}{HTML}{282A2E}
+\definecolor{selection}{HTML}{373B41}
+\definecolor{foreground}{HTML}{FFFFFF}
+\definecolor{comment}{HTML}{969896}
+\definecolor{red}{HTML}{CC6666}
+\definecolor{orange}{HTML}{DE935F}
+\definecolor{yellow}{HTML}{F0C674}
+\definecolor{green}{HTML}{B5BD68}
+\definecolor{aqua}{HTML}{8ABEB7}
+\definecolor{blue}{HTML}{81A2bE}
+\definecolor{purple}{HTML}{B294BB}
+\definecolor{bleuSkype}{HTML}{00AFF0}
+\definecolor{jauneSnapchat}{HTML}{FFFC00}
 
-% Width of text.
-\addtolength{\textwidth}{2cm}
-% Odd page left margin.
-\addtolength{\oddsidemargin}{-1cm}
-% Height of main text.
-\addtolength{\textheight}{2cm}
-% Removes indentation.
-\setlength\parindent{0pt}
-% Indicates overflow words.
-\setlength{\overfullrule}{10pt}
-% Height of items.
-\setitemize{itemsep=1em}
-
-%%%%********************************************************************
-% fancy quotes
-\definecolor{quotemark}{gray}{0.7}
+% Macro
 \makeatletter
-\def\fquote{%
-    \@ifnextchar[{\fquote@i}{\fquote@i[]}%]
-           }%
-\def\fquote@i[#1]{%
-    \def\tempa{#1}%
-    \@ifnextchar[{\fquote@ii}{\fquote@ii[]}%]
-                 }%
-\def\fquote@ii[#1]{%
-    \def\tempb{#1}%
-    \@ifnextchar[{\fquote@iii}{\fquote@iii[]}%]
-                      }%
-\def\fquote@iii[#1]{%
-    \def\tempc{#1}%
-    \vspace{1em}%
-    \noindent%
-    \begin{list}{}{%
-         \setlength{\leftmargin}{0.1\textwidth}%
-         \setlength{\rightmargin}{0.1\textwidth}%
-                  }%
-         \item[]%
-         \begin{picture}(0,0)%
-         \put(-15,-5){\makebox(0,0){\scalebox{3}{\textcolor{quotemark}{``}}}}%
-         \end{picture}%
-         \begingroup\itshape}%
- %%%%********************************************************************
- \def\endfquote{%
- \endgroup\par%
- \makebox[0pt][l]{%
- \hspace{0.8\textwidth}%
- \begin{picture}(0,0)(0,0)%
- \put(15,15){\makebox(0,0){%
- \scalebox{3}{\color{quotemark}''}}}%
- \end{picture}}%
- \ifx\tempa\empty%
- \else%
-    \ifx\tempc\empty%
-       \hfill\rule{100pt}{0.5pt}\\\mbox{}\hfill\tempa,\ \emph{\tempb}%
-   \else%
-       \hfill\rule{100pt}{0.5pt}\\\mbox{}\hfill\tempa,\ \emph{\tempb},\ \tempc%
-   \fi\fi\par%
-   \vspace{0.5em}%
- \end{list}%
- }%
- \makeatother
+\lst@InstallKeywords k{attributes}{attributestyle}\slshape{attributestyle}{}ld
+\makeatother
 
- %%%% ********************************************************************
+% Custom color scheme for batch
+\lstset{language=bash,
+		numbers=left,
+		numberstyle=\tiny,
+		autogobble=true,
+		backgroundcolor=\color{background},
+		commentstyle=\color{comment},
+		stringstyle=\color{green},
+		keywordstyle=\color{red},
+		keywords={home, root, user, @, \$},
+		basicstyle=\ttfamily\color{foreground},
+		attributestyle=\color{aqua},
+		moreattributes={ls, now}
+              }
+
+              \lstset {
+                literate={~} {$\sim$}{1}
+              }
+
+% Allows draw lines for the flyleaf.
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 
 % Starts roman numbering (trick to not numbering the first pages).
 \pagenumbering{roman}
@@ -143,8 +100,6 @@
 \input{src/flyleaf}
 \newpage
 \input{src/blank}
-%\newpage
-%\input{src/thanks}
 \newpage
 \input{src/license}
 \newpage
@@ -153,9 +108,8 @@
 \newpage
 \input{src/presentation}
 \newpage
+
 \input{src/installation}
-\newpage
-\input{src/gestion}
 \newpage
 \input{src/services}
 \newpage

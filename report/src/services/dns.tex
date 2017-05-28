@@ -1,17 +1,15 @@
 \subsection{DNS}
 \label{subsec:dns}
 
-Le \textbf{DNS}, ou \textit{\textbf{Domain Name System}}, est un service
-permettant de résoudre un nom de domaine. \\
-De fait, les serveurs étant identifiés par leur adresse IP, il a fallu créer un
-processus afin d'associer leur adresse à un nom plus simple à retenir,
-le \og \textit{nom de domaine} \fg.
-
+Le \emph{DNS} (Domain Name System), est un service permettant de résoudre un nom
+de domaine. \\ De fait, les serveurs étant identifiés par leur adresse IP, il a
+fallu créer un processus afin d'associer leur adresse à un nom plus simple à
+retenir, le \og \textit{nom de domaine} \fg.
 
 \subsubsection{Sélection du DNS}
 \label{subsubsec:selection-dns}
 
-Nous avons choisi d'utiliser \textbf{BIND}, pour \textit{\textbf{Berkeley
+Nous avons choisi d'utiliser \emph{BIND}, pour \textit{\textbf{Berkeley
 Internet Name Daemon}}. \\
 C'est \textit{le} serveur DNS le plus utilisé sur Internet, spécialement sur les
 systèmes de type UNIX et est devenu de facto un standard.
@@ -21,27 +19,23 @@ systèmes de type UNIX et est devenu de facto un standard.
 \label{subsubsec:miseen-place}
 
 Le DNS a été installé et configuré sur le serveur en différentes étapes :
+
 \begin{itemize}
-
-    \item[$\bullet$] installation de BIND9;
-    \item[$\bullet$] création des ACL \textit{(\textbf{Access Control List})}
+    \item installation de BIND9;
+    \item création des ACL \textit{(\textbf{Access Control List})}
     définissant le réseau local;
-    \item[$\bullet$] création et configuration du serveur DNS en lui-même :
+    \item création et configuration du serveur DNS en lui-même :
     \begin{itemize}
-
-        \item acceptation des requêtes uniquement pour le réseau interne;
-        \item configuration des forwarders;
-        \item activation de \textit{\textbf{DNSSEC}} qui sécurise les
+        \item[$\bullet$] acceptation des requêtes uniquement pour le réseau interne;
+        \item[$\bullet$] configuration des forwarders;
+        \item[$\bullet$] activation de \textit{\textbf{DNSSEC}} qui sécurise les
         données envoyées par le DNS;
-        \item activation de l'écoute des requêtes IPv6;
-        \item implémentation de la
+        \item[$\bullet$] activation de l'écoute des requêtes IPv6;
+        \item[$\bullet$] implémentation de la
         RFC1035\footnote{\url{http://abcdrfc.free.fr/rfc-vf/rfc1035.html}}
         \footnote{\url{http://www.bortzmeyer.org/1035.html}}. \\
-
     \end{itemize}
-
 \end{itemize}
-
 
 %%% Local Variables:
 %%% mode: latex

@@ -9,6 +9,6 @@
     "subsec:noyau"
     "subsec:partitionnement"
     "tab:tableau-partitionnement"
-    "subsec:quotas"))
+    "subsec:sauvegardes"))
  :latex)
 

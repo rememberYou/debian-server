@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2017.5.15)  28 MAY 2017 17:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2017.5.15)  28 MAY 2017 23:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -31,7 +31,7 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 1--1
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/flyleaf_bw
 _flymake.tex:2: Undefined control sequence.
 l.2   \includegraphics
-                      [scale=0.12]{textures/logo/heh_bw.pdf}
+                      [scale=0.12]{textures/logo/heh_bw.eps}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -72,7 +72,7 @@ _flymake.tex:2: Missing $ inserted.
 <inserted text> 
                 $
 l.2 ...ludegraphics[scale=0.12]{textures/logo/heh_
-                                                  bw.pdf}
+                                                  bw.eps}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
@@ -82,7 +82,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 2.
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/flyleaf_bw
 _flymake.tex:2: Extra }, or forgotten $.
-l.2 ...phics[scale=0.12]{textures/logo/heh_bw.pdf}
+l.2 ...phics[scale=0.12]{textures/logo/heh_bw.eps}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -112,8 +112,8 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (28.7644pt too wide) in paragraph at lines 2--3
- []\OML/cmm/m/it/10 w:pdf[]$ 
+Overfull \hbox (28.59772pt too wide) in paragraph at lines 2--3
+ []\OML/cmm/m/it/10 w:eps[]$ 
  []
 
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/flyleaf_bw
@@ -401,7 +401,7 @@ Overfull \hbox (3276.74998pt too wide) in paragraph at lines 36--43
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/flyleaf_bw
 _flymake.tex:46: Undefined control sequence.
 l.46   \includegraphics
-                       [scale=0.08]{textures/logo/technical_bw.pdf}
+                       [scale=0.08]{textures/logo/technical_bw.eps}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -448,13 +448,13 @@ _flymake.tex:46: Missing $ inserted.
 <inserted text> 
                 $
 l.46 ...phics[scale=0.08]{textures/logo/technical_
-                                                  bw.pdf}
+                                                  bw.eps}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/flyleaf_bw
 _flymake.tex:46: Extra }, or forgotten $.
-l.46 ...cale=0.08]{textures/logo/technical_bw.pdf}
+l.46 ...cale=0.08]{textures/logo/technical_bw.eps}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -484,8 +484,8 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (28.7644pt too wide) in paragraph at lines 46--47
- []$[]\OML/cmm/m/it/10 w:pdf[]$ 
+Overfull \hbox (28.59772pt too wide) in paragraph at lines 46--47
+ []$[]\OML/cmm/m/it/10 w:eps[]$ 
  []
 
 Missing character: There is no A in font nullfont!

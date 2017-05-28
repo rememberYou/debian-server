@@ -1,65 +1,63 @@
-%\chapter*{Installation} %On garde ?
-%\label{ch:installation}
-
 \section{Choix}
 \label{sec:choix}
-
 
 \subsection{Distribution}
 \label{subsec:distribution}
 
-Notre choix de la distribution s'est naturellement porté sur Debian, pour ses
+Le choix de la distribution s'est naturellement porté sur Debian, pour ses
 nombreux avantages. En voici quelques exemples :
 
 \begin{itemize}
-    \item Large communauté : grâce à cela, les erreurs et problèmes rencontrés ont
-      souvent plusieurs solutions connues et éprouvées.
+\item Large communauté : grâce à cela, les erreurs et problèmes rencontrés ont
+  souvent plusieurs solutions connues et éprouvées.
 
-    \item Plusieurs architectures et noyaux : Debian supporte la majorité des
-      architectures de processeurs comme AMD, Armel, i386, MIPS, etc. Elle supporte
-      aussi de nombreux noyaux tels que FreeBSD et GNU Hurd.
+\item Plusieurs architectures et noyaux : Debian supporte la majorité des
+  architectures de processeurs comme AMD, Armel, i386, MIPS, etc. Elle supporte
+  aussi de nombreux noyaux tels que FreeBSD et GNU Hurd.
 
-    \item Sécurité : vu que la distribution est open-source, cela signifie que les
-      backdoors sont presque inexistantes. De surcroît, lorsqu'une faille de sécurité
-      est détectée, celle-ci est rapidement corrigée par la communauté.
+\item Sécurité : vu que la distribution est open-source, cela signifie que les
+  backdoors sont presque inexistantes. De surcroît, lorsqu'une faille de sécurité
+  est détectée, celle-ci est rapidement corrigée par la communauté.
 
-      En outre, Debian comprend de nombreux logiciels de sécurité tels que GPG (et
-      PGP), SSH et autres.
+  En outre, Debian comprend de nombreux logiciels de sécurité tels que GPG (et
+  PGP), SSH et autres.
 
-    \item Stabilité : nous savons que les serveurs doivent avoir le plus grand temps
-    d'accessibilité ($\approx$ 99.999\%). Sous Debian, il existe de nombreux exemples de
-    machines qui tournent sans arrêt pendant des années, mis à part lors de pannes
-    ou de mises à jour matérielles.
+\item Stabilité : nous savons que les serveurs doivent avoir le plus grand temps
+  d'accessibilité ($\approx$ 99.999\%). Sous Debian, il existe de nombreux exemples de
+  machines qui tournent sans arrêt pendant des années, mis à part lors de pannes
+  ou de mises à jour matérielles.
 
-    \item Système de paquets : grâce au système de paquets, les distributions Linux
-    ont la possibilité d'installer de nombreux logiciels par une seule ligne de
-    commande. Le système de paquets de Debian est l'outil central de mise à jour,
-    installation, suppression et recherche de paquets.
+\item Système de paquets : grâce au système de paquets, les distributions Linux
+  ont la possibilité d'installer de nombreux logiciels par une seule ligne de
+  commande. Le système de paquets de Debian est l'outil central de mise à jour,
+  installation, suppression et recherche de paquets.
 \end{itemize}
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.4\textwidth]
+  {textures/images/installation/DebianVsUbuntu.eps}
+  \caption{Différences entre Debian et Ubuntu}
+  \label{fig:diff-debian-ubuntu}
+\end{figure}
+
+\newpage
 
 De même, la distribution Debian est plus professionnel et celle-ci possède le
 leadership depuis des années.
 
-À titre d'information, depuis mai 2016, Ubuntu a les mêmes parts de marché que
+\underline{Remarque :} depuis mai 2016, Ubuntu a les mêmes parts de marché que
 Debian.
 
-
-\begin{figure}[!h]
-    \centering
-    \includegraphics[scale=0.4]
-    {textures/images/installation/DebianVsUbuntu.eps}
-    \caption{Différences entre Debian et Ubuntu}
-     \label{fig:diff-debian-ubuntu}
-  \end{figure}
-
-Nous n'avons pas choisi Ubuntu pour les raisons suivantes :
+La distribution Ubuntu n'a pas été choisi pour les raisons suivantes :
 
 \begin{itemize}
 \item C'est un dérivé de Debian : de ce fait, un administrateur sachant
-  configurer un serveur Debian pourra faciliter s'adapter au serveur Ubuntu.
+  configurer un serveur sous Debian pourra facilitement s'adapter aux serveur sous
+  Ubuntu.
 
-\item Il vise le grand public et, de ce fait, est beaucoup moins utilisé
-  dans le milieu professionnel.
+\item Il vise le grand public. De ce fait, est beaucoup moins utilisé dans le
+  milieu professionnel.
 
 \item Celui-ci est assez récent sur le marché du serveur.
 
@@ -69,17 +67,14 @@ Nous n'avons pas choisi Ubuntu pour les raisons suivantes :
 Concernant les autres distributions, CentOS est en baisse, mais reste au-dessus
 de Red Hat et de Fedora qui, lui, est en chute libre.
 
-\vspace{1cm}
-
 \begin{figure}[h]
   \centering
-  \includegraphics[scale=0.95]
+  \includegraphics[width=0.8\textwidth]
   {textures/images/installation/distributions.eps}
   \caption{Parts de marché des distributions Linux}
 \end{figure}
 
 \newpage
-
 
 \subsection{Langue}
 \label{subsec:langue}
@@ -89,7 +84,6 @@ l'anglais vu que la majorité des documentations et forums sont disponibles dans
 cette langue. De plus, cela permet d'éviter une mauvaise traduction concernant
 les nouvelles mises à jour et de toucher un plus large public possible.
 
-
 \subsection{Noyau}
 \label{subsec:noyau}
 
@@ -98,66 +92,95 @@ modules. En effet, celui-ci facilite l'ajout et la suppression de modules à
 chaud. Ces modules, pas toujours indispensables, peuvent être la source de
 failles et de bugs.
 
-
 \subsection{Partitionnement}
 \label{subsec:partitionnement}
 
-Afin de posséder assez d'espace de stockage, nous avons choisi d'utiliser deux
-disques de 20 Go en RAID 1. \\
-Nous avons alors partitionné le disque de cette manière, avec un partition racine,
-\textit{/boot}, et un groupe de volume LVM nommé \textit{VolGroup} : \\
+Afin de posséder assez d'espace de stockage, deux disques de 20 Go en RAID 1 ont
+été utililisés. De surcroît, le partionnement du disque a été réalisé avec un
+partition racine, \textit{/boot}, et un groupe de volume LVM nommé
+\textit{VolGroup}.
 
 \begin{center}
-    \begin{table}[h]
-        \begin{tabularx}{\linewidth}{|C|C|C|C|}
-            \hline
-            Label & Type & Taille (Mo) & Format \\
-            \hline
-            \hline
-            /boot & primary & 512 & ext4 \\
-            \hline
-            VolGroup & logical & 20958 & lvm \\
-            \hline
-        \end{tabularx}
+  \begin{table}[h]
+    \begin{tabularx}{\linewidth}{|C|C|C|C|}
+      \hline
+      Label & Type & Taille (Mo) & Format \\
+      \hline
+      \hline
+      /boot & primary & 512 & ext4 \\
+      \hline
+      VolGroup & logical & 20958 & lvm \\
+      \hline
+    \end{tabularx}
 
-        \vskip .5cm
+    \vskip .5cm
 
-        \begin{tabularx}{\linewidth}{|C|C|C|C|}
-            \hline
-            LVsrv (/srv) & lvm & 6144 & ext4 \\
-            \hline
-            LVswap (/swap) & lvm & 4096 & swap \\
-            \hline
-            LVhome (/home) & lvm & 2048 & ext4 \\
-            \hline
-            LVroot (/root) & lvm & 2048 & ext4 \\
-            \hline
-            LVusr (/usr) & lvm & 2048 & ext4 \\
-            \hline
-            LVopt (/opt) & lvm & 2048 & ext4 \\
-            \hline
-            LVvar (/var) & lvm & 1024 & ext4 \\
-            \hline
-            LVtmp (/tmp) & lvm & 1024 & ext4 \\
-            \hline
-        \end{tabularx}
-        \caption{Tableau du partitionnement \textit{(avec LVM)}}
-        \label{tab:tableau-partitionnement}
-
-        \vskip -1cm
-    \end{table}
+    \begin{tabularx}{\linewidth}{|C|C|C|C|}
+      \hline
+      LVsrv (/srv) & lvm & 6144 & ext4 \\
+      \hline
+      LVswap (/swap) & lvm & 4096 & swap \\
+      \hline
+      LVhome (/home) & lvm & 2048 & ext4 \\
+      \hline
+      LVroot (/root) & lvm & 2048 & ext4 \\
+      \hline
+      LVusr (/usr) & lvm & 2048 & ext4 \\
+      \hline
+      LVopt (/opt) & lvm & 2048 & ext4 \\
+      \hline
+      LVvar (/var) & lvm & 1024 & ext4 \\
+      \hline
+      LVtmp (/tmp) & lvm & 1024 & ext4 \\
+      \hline
+    \end{tabularx}
+    \caption{Tableau du partitionnement \textit{(avec LVM)}}
+    \label{tab:tableau-partitionnement}
+  \end{table}
 \end{center}
 
+\newpage
 
-\subsection{Quotas}
-\label{subsec:quotas}
+\subsection{Sauvegardes}
+\label{subsec:sauvegardes}
 
-Dans le but de mieux géreer l'espace personnel de chaque utilisateur, nous avons
-mis en place des quotas sur les partitions \textit{/home} et \textit{/share}. \\
-À la création de chaque utilisateur, un quota de 500 Mb lui sera attribué. \\
+Dans le milieu de l'entreprise, deux types de sauvegarde sont principalement
+utilisées : incrémentielle\footnote{Sauvegarde exclusivement les données
+modifiées ou ajoutées depuis la précédente sauvegarde.} et différentielle
+\footnote{Sauvegarde les données modifiées ou ajoutées en référence à la
+dernière sauvegarde complète.}.
 
-Il sera prévenu lorsqu'il dépassera les 400 Mb.
+Afin de trouver un compromis, ces deux types de sauvegardes ont été utilisés :
 
+\begin{enumerate}
+\item différentielle : afin de restaurer les données plus rapidement par rapport
+  à la sauvegarde incrémentielle ;
+
+\item incrémentielle : pour une rapidité de sauvegarde et un stockage en mémoire
+plus économe que la sauvegarde différentielle.
+\end{enumerate}
+
+Afin d'éviter de perturber l'accès au serveur, chaque jour à 2h du matin, une
+sauvegarde incrémentielle est lancée à l'aide d'un
+\emph{cron}\footnote{Gestionnaire des tâches sous Linux devant être exécutées à
+un moment précis.} dans le but d'enregistrer les données modifiées et créées en
+cette journée.
+
+\begin{lstlisting}[language=bash]
+crontab -e 0 2 * * * /usr/bin/backup-make.sh -i
+\end{lstlisting}
+
+Quant à la sauvegarde différentielle, celle-ci s'opère uniquement le dimanche
+à 2h du matin.
+
+\begin{lstlisting}[language=bash]
+crontab -e 0 2 * * 0 /usr/bin/backup-make.sh -d
+\end{lstlisting}
+
+\underline{Remarque :} à défault d'utiliser \textit{fcron} n'étant plus
+disponible sur Debian, le serveur doit être alimenté à l'heure de l'exécution du
+\textit{cron}. Néanmoins, cela ne pose pas de difficultés, vu que le rôle du
+serveur est de fournir une disponibilité permanente.
 
 %%% Local Variables:
 %%% mode: latex

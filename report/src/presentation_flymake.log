@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2017.5.15)  28 MAY 2017 17:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2017.5.15)  28 MAY 2017 23:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -70,8 +70,8 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 1--3
  []
 
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/presentati
-on_flymake.tex:5: Undefined control sequence.
-l.5 \subsection
+on_flymake.tex:4: Undefined control sequence.
+l.4 \subsection
                {Introduction}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -81,13 +81,13 @@ and I'll forget about whatever was undefined.
 
 
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/presentati
-on_flymake.tex:5: LaTeX Error: Missing \begin{document}.
+on_flymake.tex:4: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.5 \subsection{I
+l.4 \subsection{I
                  ntroduction}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -105,19 +105,19 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 5--7
+Overfull \hbox (20.0pt too wide) in paragraph at lines 4--6
 []
  []
 
 
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/presentati
-on_flymake.tex:8: LaTeX Error: Missing \begin{document}.
+on_flymake.tex:7: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8 D
+l.7 D
      ans le cadre de ce projet, il nous a √©t√© demand√© d'administrer un se...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -197,6 +197,25 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no x in font nullfont!
 Missing character: There is no . in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 7--9
+[]
+ []
+
+
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/presentati
+on_flymake.tex:10: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 L
+      e choix de la distribution ainsi que la gestion des sauvegardes est li...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 Missing character: There is no L in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no c in font nullfont!
@@ -282,7 +301,7 @@ Missing character: There is no √ in font nullfont!
 Missing character: There is no © in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 8--12
+Overfull \hbox (20.0pt too wide) in paragraph at lines 10--12
 []
  []
 
@@ -419,8 +438,8 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (22.62488pt too wide) in paragraph at lines 16--17
-\OT1/cmr/bx/n/10 NFS
+Overfull \hbox (19.5832pt too wide) in paragraph at lines 16--18
+\OT1/cmr/m/it/10 NFS
  []
 
 Missing character: There is no u in font nullfont!
@@ -432,6 +451,9 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no g in font nullfont!
 Missing character: There is no e in font nullfont!
+Missing character: There is no q in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no i in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
@@ -456,6 +478,8 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no s in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
 Missing character: There is no W in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
@@ -491,8 +515,8 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (33.222pt too wide) in paragraph at lines 17--18
-\OT1/cmr/bx/n/10 Samba
+Overfull \hbox (28.11093pt too wide) in paragraph at lines 19--21
+\OT1/cmr/m/it/10 Samba
  []
 
 Missing character: There is no u in font nullfont!
@@ -554,29 +578,29 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (22.59016pt too wide) in paragraph at lines 18--19
-\OT1/cmr/bx/n/10 Web
+Overfull \hbox (19.18875pt too wide) in paragraph at lines 22--24
+\OT1/cmr/m/it/10 Web
  []
 
 
-Overfull \hbox (23.09709pt too wide) in paragraph at lines 18--19
-\OT1/cmr/bx/n/10 FTP
+Overfull \hbox (20.46652pt too wide) in paragraph at lines 22--24
+\OT1/cmr/m/it/10 FTP
  []
 
 
-Overfull \hbox (38.93034pt too wide) in paragraph at lines 18--19
-\OT1/cmr/bx/n/10 MySQL
+Overfull \hbox (33.38312pt too wide) in paragraph at lines 22--24
+\OT1/cmr/m/it/10 MySQL
  []
 
 
-Overfull \hbox (24.2082pt too wide) in paragraph at lines 18--19
-\OT1/cmr/bx/n/10 DNS
+Overfull \hbox (20.60542pt too wide) in paragraph at lines 22--24
+\OT1/cmr/m/it/10 DNS
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 20.
+(Font)              <7> on input line 26.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 20.
+(Font)              <5> on input line 26.
 Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no F in font nullfont!
@@ -791,52 +815,41 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (36.68872pt too wide) in paragraph at lines 24--26
-\OT1/cmr/bx/n/10 serveur
+Overfull \hbox (31.68864pt too wide) in paragraph at lines 31--33
+\OT1/cmr/m/it/10 serveur
  []
 
 
-Overfull \hbox (11.65967pt too wide) in paragraph at lines 24--26
-\OT1/cmr/bx/n/10 de
+Overfull \hbox (21.37209pt too wide) in paragraph at lines 31--33
+\OT1/cmr/m/it/10 NTP
  []
 
-
-Overfull \hbox (30.25122pt too wide) in paragraph at lines 24--26
-\OT1/cmr/bx/n/10 temps
- []
-
-Missing character: There is no u in font nullfont!
-Missing character: There is no n in font nullfont!
+Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no x in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no u in font nullfont!
 Missing character: There is no s in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no v in font nullfont!
-Missing character: There is no e in font nullfont!
 Missing character: There is no u in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
 Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (21.77766pt too wide) in paragraph at lines 26--27
-\OT1/cmr/bx/n/10 SSH
+Overfull \hbox (18.67767pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/it/10 SSH 
  []
 
 
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/presentati
-on_flymake.tex:30: LaTeX Error: The font size command \normalsize is not define
+on_flymake.tex:37: LaTeX Error: The font size command \normalsize is not define
 d:
                there is probably something wrong with the class file.
 
@@ -844,7 +857,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.30 \newpage
+l.37 \newpage
              
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -852,10 +865,10 @@ or  <return>  to continue without it.
 
 [1
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/presentati
-on_flymake.tex:30: Undefined control sequence.
+on_flymake.tex:37: Undefined control sequence.
 <write> \newlabel{sec:pres-gener-du}{{}{\thepage 
                                                  }}
-l.30 \newpage
+l.37 \newpage
              
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -865,10 +878,10 @@ and I'll forget about whatever was undefined.
 
 \newlabel{sec:pres-gener-du}{{}{}}
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/presentati
-on_flymake.tex:30: Undefined control sequence.
+on_flymake.tex:37: Undefined control sequence.
 <write> ...label{subsec:introduction}{{}{\thepage 
                                                   }}
-l.30 \newpage
+l.37 \newpage
              
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -879,8 +892,8 @@ and I'll forget about whatever was undefined.
 \newlabel{subsec:introduction}{{}{}}
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/presentati
-on_flymake.tex:33: Undefined control sequence.
-l.33 \subsection
+on_flymake.tex:39: Undefined control sequence.
+l.39 \subsection
                 {D√©ontologie}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -901,7 +914,7 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no e in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 33--35
+Overfull \hbox (20.0pt too wide) in paragraph at lines 39--41
 []
  []
 
@@ -992,12 +1005,12 @@ Missing character: There is no u in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 36--38
+Overfull \hbox (20.0pt too wide) in paragraph at lines 42--44
 []
  []
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 39--39
+Overfull \hbox (20.0pt too wide) in paragraph at lines 45--45
 [] 
  []
 
@@ -1329,8 +1342,8 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no . in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/presentati
-on_flymake.tex:49: Undefined control sequence.
-l.49 \subsection
+on_flymake.tex:55: Undefined control sequence.
+l.55 \subsection
                 {S√©curit√©}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1349,7 +1362,7 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no √ in font nullfont!
 Missing character: There is no © in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 49--51
+Overfull \hbox (20.0pt too wide) in paragraph at lines 55--57
 []
  []
 
@@ -1381,7 +1394,8 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no a in font nullfont!
-Missing character: There is no v in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no s in font nullfont!
@@ -1424,12 +1438,12 @@ Missing character: There is no u in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 52--53
+Overfull \hbox (20.0pt too wide) in paragraph at lines 58--59
 []
  []
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 54--54
+Overfull \hbox (20.0pt too wide) in paragraph at lines 60--60
 [] 
  []
 
@@ -1522,20 +1536,19 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no q in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no e in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ) in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (29.27193pt too wide) in paragraph at lines 57--59
-\OT1/cmr/m/it/10 (\OT1/cmr/bx/it/10 LVM
+Overfull \hbox (21.64986pt too wide) in paragraph at lines 63--65
+\OT1/cmr/m/it/10 LVM
  []
 
 
-Overfull \hbox (7.92215pt too wide) in paragraph at lines 57--59
-\OT1/cmr/m/it/10 et
- []
-
-
-Overfull \hbox (35.18025pt too wide) in paragraph at lines 57--59
-\OT1/cmr/bx/it/10 RAID\OT1/cmr/m/it/10 ) 
+Overfull \hbox (27.07343pt too wide) in paragraph at lines 63--65
+\OT1/cmr/m/it/10 RAID 
  []
 
 Missing character: There is no m in font nullfont!
@@ -1680,11 +1693,11 @@ Missing character: There is no . in font nullfont!
 
  
 Here is how much of TeX's memory you used:
- 21 strings out of 493013
- 561 string characters out of 6139317
+ 17 strings out of 493013
+ 516 string characters out of 6139317
  55646 words of memory out of 5000000
- 3659 multiletter control sequences out of 15000+600000
- 4653 words of font info for 17 fonts, out of 8000000 for 9000
+ 3657 multiletter control sequences out of 15000+600000
+ 3986 words of font info for 15 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 22i,4n,16p,241b,149s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 22i,4n,16p,206b,150s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!

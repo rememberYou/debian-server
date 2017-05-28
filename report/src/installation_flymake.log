@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2017.5.15)  28 MAY 2017 17:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2017.5.15)  28 MAY 2017 23:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -11,9 +11,42 @@ ion_flymake.tex
 LaTeX2e <2017/01/01> patch level 3
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:4: Undefined control sequence.
-l.4 \section
+on_flymake.tex:1: Undefined control sequence.
+l.1 \section
             {Choix}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
+on_flymake.tex:1: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \section{C
+              hoix}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no C in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no x in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--3
+[]
+ []
+
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
+on_flymake.tex:4: Undefined control sequence.
+l.4 \subsection
+               {Distribution}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -28,40 +61,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.4 \section{C
-              hoix}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-Missing character: There is no C in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no x in font nullfont!
-
-Overfull \hbox (20.0pt too wide) in paragraph at lines 4--6
-[]
- []
-
-/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:8: Undefined control sequence.
-l.8 \subsection
-               {Distribution}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:8: LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.8 \subsection{D
+l.4 \subsection{D
                  istribution}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -79,20 +79,20 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 8--10
+Overfull \hbox (20.0pt too wide) in paragraph at lines 4--6
 []
  []
 
 
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:11: LaTeX Error: Missing \begin{document}.
+on_flymake.tex:7: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.11 N
-      otre choix de la distribution s'est naturellement port√© sur Debian, p...
+l.7 N
+     otre choix de la distribution s'est naturellement port√© sur Debian, po...
 
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -207,25 +207,25 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 11--13
+Overfull \hbox (20.0pt too wide) in paragraph at lines 7--9
 []
  []
 
 
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:14: LaTeX Error: Missing \begin{document}.
+on_flymake.tex:10: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.14 \begin{itemize}
+l.10 \begin{itemize}
                     
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 14--14
+Overfull \hbox (20.0pt too wide) in paragraph at lines 10--10
 [] 
  []
 
@@ -873,9 +873,9 @@ Missing character: There is no √ in font nullfont!
 Missing character: There is no © in font nullfont!
 Missing character: There is no ( in font nullfont!
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 30.
+(Font)              <7> on input line 26.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 30.
+(Font)              <5> on input line 26.
 Missing character: There is no 9 in font nullfont!
 Missing character: There is no 9 in font nullfont!
 Missing character: There is no . in font nullfont!
@@ -1021,7 +1021,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (7.7778pt too wide) in paragraph at lines 29--33
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 25--29
 \OMS/cmsy/m/n/10 ^^Y$
  []
 
@@ -1362,7 +1362,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 40--42
+Overfull \hbox (20.0pt too wide) in paragraph at lines 36--38
 []
  []
 
@@ -1442,19 +1442,19 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 43--45
+Overfull \hbox (20.0pt too wide) in paragraph at lines 39--41
 []
  []
 
 
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:47: LaTeX Error: Environment figure undefined.
+on_flymake.tex:43: LaTeX Error: Environment figure undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.47 \begin{figure}
+l.43 \begin{figure}
                    [!h]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1465,9 +1465,9 @@ Missing character: There is no ! in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no ] in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:49: Undefined control sequence.
-l.49     \includegraphics
-                         [scale=0.4]
+on_flymake.tex:45: Undefined control sequence.
+l.45   \includegraphics
+                       [scale=0.4]
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1529,19 +1529,19 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no . in font nullfont!
+Missing character: There is no e in font nullfont!
 Missing character: There is no p in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no f in font nullfont!
+Missing character: There is no s in font nullfont!
 
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:51: LaTeX Error: \caption outside float.
+on_flymake.tex:47: LaTeX Error: \caption outside float.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.51     \caption
-                 {Diff√©rences entre Debian et Ubuntu}
+l.47   \caption
+               {Diff√©rences entre Debian et Ubuntu}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1578,20 +1578,20 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no u in font nullfont!
 
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:53: LaTeX Error: \begin{document} ended by \end{figure}.
+on_flymake.tex:49: LaTeX Error: \begin{document} ended by \end{figure}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.53   \end{figure}
-                   
+l.49 \end{figure}
+                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 47--54
+Overfull \hbox (20.0pt too wide) in paragraph at lines 43--50
 []
  []
 
@@ -1646,12 +1646,12 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 55--56
+Overfull \hbox (20.0pt too wide) in paragraph at lines 51--52
 []
  []
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 57--57
+Overfull \hbox (20.0pt too wide) in paragraph at lines 53--53
 [] 
  []
 
@@ -1730,6 +1730,10 @@ Missing character: There is no v in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no s in font nullfont!
 Missing character: There is no D in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no b in font nullfont!
@@ -1750,7 +1754,10 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no ' in font nullfont!
 Missing character: There is no a in font nullfont!
@@ -1762,6 +1769,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no u in font nullfont!
+Missing character: There is no x in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
@@ -1769,6 +1777,10 @@ Missing character: There is no v in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no s in font nullfont!
 Missing character: There is no U in font nullfont!
 Missing character: There is no b in font nullfont!
 Missing character: There is no u in font nullfont!
@@ -1795,10 +1807,8 @@ Missing character: There is no b in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no c in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no d in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no D in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no e in font nullfont!
@@ -2039,19 +2049,19 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 69--71
+Overfull \hbox (20.0pt too wide) in paragraph at lines 66--68
 []
  []
 
 
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:74: LaTeX Error: Environment figure undefined.
+on_flymake.tex:71: LaTeX Error: Environment figure undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.74 \begin{figure}
+l.71 \begin{figure}
                    [h]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2061,9 +2071,9 @@ Missing character: There is no [ in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no ] in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:76: Undefined control sequence.
-l.76   \includegraphics
-                       [scale=0.95]
+on_flymake.tex:73: Undefined control sequence.
+l.73   \includegraphics
+                       [width=\textwidth]
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2071,16 +2081,35 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 Missing character: There is no [ in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no e in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
 Missing character: There is no = in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no . in font nullfont!
-Missing character: There is no 9 in font nullfont!
-Missing character: There is no 5 in font nullfont!
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
+on_flymake.tex:73: Missing number, treated as zero.
+<to be read again> 
+                   ]
+l.73   \includegraphics[width=\textwidth]
+                                         
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
+on_flymake.tex:73: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   ]
+l.73   \includegraphics[width=\textwidth]
+                                         
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
 Missing character: There is no ] in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no e in font nullfont!
@@ -2125,18 +2154,18 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no . in font nullfont!
+Missing character: There is no e in font nullfont!
 Missing character: There is no p in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no f in font nullfont!
+Missing character: There is no s in font nullfont!
 
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:78: LaTeX Error: \caption outside float.
+on_flymake.tex:75: LaTeX Error: \caption outside float.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.78   \caption
+l.75   \caption
                {Parts de march√© des distributions Linux}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2178,26 +2207,26 @@ Missing character: There is no u in font nullfont!
 Missing character: There is no x in font nullfont!
 
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:79: LaTeX Error: \begin{document} ended by \end{figure}.
+on_flymake.tex:76: LaTeX Error: \begin{document} ended by \end{figure}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.79 \end{figure}
+l.76 \end{figure}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 74--80
+Overfull \hbox (20.0pt too wide) in paragraph at lines 71--77
 []
  []
 
 
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:81: LaTeX Error: The font size command \normalsize is not define
+on_flymake.tex:78: LaTeX Error: The font size command \normalsize is not define
 d:
                there is probably something wrong with the class file.
 
@@ -2205,7 +2234,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 \newpage
+l.78 \newpage
              
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2213,10 +2242,10 @@ or  <return>  to continue without it.
 
 [1
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:81: Undefined control sequence.
+on_flymake.tex:78: Undefined control sequence.
 <write> \newlabel{sec:choix}{{}{\thepage 
                                          }}
-l.81 \newpage
+l.78 \newpage
              
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2226,10 +2255,10 @@ and I'll forget about whatever was undefined.
 
 \newlabel{sec:choix}{{}{}}
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:81: Undefined control sequence.
+on_flymake.tex:78: Undefined control sequence.
 <write> ...label{subsec:distribution}{{}{\thepage 
                                                   }}
-l.81 \newpage
+l.78 \newpage
              
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2240,10 +2269,10 @@ and I'll forget about whatever was undefined.
 \newlabel{subsec:distribution}{{}{}}
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:81: Undefined control sequence.
+on_flymake.tex:78: Undefined control sequence.
 <write> ...el{fig:diff-debian-ubuntu}{{}{\thepage 
                                                   }}
-l.81 \newpage
+l.78 \newpage
              
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2254,8 +2283,8 @@ and I'll forget about whatever was undefined.
 \newlabel{fig:diff-debian-ubuntu}{{}{}}
 ]
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:84: Undefined control sequence.
-l.84 \subsection
+on_flymake.tex:81: Undefined control sequence.
+l.81 \subsection
                 {Langue}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2270,7 +2299,7 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no e in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 84--86
+Overfull \hbox (20.0pt too wide) in paragraph at lines 81--83
 []
  []
 
@@ -2543,13 +2572,13 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 87--91
+Overfull \hbox (20.0pt too wide) in paragraph at lines 84--88
 []
  []
 
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:93: Undefined control sequence.
-l.93 \subsection
+on_flymake.tex:90: Undefined control sequence.
+l.90 \subsection
                 {Noyau}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2563,7 +2592,7 @@ Missing character: There is no y in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no u in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 93--95
+Overfull \hbox (20.0pt too wide) in paragraph at lines 90--92
 []
  []
 
@@ -2771,14 +2800,14 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 96--100
+Overfull \hbox (20.0pt too wide) in paragraph at lines 93--97
 []
  []
 
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:102: Undefined control sequence.
-l.102 \subsection
-                 {Partitionnement}
+on_flymake.tex:99: Undefined control sequence.
+l.99 \subsection
+                {Partitionnement}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2801,7 +2830,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no t in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 102--104
+Overfull \hbox (20.0pt too wide) in paragraph at lines 99--101
 []
  []
 
@@ -2894,6 +2923,11 @@ Missing character: There is no I in font nullfont!
 Missing character: There is no D in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no . in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 102--104
+[]
+ []
+
 Missing character: There is no N in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no u in font nullfont!
@@ -2996,40 +3030,40 @@ Missing character: There is no √ in font nullfont!
 Missing character: There is no © in font nullfont!
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 105--109
+Overfull \hbox (20.0pt too wide) in paragraph at lines 105--107
 []
  []
 
 
-Overfull \hbox (22.23315pt too wide) in paragraph at lines 105--109
+Overfull \hbox (22.23315pt too wide) in paragraph at lines 105--107
 \OT1/cmr/m/it/10 /boot
  []
 
 
-Overfull \hbox (17.911pt too wide) in paragraph at lines 105--109
+Overfull \hbox (17.911pt too wide) in paragraph at lines 105--107
 \OT1/cmr/m/it/10 Vol-
  []
 
 
-Overfull \hbox (27.03038pt too wide) in paragraph at lines 105--109
+Overfull \hbox (27.03038pt too wide) in paragraph at lines 105--107
 \OT1/cmr/m/it/10 Group
  []
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 110--110
+Overfull \hbox (20.0pt too wide) in paragraph at lines 108--108
 [] 
  []
 
 
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:111: LaTeX Error: Environment table undefined.
+on_flymake.tex:109: LaTeX Error: Environment table undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.111     \begin{table}
-                       [h]
+l.109   \begin{table}
+                     [h]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -3039,34 +3073,34 @@ Missing character: There is no h in font nullfont!
 Missing character: There is no ] in font nullfont!
 
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:112: LaTeX Error: Environment tabularx undefined.
+on_flymake.tex:110: LaTeX Error: Environment tabularx undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.112         \begin{tabularx}
-                              {\linewidth}{|C|C|C|C|}
+l.110     \begin{tabularx}
+                          {\linewidth}{|C|C|C|C|}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:112: Missing number, treated as zero.
+on_flymake.tex:110: Missing number, treated as zero.
 <to be read again> 
                    }
-l.112         \begin{tabularx}{\linewidth}
-                                          {|C|C|C|C|}
+l.110     \begin{tabularx}{\linewidth}
+                                      {|C|C|C|C|}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:112: Illegal unit of measure (pt inserted).
+on_flymake.tex:110: Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.112         \begin{tabularx}{\linewidth}
-                                          {|C|C|C|C|}
+l.110     \begin{tabularx}{\linewidth}
+                                      {|C|C|C|C|}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
@@ -3084,11 +3118,11 @@ Missing character: There is no | in font nullfont!
 Missing character: There is no C in font nullfont!
 Missing character: There is no | in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:113: Misplaced \noalign.
+on_flymake.tex:111: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.113             \hline
-                        
+l.111       \hline
+                  
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
@@ -3098,9 +3132,9 @@ Missing character: There is no b in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no l in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:114: Misplaced alignment tab character &.
-l.114             Label &
-                          Type & Taille (Mo) & Format \\
+on_flymake.tex:112: Misplaced alignment tab character &.
+l.112       Label &
+                    Type & Taille (Mo) & Format \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3113,9 +3147,9 @@ Missing character: There is no y in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no e in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:114: Misplaced alignment tab character &.
-l.114             Label & Type &
-                                 Taille (Mo) & Format \\
+on_flymake.tex:112: Misplaced alignment tab character &.
+l.112       Label & Type &
+                           Taille (Mo) & Format \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3134,9 +3168,9 @@ Missing character: There is no M in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no ) in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:114: Misplaced alignment tab character &.
-l.114             Label & Type & Taille (Mo) &
-                                               Format \\
+on_flymake.tex:112: Misplaced alignment tab character &.
+l.112       Label & Type & Taille (Mo) &
+                                         Format \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3151,20 +3185,20 @@ Missing character: There is no m in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no t in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:115: Misplaced \noalign.
+on_flymake.tex:113: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.115             \hline
-                        
+l.113       \hline
+                  
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:116: Misplaced \noalign.
+on_flymake.tex:114: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.116             \hline
-                        
+l.114       \hline
+                  
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
@@ -3174,9 +3208,9 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no t in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:117: Misplaced alignment tab character &.
-l.117             /boot &
-                          primary & 512 & ext4 \\
+on_flymake.tex:115: Misplaced alignment tab character &.
+l.115       /boot &
+                    primary & 512 & ext4 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3192,9 +3226,9 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no y in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:117: Misplaced alignment tab character &.
-l.117             /boot & primary &
-                                    512 & ext4 \\
+on_flymake.tex:115: Misplaced alignment tab character &.
+l.115       /boot & primary &
+                              512 & ext4 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3206,9 +3240,9 @@ Missing character: There is no 5 in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no 2 in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:117: Misplaced alignment tab character &.
-l.117             /boot & primary & 512 &
-                                          ext4 \\
+on_flymake.tex:115: Misplaced alignment tab character &.
+l.115       /boot & primary & 512 &
+                                    ext4 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3221,11 +3255,11 @@ Missing character: There is no x in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no 4 in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:118: Misplaced \noalign.
+on_flymake.tex:116: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.118             \hline
-                        
+l.116       \hline
+                  
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
@@ -3238,9 +3272,9 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no p in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:119: Misplaced alignment tab character &.
-l.119             VolGroup &
-                             logical & 20958 & lvm \\
+on_flymake.tex:117: Misplaced alignment tab character &.
+l.117       VolGroup &
+                       logical & 20958 & lvm \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3256,9 +3290,9 @@ Missing character: There is no c in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no l in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:119: Misplaced alignment tab character &.
-l.119             VolGroup & logical &
-                                       20958 & lvm \\
+on_flymake.tex:117: Misplaced alignment tab character &.
+l.117       VolGroup & logical &
+                                 20958 & lvm \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3272,9 +3306,9 @@ Missing character: There is no 9 in font nullfont!
 Missing character: There is no 5 in font nullfont!
 Missing character: There is no 8 in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:119: Misplaced alignment tab character &.
-l.119             VolGroup & logical & 20958 &
-                                               lvm \\
+on_flymake.tex:117: Misplaced alignment tab character &.
+l.117       VolGroup & logical & 20958 &
+                                         lvm \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3286,59 +3320,59 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no v in font nullfont!
 Missing character: There is no m in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:120: Misplaced \noalign.
+on_flymake.tex:118: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.120             \hline
-                        
+l.118       \hline
+                  
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:121: LaTeX Error: \begin{center} on input line 110 ended by \end
+on_flymake.tex:119: LaTeX Error: \begin{center} on input line 108 ended by \end
 {tabularx}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.121         \end{tabularx}
-                            
+l.119     \end{tabularx}
+                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:125: LaTeX Error: Environment tabularx undefined.
+on_flymake.tex:123: LaTeX Error: Environment tabularx undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.125         \begin{tabularx}
-                              {\linewidth}{|C|C|C|C|}
+l.123     \begin{tabularx}
+                          {\linewidth}{|C|C|C|C|}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:125: Missing number, treated as zero.
+on_flymake.tex:123: Missing number, treated as zero.
 <to be read again> 
                    }
-l.125         \begin{tabularx}{\linewidth}
-                                          {|C|C|C|C|}
+l.123     \begin{tabularx}{\linewidth}
+                                      {|C|C|C|C|}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:125: Illegal unit of measure (pt inserted).
+on_flymake.tex:123: Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.125         \begin{tabularx}{\linewidth}
-                                          {|C|C|C|C|}
+l.123     \begin{tabularx}{\linewidth}
+                                      {|C|C|C|C|}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
@@ -3356,11 +3390,11 @@ Missing character: There is no | in font nullfont!
 Missing character: There is no C in font nullfont!
 Missing character: There is no | in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:126: Misplaced \noalign.
+on_flymake.tex:124: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.126             \hline
-                        
+l.124       \hline
+                  
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
@@ -3376,9 +3410,9 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no v in font nullfont!
 Missing character: There is no ) in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:127: Misplaced alignment tab character &.
-l.127             LVsrv (/srv) &
-                                 lvm & 6144 & ext4 \\
+on_flymake.tex:125: Misplaced alignment tab character &.
+l.125       LVsrv (/srv) &
+                           lvm & 6144 & ext4 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3390,9 +3424,9 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no v in font nullfont!
 Missing character: There is no m in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:127: Misplaced alignment tab character &.
-l.127             LVsrv (/srv) & lvm &
-                                       6144 & ext4 \\
+on_flymake.tex:125: Misplaced alignment tab character &.
+l.125       LVsrv (/srv) & lvm &
+                                 6144 & ext4 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3405,9 +3439,9 @@ Missing character: There is no 1 in font nullfont!
 Missing character: There is no 4 in font nullfont!
 Missing character: There is no 4 in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:127: Misplaced alignment tab character &.
-l.127             LVsrv (/srv) & lvm & 6144 &
-                                              ext4 \\
+on_flymake.tex:125: Misplaced alignment tab character &.
+l.125       LVsrv (/srv) & lvm & 6144 &
+                                        ext4 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3420,11 +3454,11 @@ Missing character: There is no x in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no 4 in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:128: Misplaced \noalign.
+on_flymake.tex:126: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.128             \hline
-                        
+l.126       \hline
+                  
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
@@ -3442,9 +3476,9 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no ) in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:129: Misplaced alignment tab character &.
-l.129             LVswap (/swap) &
-                                   lvm & 4096 & swap \\
+on_flymake.tex:127: Misplaced alignment tab character &.
+l.127       LVswap (/swap) &
+                             lvm & 4096 & swap \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3456,9 +3490,9 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no v in font nullfont!
 Missing character: There is no m in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:129: Misplaced alignment tab character &.
-l.129             LVswap (/swap) & lvm &
-                                         4096 & swap \\
+on_flymake.tex:127: Misplaced alignment tab character &.
+l.127       LVswap (/swap) & lvm &
+                                   4096 & swap \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3471,9 +3505,9 @@ Missing character: There is no 0 in font nullfont!
 Missing character: There is no 9 in font nullfont!
 Missing character: There is no 6 in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:129: Misplaced alignment tab character &.
-l.129             LVswap (/swap) & lvm & 4096 &
-                                                swap \\
+on_flymake.tex:127: Misplaced alignment tab character &.
+l.127       LVswap (/swap) & lvm & 4096 &
+                                          swap \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3486,11 +3520,11 @@ Missing character: There is no w in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no p in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:130: Misplaced \noalign.
+on_flymake.tex:128: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.130             \hline
-                        
+l.128       \hline
+                  
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
@@ -3508,9 +3542,75 @@ Missing character: There is no m in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no ) in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
+on_flymake.tex:129: Misplaced alignment tab character &.
+l.129       LVhome (/home) &
+                             lvm & 2048 & ext4 \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+Missing character: There is no l in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no m in font nullfont!
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
+on_flymake.tex:129: Misplaced alignment tab character &.
+l.129       LVhome (/home) & lvm &
+                                   2048 & ext4 \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no 8 in font nullfont!
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
+on_flymake.tex:129: Misplaced alignment tab character &.
+l.129       LVhome (/home) & lvm & 2048 &
+                                          ext4 \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no 4 in font nullfont!
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
+on_flymake.tex:130: Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
+l.130       \hline
+                  
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+Missing character: There is no L in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ) in font nullfont!
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
 on_flymake.tex:131: Misplaced alignment tab character &.
-l.131             LVhome (/home) &
-                                   lvm & 2048 & ext4 \\
+l.131       LVroot (/root) &
+                             lvm & 2048 & ext4 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3523,8 +3623,8 @@ Missing character: There is no v in font nullfont!
 Missing character: There is no m in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
 on_flymake.tex:131: Misplaced alignment tab character &.
-l.131             LVhome (/home) & lvm &
-                                         2048 & ext4 \\
+l.131       LVroot (/root) & lvm &
+                                   2048 & ext4 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3538,8 +3638,8 @@ Missing character: There is no 4 in font nullfont!
 Missing character: There is no 8 in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
 on_flymake.tex:131: Misplaced alignment tab character &.
-l.131             LVhome (/home) & lvm & 2048 &
-                                                ext4 \\
+l.131       LVroot (/root) & lvm & 2048 &
+                                          ext4 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3555,28 +3655,26 @@ Missing character: There is no 4 in font nullfont!
 on_flymake.tex:132: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.132             \hline
-                        
+l.132       \hline
+                  
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 Missing character: There is no L in font nullfont!
 Missing character: There is no V in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no s in font nullfont!
 Missing character: There is no r in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no t in font nullfont!
 Missing character: There is no ( in font nullfont!
 Missing character: There is no / in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no s in font nullfont!
 Missing character: There is no r in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no t in font nullfont!
 Missing character: There is no ) in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
 on_flymake.tex:133: Misplaced alignment tab character &.
-l.133             LVroot (/root) &
-                                   lvm & 2048 & ext4 \\
+l.133       LVusr (/usr) &
+                           lvm & 2048 & ext4 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3589,8 +3687,8 @@ Missing character: There is no v in font nullfont!
 Missing character: There is no m in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
 on_flymake.tex:133: Misplaced alignment tab character &.
-l.133             LVroot (/root) & lvm &
-                                         2048 & ext4 \\
+l.133       LVusr (/usr) & lvm &
+                                 2048 & ext4 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3604,8 +3702,8 @@ Missing character: There is no 4 in font nullfont!
 Missing character: There is no 8 in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
 on_flymake.tex:133: Misplaced alignment tab character &.
-l.133             LVroot (/root) & lvm & 2048 &
-                                                ext4 \\
+l.133       LVusr (/usr) & lvm & 2048 &
+                                        ext4 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3621,26 +3719,26 @@ Missing character: There is no 4 in font nullfont!
 on_flymake.tex:134: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.134             \hline
-                        
+l.134       \hline
+                  
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 Missing character: There is no L in font nullfont!
 Missing character: There is no V in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
 Missing character: There is no ( in font nullfont!
 Missing character: There is no / in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
 Missing character: There is no ) in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
 on_flymake.tex:135: Misplaced alignment tab character &.
-l.135             LVusr (/usr) &
-                                 lvm & 2048 & ext4 \\
+l.135       LVopt (/opt) &
+                           lvm & 2048 & ext4 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3653,8 +3751,8 @@ Missing character: There is no v in font nullfont!
 Missing character: There is no m in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
 on_flymake.tex:135: Misplaced alignment tab character &.
-l.135             LVusr (/usr) & lvm &
-                                       2048 & ext4 \\
+l.135       LVopt (/opt) & lvm &
+                                 2048 & ext4 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3668,8 +3766,8 @@ Missing character: There is no 4 in font nullfont!
 Missing character: There is no 8 in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
 on_flymake.tex:135: Misplaced alignment tab character &.
-l.135             LVusr (/usr) & lvm & 2048 &
-                                              ext4 \\
+l.135       LVopt (/opt) & lvm & 2048 &
+                                        ext4 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3685,26 +3783,26 @@ Missing character: There is no 4 in font nullfont!
 on_flymake.tex:136: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.136             \hline
-                        
+l.136       \hline
+                  
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 Missing character: There is no L in font nullfont!
 Missing character: There is no V in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no t in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
 Missing character: There is no ( in font nullfont!
 Missing character: There is no / in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no t in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
 Missing character: There is no ) in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
 on_flymake.tex:137: Misplaced alignment tab character &.
-l.137             LVopt (/opt) &
-                                 lvm & 2048 & ext4 \\
+l.137       LVvar (/var) &
+                           lvm & 1024 & ext4 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3717,8 +3815,8 @@ Missing character: There is no v in font nullfont!
 Missing character: There is no m in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
 on_flymake.tex:137: Misplaced alignment tab character &.
-l.137             LVopt (/opt) & lvm &
-                                       2048 & ext4 \\
+l.137       LVvar (/var) & lvm &
+                                 1024 & ext4 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3726,14 +3824,14 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-Missing character: There is no 2 in font nullfont!
+Missing character: There is no 1 in font nullfont!
 Missing character: There is no 0 in font nullfont!
+Missing character: There is no 2 in font nullfont!
 Missing character: There is no 4 in font nullfont!
-Missing character: There is no 8 in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
 on_flymake.tex:137: Misplaced alignment tab character &.
-l.137             LVopt (/opt) & lvm & 2048 &
-                                              ext4 \\
+l.137       LVvar (/var) & lvm & 1024 &
+                                        ext4 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3749,26 +3847,26 @@ Missing character: There is no 4 in font nullfont!
 on_flymake.tex:138: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.138             \hline
-                        
+l.138       \hline
+                  
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 Missing character: There is no L in font nullfont!
 Missing character: There is no V in font nullfont!
-Missing character: There is no v in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
 Missing character: There is no ( in font nullfont!
 Missing character: There is no / in font nullfont!
-Missing character: There is no v in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
 Missing character: There is no ) in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
 on_flymake.tex:139: Misplaced alignment tab character &.
-l.139             LVvar (/var) &
-                                 lvm & 1024 & ext4 \\
+l.139       LVtmp (/tmp) &
+                           lvm & 1024 & ext4 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3781,8 +3879,8 @@ Missing character: There is no v in font nullfont!
 Missing character: There is no m in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
 on_flymake.tex:139: Misplaced alignment tab character &.
-l.139             LVvar (/var) & lvm &
-                                       1024 & ext4 \\
+l.139       LVtmp (/tmp) & lvm &
+                                 1024 & ext4 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3796,8 +3894,8 @@ Missing character: There is no 2 in font nullfont!
 Missing character: There is no 4 in font nullfont!
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
 on_flymake.tex:139: Misplaced alignment tab character &.
-l.139             LVvar (/var) & lvm & 1024 &
-                                              ext4 \\
+l.139       LVtmp (/tmp) & lvm & 1024 &
+                                        ext4 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3813,100 +3911,36 @@ Missing character: There is no 4 in font nullfont!
 on_flymake.tex:140: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.140             \hline
-                        
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-Missing character: There is no L in font nullfont!
-Missing character: There is no V in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no ) in font nullfont!
-/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:141: Misplaced alignment tab character &.
-l.141             LVtmp (/tmp) &
-                                 lvm & 1024 & ext4 \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-Missing character: There is no l in font nullfont!
-Missing character: There is no v in font nullfont!
-Missing character: There is no m in font nullfont!
-/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:141: Misplaced alignment tab character &.
-l.141             LVtmp (/tmp) & lvm &
-                                       1024 & ext4 \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-Missing character: There is no 1 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no 2 in font nullfont!
-Missing character: There is no 4 in font nullfont!
-/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:141: Misplaced alignment tab character &.
-l.141             LVtmp (/tmp) & lvm & 1024 &
-                                              ext4 \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-Missing character: There is no e in font nullfont!
-Missing character: There is no x in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no 4 in font nullfont!
-/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:142: Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.142             \hline
-                        
+l.140       \hline
+                  
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:143: LaTeX Error: \begin{center} on input line 110 ended by \end
+on_flymake.tex:141: LaTeX Error: \begin{center} on input line 108 ended by \end
 {tabularx}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.143         \end{tabularx}
-                            
+l.141     \end{tabularx}
+                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:144: LaTeX Error: \caption outside float.
+on_flymake.tex:142: LaTeX Error: \caption outside float.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.144         \caption
-                      {Tableau du partitionnement \textit{(avec LVM)}}
+l.142     \caption
+                  {Tableau du partitionnement \textit{(avec LVM)}}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -3935,48 +3969,123 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no t in font nullfont!
 
-Overfull \hbox (22.48871pt too wide) in paragraph at lines 144--146
- \OT1/cmr/m/it/10 (avec 
- []
-
-
-Overfull \hbox (25.73872pt too wide) in paragraph at lines 144--146
- \OT1/cmr/m/it/10 LVM) 
- []
-
-
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:148: LaTeX Error: \begin{center} on input line 110 ended by \end
+on_flymake.tex:144: LaTeX Error: \begin{center} on input line 108 ended by \end
 {table}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.148     \end{table}
-                     
+l.144   \end{table}
+                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
+
+Overfull \hbox (22.48871pt too wide) in paragraph at lines 142--145
+ \OT1/cmr/m/it/10 (avec 
+ []
+
+
+Overfull \hbox (25.73872pt too wide) in paragraph at lines 142--145
+ \OT1/cmr/m/it/10 LVM) 
+ []
+
+
 /home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
-on_flymake.tex:152: Undefined control sequence.
-l.152 \subsection
-                 {Quotas}
+on_flymake.tex:147: LaTeX Error: The font size command \normalsize is not defin
+ed:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.147 \newpage
+              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[2
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
+on_flymake.tex:147: Undefined control sequence.
+<write> \newlabel{subsec:langue}{{}{\thepage 
+                                             }}
+l.147 \newpage
+              
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no Q in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no t in font nullfont!
+\newlabel{subsec:langue}{{}{}}
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
+on_flymake.tex:147: Undefined control sequence.
+<write> \newlabel{subsec:noyau}{{}{\thepage 
+                                            }}
+l.147 \newpage
+              
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\newlabel{subsec:noyau}{{}{}}
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
+on_flymake.tex:147: Undefined control sequence.
+<write> ...el{subsec:partitionnement}{{}{\thepage 
+                                                  }}
+l.147 \newpage
+              
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\newlabel{subsec:partitionnement}{{}{}}
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
+on_flymake.tex:147: Undefined control sequence.
+<write> ...b:tableau-partitionnement}{{}{\thepage 
+                                                  }}
+l.147 \newpage
+              
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\newlabel{tab:tableau-partitionnement}{{}{}}
+]
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
+on_flymake.tex:149: Undefined control sequence.
+l.149 \subsection
+                 {Sauvegardes}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no S in font nullfont!
 Missing character: There is no a in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 152--154
+Overfull \hbox (20.0pt too wide) in paragraph at lines 149--151
 []
  []
 
@@ -3986,231 +4095,1445 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no e in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no d in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no x in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
 Missing character: There is no g in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no √ in font nullfont!
+Missing character: There is no © in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no √ in font nullfont!
+Missing character: There is no © in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
+on_flymake.tex:154: Undefined control sequence.
+\@footnotetext ...tins {\reset@font \footnotesize 
+                                                  \interlinepenalty \interfo...
+l.154 ...t√©es depuis la pr√©c√©dente sauvegarde.}
+                                                   et diff√©rentielle
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
+on_flymake.tex:154: Undefined control sequence.
+\@footnotetext ...}\color@begingroup \@makefntext 
+                                                  {\rule \z@ \footnotesep \i...
+l.154 ...t√©es depuis la pr√©c√©dente sauvegarde.}
+                                                   et diff√©rentielle
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no √ in font cmr10!
+Missing character: There is no © in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no © in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no © in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no © in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no © in font cmr10!
+
+Overfull \hbox (49.47234pt too wide) in paragraph at lines 154--154
+[][]\OT1/cmr/m/n/10 Sauvegarde
+ []
+
+
+Overfull \hbox (13.05557pt too wide) in paragraph at lines 154--154
+\OT1/cmr/m/n/10 ex-
+ []
+
+
+Overfull \hbox (16.11113pt too wide) in paragraph at lines 154--154
+\OT1/cmr/m/n/10 clu-
+ []
+
+
+Overfull \hbox (19.50002pt too wide) in paragraph at lines 154--154
+\OT1/cmr/m/n/10 sive-
+ []
+
+
+Overfull \hbox (21.94449pt too wide) in paragraph at lines 154--154
+\OT1/cmr/m/n/10 ment
+ []
+
+
+Overfull \hbox (11.16667pt too wide) in paragraph at lines 154--154
+\OT1/cmr/m/n/10 les
+ []
+
+
+Overfull \hbox (30.05562pt too wide) in paragraph at lines 154--154
+\OT1/cmr/m/n/10 donnes
+ []
+
+
+Overfull \hbox (22.50006pt too wide) in paragraph at lines 154--154
+\OT1/cmr/m/n/10 mod-
+ []
+
+
+Overfull \hbox (6.11111pt too wide) in paragraph at lines 154--154
+\OT1/cmr/m/n/10 i-
+ []
+
+
+Overfull \hbox (13.94446pt too wide) in paragraph at lines 154--154
+\OT1/cmr/m/n/10 fies
+ []
+
+
+Overfull \hbox (10.55559pt too wide) in paragraph at lines 154--154
+\OT1/cmr/m/n/10 ou
+ []
+
+
+Overfull \hbox (31.4445pt too wide) in paragraph at lines 154--154
+\OT1/cmr/m/n/10 ajoutes
+ []
+
+
+Overfull \hbox (27.83339pt too wide) in paragraph at lines 154--154
+\OT1/cmr/m/n/10 depuis
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 154--154
+\OT1/cmr/m/n/10 la
+ []
+
+
+Overfull \hbox (17.25002pt too wide) in paragraph at lines 154--154
+\OT1/cmr/m/n/10 prc-
+ []
+
+
+Overfull \hbox (23.61115pt too wide) in paragraph at lines 154--154
+\OT1/cmr/m/n/10 dente
+ []
+
+
+Overfull \hbox (27.27782pt too wide) in paragraph at lines 154--154
+\OT1/cmr/m/n/10 sauve-
+ []
+
+
+Overfull \hbox (8.33334pt too wide) in paragraph at lines 154--154
+\OT1/cmr/m/n/10 g-
+ []
+
+
+Overfull \hbox (21.69449pt too wide) in paragraph at lines 154--154
+\OT1/cmr/m/n/10 arde.| 
+ []
+
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no f in font nullfont!
 Missing character: There is no √ in font nullfont!
 Missing character: There is no © in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no ' in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
-Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
+on_flymake.tex:156: Undefined control sequence.
+\@footnotetext ...tins {\reset@font \footnotesize 
+                                                  \interlinepenalty \interfo...
+l.156 derni√®re sauvegarde compl√®te.}
+                                      .
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
+on_flymake.tex:156: Undefined control sequence.
+\@footnotetext ...}\color@begingroup \@makefntext 
+                                                  {\rule \z@ \footnotesep \i...
+l.156 derni√®re sauvegarde compl√®te.}
+                                      .
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no √ in font cmr10!
+Missing character: There is no © in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no © in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no © in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no © in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no © in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+
+Overfull \hbox (49.47234pt too wide) in paragraph at lines 156--156
+[][]\OT1/cmr/m/n/10 Sauvegarde
+ []
+
+
+Overfull \hbox (11.16667pt too wide) in paragraph at lines 156--156
+\OT1/cmr/m/n/10 les
+ []
+
+
+Overfull \hbox (30.05562pt too wide) in paragraph at lines 156--156
+\OT1/cmr/m/n/10 donnes
+ []
+
+
+Overfull \hbox (22.50006pt too wide) in paragraph at lines 156--156
+\OT1/cmr/m/n/10 mod-
+ []
+
+
+Overfull \hbox (6.11111pt too wide) in paragraph at lines 156--156
+\OT1/cmr/m/n/10 i-
+ []
+
+
+Overfull \hbox (13.94446pt too wide) in paragraph at lines 156--156
+\OT1/cmr/m/n/10 fies
+ []
+
+
+Overfull \hbox (10.55559pt too wide) in paragraph at lines 156--156
+\OT1/cmr/m/n/10 ou
+ []
+
+
+Overfull \hbox (31.4445pt too wide) in paragraph at lines 156--156
+\OT1/cmr/m/n/10 ajoutes
+ []
+
+
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 156--156
+\OT1/cmr/m/n/10 en
+ []
+
+
+Overfull \hbox (29.77782pt too wide) in paragraph at lines 156--156
+\OT1/cmr/m/n/10 rfrence
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 156--156
+\OT1/cmr/m/n/10 la
+ []
+
+
+Overfull \hbox (30.61116pt too wide) in paragraph at lines 156--156
+\OT1/cmr/m/n/10 dernire
+ []
+
+
+Overfull \hbox (27.27782pt too wide) in paragraph at lines 156--156
+\OT1/cmr/m/n/10 sauve-
+ []
+
+
+Overfull \hbox (8.33334pt too wide) in paragraph at lines 156--156
+\OT1/cmr/m/n/10 g-
+ []
+
+
+Overfull \hbox (18.9167pt too wide) in paragraph at lines 156--156
+\OT1/cmr/m/n/10 arde
+ []
+
+
+Overfull \hbox (21.11115pt too wide) in paragraph at lines 156--156
+\OT1/cmr/m/n/10 com-
+ []
+
+
+Overfull \hbox (19.44449pt too wide) in paragraph at lines 156--156
+\OT1/cmr/m/n/10 plte.| 
+ []
+
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 152--157
+[]
+ []
+
+
+Overfull \hbox (4.48613pt too wide) in paragraph at lines 152--157
+[]
+ []
+
+
+Overfull \hbox (4.48613pt too wide) in paragraph at lines 152--157
+[] 
+ []
+
+Missing character: There is no A in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no e in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no q in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no u in font nullfont!
 Missing character: There is no t in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no u in font nullfont!
 Missing character: There is no r in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no n in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no u in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no a in font nullfont!
 Missing character: There is no v in font nullfont!
-Missing character: There is no o in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
 Missing character: There is no n in font nullfont!
-Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no s in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no a in font nullfont!
+Missing character: There is no , in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
-Missing character: There is no q in font nullfont!
+Missing character: There is no a in font nullfont!
 Missing character: There is no u in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
 Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no √ in font nullfont!
+Missing character: There is no © in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no √ in font nullfont!
+Missing character: There is no © in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no √ in font nullfont!
+Missing character: There is no © in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no : in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 158--159
+[]
+ []
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 160--160
+[] 
+ []
+
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no √ in font nullfont!
+Missing character: There is no © in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no a in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no s in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
 Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no √ in font nullfont!
+Missing character: There is no © in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no p in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no r in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no p in font nullfont!
 Missing character: There is no o in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
 Missing character: There is no t in font nullfont!
-Missing character: There is no . in font nullfont!
 Missing character: There is no √ in font nullfont!
-Missing character: There is no Ä in font nullfont!
+Missing character: There is no † in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no √ in font nullfont!
 Missing character: There is no © in font nullfont!
-Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no i in font nullfont!
-Missing character: There is no o in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no √ in font nullfont!
+Missing character: There is no © in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no √ in font nullfont!
+Missing character: There is no © in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no √ in font nullfont!
+Missing character: There is no © in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no √ in font nullfont!
+Missing character: There is no © in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no q in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no √ in font nullfont!
+Missing character: There is no © in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no √ in font nullfont!
+Missing character: There is no © in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no √ in font nullfont!
+Missing character: There is no ® in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no , in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no q in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no e in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no e in font nullfont!
+Missing character: There is no j in font nullfont!
+Missing character: There is no o in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no r in font nullfont!
+Missing character: There is no √ in font nullfont!
+Missing character: There is no † in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no n in font nullfont!
-Missing character: There is no q in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no d in font nullfont!
 Missing character: There is no e in font nullfont!
-Missing character: There is no 5 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no M in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no i in font nullfont!
 Missing character: There is no s in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
 Missing character: There is no a in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no b in font nullfont!
 Missing character: There is no u in font nullfont!
-Missing character: There is no √ in font nullfont!
-Missing character: There is no © in font nullfont!
-Missing character: There is no . in font nullfont!
-
-Overfull \hbox (20.0pt too wide) in paragraph at lines 155--158
-[]
- []
-
-
-Overfull \hbox (28.11095pt too wide) in paragraph at lines 155--158
-\OT1/cmr/m/it/10 /home
- []
-
-
-Overfull \hbox (27.72758pt too wide) in paragraph at lines 155--158
-\OT1/cmr/m/it/10 /share 
- []
-
-Missing character: There is no I in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no √ in font nullfont!
-Missing character: There is no © in font nullfont!
 Missing character: There is no v in font nullfont!
 Missing character: There is no e in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no o in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no a in font nullfont!
 Missing character: There is no r in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no √ in font nullfont!
+Missing character: There is no © in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no √ in font nullfont!
+Missing character: There is no © in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no √ in font nullfont!
+Missing character: There is no † in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
+on_flymake.tex:171: Undefined control sequence.
+\@footnotetext ...tins {\reset@font \footnotesize 
+                                                  \interlinepenalty \interfo...
+l.171 un moment pr√©cis.}
+                          dans le but d'enregistrer les donn√©es modifi√©es ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
+on_flymake.tex:171: Undefined control sequence.
+\@footnotetext ...}\color@begingroup \@makefntext 
+                                                  {\rule \z@ \footnotesep \i...
+l.171 un moment pr√©cis.}
+                          dans le but d'enregistrer les donn√©es modifi√©es ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no © in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no © in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no © in font cmr10!
+
+Overfull \hbox (55.15288pt too wide) in paragraph at lines 171--171
+[][]\OT1/cmr/m/n/10 Gestionnaire
+ []
+
+
+Overfull \hbox (13.94446pt too wide) in paragraph at lines 171--171
+\OT1/cmr/m/n/10 des
+ []
+
+
+Overfull \hbox (22.00002pt too wide) in paragraph at lines 171--171
+\OT1/cmr/m/n/10 tches
+ []
+
+
+Overfull \hbox (18.44447pt too wide) in paragraph at lines 171--171
+\OT1/cmr/m/n/10 sous
+ []
+
+
+Overfull \hbox (25.13896pt too wide) in paragraph at lines 171--171
+\OT1/cmr/m/n/10 Linux
+ []
+
+
+Overfull \hbox (13.33334pt too wide) in paragraph at lines 171--171
+\OT1/cmr/m/n/10 de-
+ []
+
+
+Overfull \hbox (18.88895pt too wide) in paragraph at lines 171--171
+\OT1/cmr/m/n/10 vant
+ []
+
+
+Overfull \hbox (12.25002pt too wide) in paragraph at lines 171--171
+\OT1/cmr/m/n/10 tre
+ []
+
+
+Overfull \hbox (13.05557pt too wide) in paragraph at lines 171--171
+\OT1/cmr/m/n/10 ex-
+ []
+
+
+Overfull \hbox (22.2778pt too wide) in paragraph at lines 171--171
+\OT1/cmr/m/n/10 cutes
+ []
+
+
+Overfull \hbox (11.11115pt too wide) in paragraph at lines 171--171
+\OT1/cmr/m/n/10 un
+ []
+
+
+Overfull \hbox (16.6667pt too wide) in paragraph at lines 171--171
+\OT1/cmr/m/n/10 mo-
+ []
+
+
+Overfull \hbox (21.94449pt too wide) in paragraph at lines 171--171
+\OT1/cmr/m/n/10 ment
+ []
+
+
+Overfull \hbox (23.4167pt too wide) in paragraph at lines 171--171
+\OT1/cmr/m/n/10 prcis.| 
+ []
+
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no √ in font nullfont!
+Missing character: There is no © in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no √ in font nullfont!
+Missing character: There is no © in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no √ in font nullfont!
+Missing character: There is no © in font nullfont!
+Missing character: There is no √ in font nullfont!
+Missing character: There is no © in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no j in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no √ in font nullfont!
+Missing character: There is no © in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 168--173
+[]
+ []
+
+
+Overfull \hbox (24.292pt too wide) in paragraph at lines 168--173
+\OT1/cmr/m/it/10 cron[]
+ []
+
+
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
+on_flymake.tex:174: LaTeX Error: Environment lstlisting undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.174 \begin{lstlisting}
+                        [language=bash]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no * in font nullfont!
+Missing character: There is no * in font nullfont!
+Missing character: There is no * in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no i in font nullfont!
+
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
+on_flymake.tex:176: LaTeX Error: \begin{document} ended by \end{lstlisting}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.176 \end{lstlisting}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 174--177
+[]
+ []
+
+Missing character: There is no Q in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no √ in font nullfont!
+Missing character: There is no † in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no √ in font nullfont!
+Missing character: There is no © in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no √ in font nullfont!
+Missing character: There is no ® in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
 Missing character: There is no q in font nullfont!
 Missing character: There is no u in font nullfont!
-Missing character: There is no ' in font nullfont!
-Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
 Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no √ in font nullfont!
+Missing character: There is no † in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 178--180
+[]
+ []
+
+
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
+on_flymake.tex:181: LaTeX Error: Environment lstlisting undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.181 \begin{lstlisting}
+                        [language=bash]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no * in font nullfont!
+Missing character: There is no * in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no d in font nullfont!
+
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/installati
+on_flymake.tex:183: LaTeX Error: \begin{document} ended by \end{lstlisting}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.183 \end{lstlisting}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 181--184
+[]
+ []
+
+Missing character: There is no R in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no q in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no √ in font nullfont!
+Missing character: There is no † in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no √ in font nullfont!
 Missing character: There is no © in font nullfont!
-Missing character: There is no p in font nullfont!
+Missing character: There is no f in font nullfont!
 Missing character: There is no a in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no s in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no q in font nullfont!
+Missing character: There is no u in font nullfont!
 Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no √ in font nullfont!
+Missing character: There is no © in font nullfont!
+Missing character: There is no t in font nullfont!
 Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no b in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no M in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no e in font nullfont!
 Missing character: There is no b in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no √ in font nullfont!
+Missing character: There is no ™ in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no √ in font nullfont!
+Missing character: There is no © in font nullfont!
+Missing character: There is no √ in font nullfont!
+Missing character: There is no † in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no √ in font nullfont!
+Missing character: There is no © in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no √ in font nullfont!
+Missing character: There is no © in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no √ in font nullfont!
+Missing character: There is no © in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no q in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no √ in font nullfont!
+Missing character: There is no ¥ in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no √ in font nullfont!
+Missing character: There is no © in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 159--160
-[]
+Overfull \hbox (20.0pt too wide) in paragraph at lines 185--189
+[]$[]$
+ []
+
+
+Overfull \hbox (22.1054pt too wide) in paragraph at lines 185--189
+\OT1/cmr/m/it/10 fcron
+ []
+
+
+Overfull \hbox (19.03874pt too wide) in paragraph at lines 185--189
+\OT1/cmr/m/it/10 cron
  []
 
 )
@@ -4221,11 +5544,11 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 159--160
 
  
 Here is how much of TeX's memory you used:
- 21 strings out of 493013
- 545 string characters out of 6139317
+ 24 strings out of 493013
+ 578 string characters out of 6139317
  56646 words of memory out of 5000000
- 3661 multiletter control sequences out of 15000+600000
+ 3664 multiletter control sequences out of 15000+600000
  3986 words of font info for 15 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 18i,4n,12p,201b,111s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 18i,5n,12p,199b,111s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!
