@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Arch Linux) (preloaded format=xelatex 2017.5.15)  29 MAY 2017 00:16
+=======
+<<<<<<< HEAD
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.4.29)  28 MAY 2017 22:32
+=======
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Arch Linux) (preloaded format=xelatex 2017.5.15)  28 MAY 2017 17:07
+>>>>>>> a8f7fe65a200687fe3a8b33edd505a66f855665a
+>>>>>>> 44a5ae37c9db867cd69d232a82e5594d80559b6b
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -896,6 +904,7 @@ LaTeX Font Info:    Try loading font information for TS1+lmr on input line 3.
 
 (/usr/share/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+<<<<<<< HEAD
 ) [1])
 \tf@toc=\write5
 \openout5 = `main.toc'.
@@ -905,6 +914,17 @@ Overfull \hbox (18.71384pt too wide) in paragraph at lines 22--24
 []\T1/lmr/m/n/12 un ser-veur \T1/lmr/m/it/12 Web\T1/lmr/m/n/12 , \T1/lmr/m/it/1
 2 FTP\T1/lmr/m/n/12 , \T1/lmr/m/it/12 MySQL \T1/lmr/m/n/12 et \T1/lmr/m/it/12 D
 NS \T1/lmr/m/n/12 qui per-met-tra un hé-ber-ge-ment multi-utilisateurs ; 
+=======
+))
+\tf@toc=\write4
+\openout4 = `main.toc'.
+
+ [1
+
+] (./src/presentation.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--12
+
+>>>>>>> 44a5ae37c9db867cd69d232a82e5594d80559b6b
  []
 
 [3]) [4] (./src/installation.tex
@@ -917,10 +937,24 @@ File: textures/images/installation/distributions.eps Graphic file (type eps)
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 169.
 
 
+<<<<<<< HEAD
 (/usr/share/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )) [8] (./src/services.tex
 (./src/services/ntp.tex
+=======
+]
+Underfull \hbox (badness 10000) in paragraph at lines 28--32
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
+
+ []
+
+) [8] (./src/services.tex (./src/services/ntp.tex
+>>>>>>> 44a5ae37c9db867cd69d232a82e5594d80559b6b
 Missing character: There is no ́ in font ec-lmr12!
  [9]) [10] (./src/services/ssh.tex) [11] [12]
 (./src/services/nfs.tex [13]) [14] (./src/services/samba.tex) [15]
@@ -1005,11 +1039,26 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 120.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 120.
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
  23264 strings out of 493068
  402128 string characters out of 6141028
  482719 words of memory out of 5000000
  26723 multiletter control sequences out of 15000+600000
  69762 words of font info for 53 fonts, out of 8000000 for 9000
+=======
+<<<<<<< HEAD
+ 23496 strings out of 493068
+ 420001 string characters out of 6135636
+ 524659 words of memory out of 5000000
+ 27068 multiletter control sequences out of 15000+600000
+=======
+ 23494 strings out of 493068
+ 416971 string characters out of 6141028
+ 524499 words of memory out of 5000000
+ 27066 multiletter control sequences out of 15000+600000
+>>>>>>> a8f7fe65a200687fe3a8b33edd505a66f855665a
+ 92217 words of font info for 67 fonts, out of 8000000 for 9000
+>>>>>>> 44a5ae37c9db867cd69d232a82e5594d80559b6b
  1347 hyphenation exceptions out of 8191
  55i,11n,93p,909b,1127s stack positions out of 5000i,500n,10000p,200000b,80000s
 

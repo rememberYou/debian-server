@@ -1,0 +1,65 @@
+\chapter*{Gestion}
+\label{ch:gestion}
+
+
+\section{Sauvegardes}
+\label{subsec:sauvegardes}
+
+Dans le milieu de l'entreprise, deux types de sauvegarde sont utilisées :
+incrémentielle et différentielle.
+
+La méthode de sauvegarde choisie est la différentielle, afin de restaurer les
+données plus rapidement par rapport à la sauvegarde incrémentielle. De plus,
+cette méthode est plus fiable, car seule la sauvegarde complète est nécessaire
+pour reconstituer les données sauvegardées.
+
+Il est à remarqué que la sauvegarde incrémentielle est plus économe en terme de
+stockage.
+
+Pour terminer, nous prévoyons d'effectuer une sauvegarde complète
+\textit{(différentielle)} une fois toutes les semaines.
+
+\newpage
+
+
+\subsection{Horaire de sauvegarde}
+\label{subsec:horaire-sauvegarde}
+
+Nous avons décidé de mettre en place deux types de sauvegarde : une sauvegarde
+incrémentielle tous les jours à deux heures du matin, et une sauvegarde complète
+tous les dimanches à nouveau à deux heures du matin. Chaque sauvegarde se fera
+sur un disque dur externe. \\
+
+L'heure a été choisie de cette manière, car la machine, étant un serveur, n'est
+jamais arrêtée et, à ce moment, personne ne devrait travailler dessus. \\
+Le choix du dimanche en découle : en plus d'être à une plage horaire sans
+travailleur \textit{(ou très peu)}, le dimanche est un jour de congé pour la
+majorité du monde, ce qui aura un impact mineur sur les performances du serveur.
+
+
+\subsection{Mise en \oe{}uvre}
+\label{subsec:mise-en-oeuvre)}
+
+Les sauvegardes ont été automatisées à l'aide de \textit{cron} et configurées
+comme suit :
+\begin{itemize}
+
+    \item[$\bullet$] création du script à exécuter pour les deux types de
+    sauvegarde : sauvegarde des différents dossiers systèmes
+    \textit{/dev, /proc, /sys, /tmp, /srv/share, etc.)};
+    \item[$\bullet$] création du script de restauration des dossiers systèmes
+    sauvegardés;
+    \item[$\bullet$] ajout des horaires d'exécution des scripts à l'aide de
+    \textit{crontab};
+    \item[$\bullet$] redémarrage de cron;
+    \item[$\bullet$] ajout d'une sauvegarde bootable. \\
+
+\end{itemize}
+
+\underline{Remarque :} une documentation accompagne chaque type de sauvegarde.
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
