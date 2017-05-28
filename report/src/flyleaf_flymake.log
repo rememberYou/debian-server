@@ -1,0 +1,446 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2017.5.15)  28 MAY 2017 17:04
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/flyleaf_
+flymake.tex
+
+(/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/flyleaf_f
+lymake.tex
+LaTeX2e <2017/01/01> patch level 3
+Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
+
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/flyleaf_fl
+ymake.tex:1: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \begin{center}
+                  
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--1
+[] 
+ []
+
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/flyleaf_fl
+ymake.tex:2: Undefined control sequence.
+l.2   \includegraphics
+                      [scale=0.12]{textures/logo/heh.pdf}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no f in font nullfont!
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/flyleaf_fl
+ymake.tex:6: Undefined control sequence.
+<recently read> \LARGE 
+                       
+l.6   \textsc{\LARGE Serveur Linux}
+                                    \\ [0.5cm]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (40.68867pt too wide) in paragraph at lines 6--6
+ []\OT1/cmr/m/sc/10 Serveur 
+ []
+
+
+Overfull \hbox (28.25542pt too wide) in paragraph at lines 6--6
+ \OT1/cmr/m/sc/10 Linux 
+ []
+
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/flyleaf_fl
+ymake.tex:7: Undefined control sequence.
+<recently read> \Large 
+                       
+l.7 ...extsc{\Large Installation et configuration}
+                                                   \\ [0.5cm]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (63.29962pt too wide) in paragraph at lines 7--7
+ []\OT1/cmr/m/sc/10 Installation 
+ []
+
+
+Overfull \hbox (11.48882pt too wide) in paragraph at lines 7--7
+ \OT1/cmr/m/sc/10 et 
+ []
+
+
+Overfull \hbox (22.17766pt too wide) in paragraph at lines 7--7
+ \OT1/cmr/m/sc/10 con- 
+ []
+
+
+Overfull \hbox (18.56656pt too wide) in paragraph at lines 7--7
+ \OT1/cmr/m/sc/10 fig- 
+ []
+
+
+Overfull \hbox (9.91106pt too wide) in paragraph at lines 7--7
+ \OT1/cmr/m/sc/10 u- 
+ []
+
+
+Overfull \hbox (15.93326pt too wide) in paragraph at lines 7--7
+ \OT1/cmr/m/sc/10 ra- 
+ []
+
+
+Overfull \hbox (21.42212pt too wide) in paragraph at lines 7--7
+ \OT1/cmr/m/sc/10 tion 
+ []
+
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/flyleaf_fl
+ymake.tex:9: Undefined control sequence.
+<recently read> \large 
+                       
+l.9 ...large 2\up{Ã¨me} Bachelier en Informatique}
+                                                   \\ [0.2cm]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/flyleaf_fl
+ymake.tex:9: Undefined control sequence.
+<argument> \large 2\up 
+                       {Ã¨me} Bachelier en Informatique
+l.9 ...large 2\up{Ã¨me} Bachelier en Informatique}
+                                                   \\ [0.2cm]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no Ã in font cmcsc10!
+Missing character: There is no ¨ in font cmcsc10!
+
+Overfull \hbox (18.5721pt too wide) in paragraph at lines 9--9
+ []\OT1/cmr/m/sc/10 2me 
+ []
+
+
+Overfull \hbox (35.01921pt too wide) in paragraph at lines 9--9
+ \OT1/cmr/m/sc/10 Bache- 
+ []
+
+
+Overfull \hbox (19.75545pt too wide) in paragraph at lines 9--9
+ \OT1/cmr/m/sc/10 lier 
+ []
+
+
+Overfull \hbox (11.71106pt too wide) in paragraph at lines 9--9
+ \OT1/cmr/m/sc/10 en 
+ []
+
+
+Overfull \hbox (13.96655pt too wide) in paragraph at lines 9--9
+ \OT1/cmr/m/sc/10 In- 
+ []
+
+
+Overfull \hbox (21.28879pt too wide) in paragraph at lines 9--9
+ \OT1/cmr/m/sc/10 for- 
+ []
+
+
+Overfull \hbox (17.37769pt too wide) in paragraph at lines 9--9
+ \OT1/cmr/m/sc/10 ma- 
+ []
+
+
+Overfull \hbox (26.99986pt too wide) in paragraph at lines 9--9
+ \OT1/cmr/m/sc/10 tique 
+ []
+
+LaTeX Font Info:    Try loading font information for OT1+pag on input line 12.
+(/usr/share/texmf-dist/tex/latex/psnfss/ot1pag.fd
+File: ot1pag.fd 2001/06/04 font definitions for OT1/pag.
+)
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/flyleaf_fl
+ymake.tex:14: Undefined control sequence.
+l.14   \HRule
+              \\ [0.4cm] {
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/flyleaf_fl
+ymake.tex:14: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14   \HRule \\
+                 [0.4cm] {
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/flyleaf_fl
+ymake.tex:15: Undefined control sequence.
+l.15     \huge
+               Projet Linux \\ [0.2cm]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (27.19955pt too wide) in paragraph at lines 15--15
+ []\OT1/pag/m/n/10 Projet 
+ []
+
+
+Overfull \hbox (23.59984pt too wide) in paragraph at lines 15--15
+ \OT1/pag/m/n/10 Linux 
+ []
+
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/flyleaf_fl
+ymake.tex:17: Undefined control sequence.
+l.17   \HRule
+              \\ [1.3cm]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/flyleaf_fl
+ymake.tex:17: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17   \HRule \\
+                 [1.3cm]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/flyleaf_fl
+ymake.tex:22: Undefined control sequence.
+l.22       \large
+                  \emph{Auteur:} \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no T in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/flyleaf_fl
+ymake.tex:29: Undefined control sequence.
+l.29       \large
+                  \emph{Auteur :} \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no A in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+
+Overfull \hbox (3276.74998pt too wide) in paragraph at lines 20--33
+ [][] 
+ []
+
+
+Overfull \hbox (3276.74998pt too wide) in paragraph at lines 20--33
+ [] 
+ []
+
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/flyleaf_fl
+ymake.tex:38: Undefined control sequence.
+l.38       \large
+                  \emph{Enseignants:} \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no A in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no J in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+
+Overfull \hbox (3276.74998pt too wide) in paragraph at lines 36--43
+ [][] 
+ []
+
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/flyleaf_fl
+ymake.tex:46: Undefined control sequence.
+l.46   \includegraphics
+                       [scale=0.08]{textures/logo/technical.pdf}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 8 in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no Ã in font nullfont!
+Missing character: There is no © in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no Ã in font nullfont!
+Missing character: There is no © in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no q in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 7 in font nullfont!
+)
+! Emergency stop.
+<*> ...ebian-server/report/src/flyleaf_flymake.tex
+                                                  
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 58 strings out of 493013
+ 1073 string characters out of 6139317
+ 54646 words of memory out of 5000000
+ 3694 multiletter control sequences out of 15000+600000
+ 4932 words of font info for 17 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 14i,3n,10p,198b,220s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!

@@ -2,12 +2,13 @@
  "installation"
  (lambda ()
    (LaTeX-add-labels
-    "cha:installation"
     "sec:choix"
-    "sec:distribution"
+    "subsec:distribution"
     "fig:diff-debian-ubuntu"
-    "sec:langue"
-    "sec:noyau"
-    "sec:partitionnement"))
+    "subsec:langue"
+    "subsec:noyau"
+    "subsec:partitionnement"
+    "tab:tableau-partitionnement"
+    "subsec:quotas"))
  :latex)
 
