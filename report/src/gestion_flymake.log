@@ -1,17 +1,17 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.12.13)  22 FEB 2017 15:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2017.5.15)  28 MAY 2017 17:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/home/someone/Documents/Repositories/GitHub/Debian Server/Rapport/src/gestio
-n_flymake.tex"
-
-(/home/someone/Documents/Repositories/GitHub/Debian Server/Rapport/src/gestion_
+**/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/gestion_
 flymake.tex
-LaTeX2e <2016/03/31> patch level 3
+
+(/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/gestion_f
+lymake.tex
+LaTeX2e <2017/01/01> patch level 3
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
-/home/someone/Documents/Repositories/GitHub/Debian Server/Rapport/src/gestion_f
-lymake.tex:1: Undefined control sequence.
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/gestion_fl
+ymake.tex:1: Undefined control sequence.
 l.1 \chapter
             *{Gestion}
 The control sequence at the end of the top line
@@ -21,8 +21,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-/home/someone/Documents/Repositories/GitHub/Debian Server/Rapport/src/gestion_f
-lymake.tex:1: LaTeX Error: Missing \begin{document}.
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/gestion_fl
+ymake.tex:1: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -46,9 +46,9 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 1--3
 []
  []
 
-/home/someone/Documents/Repositories/GitHub/Debian Server/Rapport/src/gestion_f
-lymake.tex:4: Undefined control sequence.
-l.4 \section
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/gestion_fl
+ymake.tex:5: Undefined control sequence.
+l.5 \section
             {Sauvegardes}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -57,14 +57,14 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-/home/someone/Documents/Repositories/GitHub/Debian Server/Rapport/src/gestion_f
-lymake.tex:4: LaTeX Error: Missing \begin{document}.
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/gestion_fl
+ymake.tex:5: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.4 \section{S
+l.5 \section{S
               auvegardes}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -81,19 +81,19 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 4--6
+Overfull \hbox (20.0pt too wide) in paragraph at lines 5--7
 []
  []
 
 
-/home/someone/Documents/Repositories/GitHub/Debian Server/Rapport/src/gestion_f
-lymake.tex:7: LaTeX Error: Missing \begin{document}.
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/gestion_fl
+ymake.tex:8: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7 D
+l.8 D
      ans le milieu de l'entreprise, deux types de sauvegarde sont utilisées :
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -195,19 +195,19 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 7--9
+Overfull \hbox (20.0pt too wide) in paragraph at lines 8--10
 []
  []
 
 
-/home/someone/Documents/Repositories/GitHub/Debian Server/Rapport/src/gestion_f
-lymake.tex:10: LaTeX Error: Missing \begin{document}.
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/gestion_fl
+ymake.tex:11: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10 L
+l.11 L
       a méthode de sauvegarde choisie est la différentielle, afin de resta...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -462,19 +462,19 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 10--14
+Overfull \hbox (20.0pt too wide) in paragraph at lines 11--15
 []
  []
 
 
-/home/someone/Documents/Repositories/GitHub/Debian Server/Rapport/src/gestion_f
-lymake.tex:15: LaTeX Error: Missing \begin{document}.
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/gestion_fl
+ymake.tex:16: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.15 I
+l.16 I
       l est à remarqué que la sauvegarde incrémentielle est plus économe...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -560,19 +560,19 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 15--17
+Overfull \hbox (20.0pt too wide) in paragraph at lines 16--18
 []
  []
 
 
-/home/someone/Documents/Repositories/GitHub/Debian Server/Rapport/src/gestion_f
-lymake.tex:18: LaTeX Error: Missing \begin{document}.
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/gestion_fl
+ymake.tex:19: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.18 P
+l.19 P
       our terminer, nous prévoyons d'effectuer une sauvegarde complète une...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -663,19 +663,107 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no . in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 19--21
+[]
+ []
+
+
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/gestion_fl
+ymake.tex:22: LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22 \newpage
+             
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[1
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/gestion_fl
+ymake.tex:22: Undefined control sequence.
+<write> \newlabel{ch:gestion}{{}{\thepage 
+                                          }}
+l.22 \newpage
+             
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\newlabel{ch:gestion}{{}{}}
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/gestion_fl
+ymake.tex:22: Undefined control sequence.
+<write> \newlabel{subsec:sauvegardes}{{}{\thepage 
+                                                  }}
+l.22 \newpage
+             
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\newlabel{subsec:sauvegardes}{{}{}}
+]
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/gestion_fl
+ymake.tex:25: Undefined control sequence.
+l.25 \section
+             {Mise en œuvre}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+/home/someone/Documents/Repositories/GitHub/Debian-server/report/src/gestion_fl
+ymake.tex:25: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 \section{M
+               ise en œuvre}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no M in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 25--27
+[]
+ []
+
 )
 ! Emergency stop.
-<*> ...ian Server/Rapport/src/gestion_flymake.tex"
+<*> ...ebian-server/report/src/gestion_flymake.tex
                                                   
 *** (job aborted, no legal \end found)
 
  
 Here is how much of TeX's memory you used:
- 6 strings out of 493013
- 380 string characters out of 6139316
- 53632 words of memory out of 5000000
- 3649 multiletter control sequences out of 15000+600000
+ 8 strings out of 493013
+ 398 string characters out of 6139317
+ 53646 words of memory out of 5000000
+ 3650 multiletter control sequences out of 15000+600000
  3640 words of font info for 14 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 5i,0n,4p,177b,16s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 19i,4n,14p,174b,113s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!
