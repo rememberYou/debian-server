@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.4.29)  29 MAY 2017 10:02
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.4.29)  29 MAY 2017 10:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1039,17 +1039,13 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 116.
  (./main.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 116.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 116.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 116.
  ) 
 Here is how much of TeX's memory you used:
- 23483 strings out of 493068
- 408664 string characters out of 6135636
+ 23476 strings out of 493068
+ 408552 string characters out of 6135636
  490763 words of memory out of 5000000
- 26943 multiletter control sequences out of 15000+600000
+ 26936 multiletter control sequences out of 15000+600000
  65491 words of font info for 52 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
  55i,11n,93p,909b,1224s stack positions out of 5000i,500n,10000p,200000b,80000s
