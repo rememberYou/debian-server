@@ -1,36 +1,36 @@
 \select@language {french}
-\contentsline {section}{\numberline {1}Présentation générale du projet}{3}{section.1}
-\contentsline {subsection}{\numberline {1.1}Introduction}{3}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}Déontologie}{4}{subsection.1.2}
-\contentsline {subsection}{\numberline {1.3}Sécurité}{4}{subsection.1.3}
-\contentsline {section}{\numberline {2}Choix}{5}{section.2}
-\contentsline {subsection}{\numberline {2.1}Distribution}{5}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Langue}{7}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Noyau}{7}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Partitionnement}{7}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Sauvegardes}{8}{subsection.2.5}
-\contentsline {section}{\numberline {3}Services}{9}{section.3}
-\contentsline {subsection}{\numberline {3.1}NTP}{9}{subsection.3.1}
-\contentsline {subsubsection}{\numberline {3.1.1}Principe}{9}{subsubsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.2}Configuration du serveur}{9}{subsubsection.3.1.2}
-\contentsline {subsubsection}{\numberline {3.1.3}Configuration du client}{11}{subsubsection.3.1.3}
-\contentsline {subsection}{\numberline {3.2}SSH}{12}{subsection.3.2}
-\contentsline {subsubsection}{\numberline {3.2.1}Type d'authentification}{12}{subsubsection.3.2.1}
-\contentsline {subsubsection}{\numberline {3.2.2}Implémentation}{12}{subsubsection.3.2.2}
-\contentsline {subsection}{\numberline {3.3}NFS}{14}{subsection.3.3}
-\contentsline {subsubsection}{\numberline {3.3.1}Constatation}{14}{subsubsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.2}Configuration côté serveur}{14}{subsubsection.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.3}Configuration côté client}{15}{subsubsection.3.3.3}
-\contentsline {subsection}{\numberline {3.4}Samba}{16}{subsection.3.4}
-\contentsline {subsubsection}{\numberline {3.4.1}Configuration}{16}{subsubsection.3.4.1}
-\contentsline {subsection}{\numberline {3.5}Quotas}{18}{subsection.3.5}
-\contentsline {subsection}{\numberline {3.6}Base de données}{19}{subsection.3.6}
-\contentsline {subsubsection}{\numberline {3.6.1}Mise en place}{19}{subsubsection.3.6.1}
-\contentsline {subsection}{\numberline {3.7}Serveur Web}{20}{subsection.3.7}
-\contentsline {subsection}{\numberline {3.8}FTP}{21}{subsection.3.8}
-\contentsline {subsubsection}{\numberline {3.8.1}Choix du serveur}{21}{subsubsection.3.8.1}
-\contentsline {subsubsection}{\numberline {3.8.2}Configuration}{21}{subsubsection.3.8.2}
-\contentsline {subsection}{\numberline {3.9}DNS}{22}{subsection.3.9}
-\contentsline {subsubsection}{\numberline {3.9.1}Sélection du DNS}{22}{subsubsection.3.9.1}
-\contentsline {subsubsection}{\numberline {3.9.2}Mise en place}{22}{subsubsection.3.9.2}
-\contentsline {section}{Références}{24}{section*.2}
+\contentsline {section}{\numberline {1}Présentation générale du projet}{2}{section.1}
+\contentsline {subsection}{\numberline {1.1}Introduction}{2}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Déontologie}{3}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Sécurité}{3}{subsection.1.3}
+\contentsline {section}{\numberline {2}Choix}{4}{section.2}
+\contentsline {subsection}{\numberline {2.1}Distribution}{4}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Langue}{6}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Noyau}{6}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Partitionnement}{6}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Sauvegardes}{7}{subsection.2.5}
+\contentsline {section}{\numberline {3}Services}{8}{section.3}
+\contentsline {subsection}{\numberline {3.1}NTP}{8}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Principe}{8}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Configuration du serveur}{8}{subsubsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.3}Configuration du client}{10}{subsubsection.3.1.3}
+\contentsline {subsection}{\numberline {3.2}SSH}{11}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Type d'authentification}{11}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Implémentation}{11}{subsubsection.3.2.2}
+\contentsline {subsection}{\numberline {3.3}NFS}{13}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Constatation}{13}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Configuration côté serveur}{13}{subsubsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.3}Configuration côté client}{14}{subsubsection.3.3.3}
+\contentsline {subsection}{\numberline {3.4}Samba}{15}{subsection.3.4}
+\contentsline {subsubsection}{\numberline {3.4.1}Configuration}{15}{subsubsection.3.4.1}
+\contentsline {subsection}{\numberline {3.5}Quotas}{17}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Base de données}{18}{subsection.3.6}
+\contentsline {subsubsection}{\numberline {3.6.1}Mise en place}{18}{subsubsection.3.6.1}
+\contentsline {subsection}{\numberline {3.7}Serveur Web}{19}{subsection.3.7}
+\contentsline {subsection}{\numberline {3.8}FTP}{20}{subsection.3.8}
+\contentsline {subsubsection}{\numberline {3.8.1}Choix du serveur}{20}{subsubsection.3.8.1}
+\contentsline {subsubsection}{\numberline {3.8.2}Configuration}{20}{subsubsection.3.8.2}
+\contentsline {subsection}{\numberline {3.9}DNS}{21}{subsection.3.9}
+\contentsline {subsubsection}{\numberline {3.9.1}Sélection du DNS}{21}{subsubsection.3.9.1}
+\contentsline {subsubsection}{\numberline {3.9.2}Mise en place}{21}{subsubsection.3.9.2}
+\contentsline {section}{Références}{23}{section*.2}
