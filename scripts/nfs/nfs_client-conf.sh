@@ -11,7 +11,7 @@ fi
 
 ######################## AutoFS Configuration ########################
 
-# Installation of AutoFS
+# Installation of AutoFS.
 apt-get install AutoFS
 
 # Create a backup of the configuration file.

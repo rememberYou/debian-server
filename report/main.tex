@@ -47,10 +47,10 @@
 \newcolumntype{R}{>{\raggedleft\arraybackslash}X}
 
 % Define colors for color scheme
-\definecolor{background}{HTML}{333333}
+\definecolor{black}{HTML}{333333}
 \definecolor{currentLine}{HTML}{282A2E}
 \definecolor{selection}{HTML}{373B41}
-\definecolor{foreground}{HTML}{FFFFFF}
+\definecolor{grey}{HTML}{EEEEEE}
 \definecolor{comment}{HTML}{969896}
 \definecolor{red}{HTML}{CC6666}
 \definecolor{orange}{HTML}{DE935F}
@@ -69,22 +69,19 @@
 
 % Custom color scheme for batch
 \lstset{language=bash,
-		numbers=left,
-		numberstyle=\tiny,
-		autogobble=true,
-		backgroundcolor=\color{background},
-		commentstyle=\color{comment},
-		stringstyle=\color{green},
-		keywordstyle=\color{red},
-		keywords={home, root, user, @, \$},
-		basicstyle=\ttfamily\color{foreground},
-		attributestyle=\color{aqua},
-		moreattributes={ls, now}
-              }
-
-              \lstset {
-                literate={~} {$\sim$}{1}
-              }
+  basicstyle=\ttfamily\color{black},
+  numbers=left,
+  stepnumber=1,
+  numberstyle=\tiny,
+  autogobble=true,
+  backgroundcolor=\color{grey},
+  commentstyle=\color{comment},
+  stringstyle=\color{green},
+  keywordstyle=\color{red},
+  keywords={home, root, user, @, \$},
+  attributestyle=\color{aqua},
+  moreattributes={ls, now}
+}
 
 % Allows draw lines for the flyleaf.
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}

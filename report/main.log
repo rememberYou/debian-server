@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Arch Linux) (preloaded format=xelatex 2017.5.15)  29 MAY 2017 08:55
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Arch Linux) (preloaded format=xelatex 2017.5.15)  29 MAY 2017 09:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -755,44 +755,44 @@ File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 95.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 95.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 92.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 92.
 
 (/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Info: Redefining \dots on input line 95.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Info: Redefining \dots on input line 92.
 Package frenchb.ldf Info: Setting StandardItemizeEnv=true for
 (frenchb.ldf)             compatibility with enumitem package,
-(frenchb.ldf)             reported on input line 95.
+(frenchb.ldf)             reported on input line 92.
 Package frenchb.ldf Info: Setting StandardEnumerateEnv=true for
 (frenchb.ldf)             compatibility with enumitem package,
-(frenchb.ldf)             reported on input line 95.
-LaTeX Info: Redefining \up on input line 95.
+(frenchb.ldf)             reported on input line 92.
+LaTeX Info: Redefining \up on input line 92.
 
 
 Package frenchb.ldf Warning: Add \usepackage{fontspec} to the
 (frenchb.ldf)                preamble of your document, reported on input line 
-95.
+92.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -830,19 +830,19 @@ Package frenchb.ldf Warning: Add \usepackage{fontspec} to the
 
 \symgns@font=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/lmr/m/n --> TS1/lmr/bx/n on input line 95.
-Package gensymb Info: Math companion symbols declared on input line 95.
-LaTeX Info: Redefining \degree on input line 95.
-LaTeX Info: Redefining \celsius on input line 95.
+(Font)                  TS1/lmr/m/n --> TS1/lmr/bx/n on input line 92.
+Package gensymb Info: Math companion symbols declared on input line 92.
+LaTeX Info: Redefining \degree on input line 92.
+LaTeX Info: Redefining \celsius on input line 92.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 95.
-LaTeX Info: Redefining \ohm on input line 95.
-Package gensymb Info: Using \textohm for \ohm on input line 95.
-Package gensymb Info: Using \textmu for \micro on input line 95.
+erthousand on input line 92.
+LaTeX Info: Redefining \ohm on input line 92.
+Package gensymb Info: Using \textohm for \ohm on input line 92.
+Package gensymb Info: Using \textmu for \micro on input line 92.
 \c@lstlisting=\count152
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box41
-Package hyperref Info: Link coloring ON on input line 95.
+Package hyperref Info: Link coloring ON on input line 92.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -852,9 +852,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count153
 )
-LaTeX Info: Redefining \ref on input line 95.
-LaTeX Info: Redefining \pageref on input line 95.
-LaTeX Info: Redefining \nameref on input line 95.
+LaTeX Info: Redefining \ref on input line 92.
+LaTeX Info: Redefining \pageref on input line 92.
+LaTeX Info: Redefining \nameref on input line 92.
  (./main.out)
 (./main.out)
 \@outlinefile=\write4
@@ -995,20 +995,20 @@ ur NTP, Site, [en ligne].
  []
 
 )) [25] (./src/blank.tex [0])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 119.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 119.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 116.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 116.
  (./main.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 119.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 119.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 119.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 116.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 116.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 116.
  ) 
 Here is how much of TeX's memory you used:
- 23485 strings out of 493068
- 404547 string characters out of 6141028
- 490721 words of memory out of 5000000
- 26945 multiletter control sequences out of 15000+600000
+ 23483 strings out of 493068
+ 404517 string characters out of 6141028
+ 490763 words of memory out of 5000000
+ 26943 multiletter control sequences out of 15000+600000
  65491 words of font info for 52 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
- 55i,11n,93p,909b,1229s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,11n,93p,909b,1224s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on main.pdf (31 pages).
