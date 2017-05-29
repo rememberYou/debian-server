@@ -1,12 +1,16 @@
 \subsection{Samba}
 \label{subsec:samba}
 
-\emph{Samba} est un outil permettant de partager des dossiers et des imprimantes
-à travers un réseau local. Son utilisation est conseillée pour partager de
-manière simple des ressources entre plusieurs ordinateurs \\ Il est compatible
-avec les systèmes d'exploitation suivants : \emph{Windows}, \emph{macOS}, ainsi
-que des systèmes \emph{GNU/Linux}, \emph{*BSD} et \emph{Solaris}} dans lesquels
-une implémentation de Samba est installée.
+Samba est un outil permettant de partager des dossiers et des imprimantes à
+travers un réseau local.
+
+Son utilisation est conseillée pour partager de manière
+simple des ressources entre plusieurs ordinateurs.
+
+Celui-ci est compatible avec les systèmes d'exploitation suivants :
+\emph{Windows}, \emph{macOS}, ainsi que des systèmes \emph{GNU/Linux},
+\emph{*BSD} et \emph{Solaris}} dans lesquels une implémentation de Samba est
+installée.
 
 \subsubsection{Configuration}
 \label{subsubsec:configuration}
@@ -15,15 +19,60 @@ La configuration du serveur Samba se déroule en trois parties, mais tout
 d'abord, il est nécessaire de créer le dossier de partage et de lui donner les
 droits appropriés.
 
+\begin{lstlisting}[language=bash]
+  mkdir -p /srv/share/users/
+  chown -R root:users /srv/share/users/
+  chmod -R 775 /srv/share/users/
+\end{lstlisting}
+
+La totalité de l'implémentation se trouve dans le fichier
+\textit{/etc/samba/smb.conf}.
+
 \begin{enumerate}
-\item configuration de Samba \emph{(désignation du \textbf{workgroup}, choix
-    du nom de \textbf{netbios}, etc.)} ;
+\item configuration de Samba (désignation du \emph{workgroup}, choix
+  du nom de \emph{netbios}, etc.) ;
+
+  \begin{lstlisting}[language=bash]
+    # Installation of Samba.
+    apt-get install libcups2 samba samba-common cups
+    # If you don't know the name of the workgroup
+    # run this command on the Windows client to get
+    # the workgroup name: net config workstation.
+    [global]
+    workgroup = WORKGROUP
+    server string = Samba Server %v
+    netbios name = debian
+    security = user
+    map to guest = bad user
+    dns proxy = no
+  \end{lstlisting}
 
 \item configuration du partage pour le groupe \og \textit{users} \fg
-  \emph{(désignation du chemin, des droits, etc.)} ;
+  (désignation du chemin, des droits, etc.) ;
+
+  \begin{lstlisting}[language=bash]
+    [users]
+    comment = All Users
+    path = /srv/share/users
+    valid users = @users
+    force group = users
+    create mask = 0660
+    directory mask = 0771
+    writable = yes
+  \end{lstlisting}
 
 \item configuration du partage du dossier \og \textit{home} \fg des utilisateurs
-  \emph{(désignation des droits, vérification de l'identité, etc.)}.
+  (désignation des droits, vérification de l'identité, etc.).
+
+  \begin{lstlisting}[language=bash]
+    [homes]
+    comment = Home Directories
+    browseable = no
+    valid users = %S
+    writable = yes
+    create mask = 0700
+    directory mask = 0700
+  \end{lstlisting}
 \end{enumerate}
 
 %%% Local Variables:

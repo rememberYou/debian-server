@@ -17,9 +17,6 @@ if [ ! -f /etc/exports.bak ]; then
     cp /etc/ntp.conf /etc/ntp.bak
 fi
 
-# Delete the initial configuration file.
-#rm -f /etc/ntp.conf
-
 # Create the configuration file.
 echo "###### NTP SERVER CONFIGURATION ######" > /etc/ntp.conf
 echo " " >> /etc/ntp.conf

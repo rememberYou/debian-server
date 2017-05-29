@@ -1,12 +1,4 @@
-<<<<<<< HEAD
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Arch Linux) (preloaded format=xelatex 2017.5.15)  29 MAY 2017 00:16
-=======
-<<<<<<< HEAD
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.4.29)  28 MAY 2017 22:32
-=======
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Arch Linux) (preloaded format=xelatex 2017.5.15)  28 MAY 2017 17:07
->>>>>>> a8f7fe65a200687fe3a8b33edd505a66f855665a
->>>>>>> 44a5ae37c9db867cd69d232a82e5594d80559b6b
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Arch Linux) (preloaded format=xelatex 2017.5.15)  29 MAY 2017 08:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -904,79 +896,51 @@ LaTeX Font Info:    Try loading font information for TS1+lmr on input line 3.
 
 (/usr/share/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-<<<<<<< HEAD
 ) [1])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [2] (./src/presentation.tex
-Overfull \hbox (18.71384pt too wide) in paragraph at lines 22--24
+ [2] (./src/introduction.tex
+Overfull \hbox (18.71384pt too wide) in paragraph at lines 21--24
 []\T1/lmr/m/n/12 un ser-veur \T1/lmr/m/it/12 Web\T1/lmr/m/n/12 , \T1/lmr/m/it/1
 2 FTP\T1/lmr/m/n/12 , \T1/lmr/m/it/12 MySQL \T1/lmr/m/n/12 et \T1/lmr/m/it/12 D
 NS \T1/lmr/m/n/12 qui per-met-tra un hé-ber-ge-ment multi-utilisateurs ; 
-=======
-))
-\tf@toc=\write4
-\openout4 = `main.toc'.
-
- [1
-
-] (./src/presentation.tex
-Underfull \hbox (badness 10000) in paragraph at lines 8--12
-
->>>>>>> 44a5ae37c9db867cd69d232a82e5594d80559b6b
  []
 
-[3]) [4] (./src/installation.tex
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 24.
+[3]) [4] (./src/choices.tex
 File: textures/images/installation/DebianVsUbuntu.eps Graphic file (type eps)
-
-<textures/images/installation/DebianVsUbuntu.eps> [5]
+ <textures/images/installation/DebianVsUbuntu.eps>
+[5]
 File: textures/images/installation/distributions.eps Graphic file (type eps)
+ <textures/images/installation/distributions.eps> [6] [7]
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 163.
 
-<textures/images/installation/distributions.eps> [6] [7]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 169.
 
-
-<<<<<<< HEAD
 (/usr/share/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )) [8] (./src/services.tex
 (./src/services/ntp.tex
-=======
-]
-Underfull \hbox (badness 10000) in paragraph at lines 28--32
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
-
- []
-
-) [8] (./src/services.tex (./src/services/ntp.tex
->>>>>>> 44a5ae37c9db867cd69d232a82e5594d80559b6b
 Missing character: There is no ́ in font ec-lmr12!
- [9]) [10] (./src/services/ssh.tex) [11] [12]
-(./src/services/nfs.tex [13]) [14] (./src/services/samba.tex) [15]
-(./src/services/quota.tex) [16] (./src/services/bd.tex
-Underfull \hbox (badness 10000) in paragraph at lines 22--24
-
+ [9]
+Overfull \hbox (7.47748pt too wide) in paragraph at lines 87--89
+[]\T1/lmr/m/n/12 Tout comme le ser-veur, la to-ta-lité de l'im-plé-men-ta-tion 
+se trouve dans le fi-chier \T1/lmr/m/it/12 /etc/ntp.conf 
  []
 
-) [17] (./src/services/srvWeb.tex) [18] (./src/services/ftp.tex
-Missing character: There is no œ in font ec-lmr12!
-) [19]
-(./src/services/dns.tex
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 35.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 35.
-
-Underfull \hbox (badness 10000) in paragraph at lines 34--37
-
+[10]) [11] (./src/services/ssh.tex [12]) [13] (./src/services/nfs.tex
+Overfull \hbox (11.9515pt too wide) in paragraph at lines 45--46
+[][][][][][][][][][][][][][][][][][] 
  []
 
-) [20]) (./src/references.tex (./main.bbl
+[14]) [15] (./src/services/samba.tex [16]) [17] (./src/services/quota.tex)
+[18] (./src/services/bd.tex) [19] (./src/services/srvWeb.tex) [20]
+(./src/services/ftp.tex) [21] (./src/services/dns.tex [22]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 73.
+) [23])
+(./src/references.tex (./main.bbl
 Underfull \hbox (badness 2318) in paragraph at lines 35--40
 []\T1/lmr/m/sc/12 Krout, E.  \T1/lmr/m/n/12 Apache Web Ser-ver on De-bian 8 (Je
 s-sie), Site, [en ligne].
@@ -1018,7 +982,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 90--95
 , [en ligne].
  []
 
-[21]
+[24]
 Underfull \hbox (badness 1803) in paragraph at lines 109--114
 []\T1/lmr/m/sc/12 ruchi\T1/lmr/m/n/12 .  NTP Ser-ver and Client Confi-gu-ra-tio
 n in de-bian, Site, [en ligne].
@@ -1030,36 +994,21 @@ Underfull \hbox (badness 5607) in paragraph at lines 130--135
 ur NTP, Site, [en ligne].
  []
 
-)) [22] (./src/blank.tex [0])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 120.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 120.
+)) [25] (./src/blank.tex [0])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 119.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 119.
  (./main.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 120.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 120.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 120.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 119.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 119.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 119.
  ) 
 Here is how much of TeX's memory you used:
-<<<<<<< HEAD
- 23264 strings out of 493068
- 402128 string characters out of 6141028
- 482719 words of memory out of 5000000
- 26723 multiletter control sequences out of 15000+600000
- 69762 words of font info for 53 fonts, out of 8000000 for 9000
-=======
-<<<<<<< HEAD
- 23496 strings out of 493068
- 420001 string characters out of 6135636
- 524659 words of memory out of 5000000
- 27068 multiletter control sequences out of 15000+600000
-=======
- 23494 strings out of 493068
- 416971 string characters out of 6141028
- 524499 words of memory out of 5000000
- 27066 multiletter control sequences out of 15000+600000
->>>>>>> a8f7fe65a200687fe3a8b33edd505a66f855665a
- 92217 words of font info for 67 fonts, out of 8000000 for 9000
->>>>>>> 44a5ae37c9db867cd69d232a82e5594d80559b6b
+ 23485 strings out of 493068
+ 404547 string characters out of 6141028
+ 490721 words of memory out of 5000000
+ 26945 multiletter control sequences out of 15000+600000
+ 65491 words of font info for 52 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
- 55i,11n,93p,909b,1127s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,11n,93p,909b,1229s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (28 pages).
+Output written on main.pdf (31 pages).

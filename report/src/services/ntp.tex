@@ -1,7 +1,7 @@
 \subsection{NTP}
 \label{subsec:ntp}
 
-Le \textit{NTP} ({\emph{Network Time Protocol}), est le protocole utilisé afin
+Le NTP ({\emph{Network Time Protocol}), est le protocole utilisé afin
 de synchroniser les machines du réseau local en fonction de l'horloge du
 serveur.
 
@@ -13,45 +13,108 @@ dérive comme toute montre ordinaire, ce qui peut amener a des erreurs de
 synchronisation. \\
 La nécessité de synchroniser des équipements en réseau paraît alors évidente.
 
-Chaque machine peut être à la fois serveur et client.
-Elle sélectionnera un serveur de temps dans sa configuration, et récupérera
-l'heure, ainsi qu'un numéro de strate, \emph{n}, et se déclarera
-de strate \emph{n + 1}.
+Chaque machine peut être à la fois serveur et cliente.  Celle-ci sélectionnera
+un serveur de temps dans sa configuration, et récupérera l'heure, ainsi qu'un
+numéro de strate, \emph{n}, et se déclarera de strate \emph{n + 1}.
 
 L'architecture du réseau est en arborescence, et divisée en trois couches :
-
 \begin{enumerate}
-    \item les plus précises sources \textit{(horloges atomiques,
-        récepteurs GPS, ...)} sont de \emph{strate 0};
+\item les plus précises sources (horloges atomiques, récepteurs GPS, ...) sont
+de \emph{strate 0};
 
-    \item les serveurs diffusant l'heure des sources sont de \emph{strate 1};
+\item les serveurs diffusant l'heure des sources sont de \emph{strate 1};
 
-    \item les serveurs de \emph{strate 2} sont généralement accessibles au public.
+\item les serveurs de \emph{strate 2} sont généralement accessibles au public.
 \end{enumerate}
 
 \subsubsection{Configuration du serveur}
 \label{subsubsec:configuration-serveur}
 
-Voici les différentes étapes et options que nous avons effectuées :
+La totalité de l'implémentation se trouve dans le fichier
+\textit{/etc/ntp.conf}
 
+Voici les différentes étapes et options qui ont été effectuées :
 \begin{itemize}
-    \item activation des statistiques NTP;
-    \item ajout de trois serveurs \emph{(un belge et deux européens)};
-    \item activation de l'échange de l'heure avec tout le monde \emph{(aucune
-modification n'est acceptée)};
-    \item activation de la synchronisation avec les machines du réseau local.
+\item activation des statistiques NTP;
+\item ajout de trois serveurs (un belge et deux européens);
+\item activation de l'échange de l'heure avec tout le monde (aucune
+  modification n'est acceptée);
+\item activation de la synchronisation avec les machines du réseau local.
 \end{itemize}
 
+\newpage
+
+\begin{lstlisting}[language=bash]
+...
+
+# Adjust time server
+ntpdate 1.be.pool.ntp.org
+
+driftfile /var/lib/ntp/ntp.drift
+
+# Statistics loopstats peerstats clockstats
+filegen loopstats file loopstats type day enable
+filegen peerstats file peerstats type day enable
+filegen clockstats file clockstats type day enable
+
+# You do need to talk to an NTP server or two (or three).
+server 1.be.pool.ntp.org iburst
+server 3.europe.pool.ntp.org
+server 2.europe.pool.ntp.org
+
+# By default, exchange time with everybody, but don't
+# allow configuration.
+restrict -4 default kod notrap nomodify nopeer noquery
+restrict -6 default kod notrap nomodify nopeer noquery
+
+# Local users may interrogate the ntp server more closely.
+restrict 127.0.0.1
+restrict 10.1.0.0 mask 255.255.0.0 nomodify notrap nopeer
+restrict ::1
+
+# To provide time to the local subnet.
+broadcast 10.1.255.255
+
+...
+\end{lstlisting}
+
+\underline{Remarque :} l'adresse de diffusion (broadcast) a été adapté en
+fonction du réseau.
 
 \subsubsection{Configuration du client}
 \label{subsubsec:configuration-client}
 
-Sur le client, la configuration est beaucoup plus simple :
+Tout comme le serveur, la totalité de l'implémentation se trouve dans le fichier
+\textit{/etc/ntp.conf}
 
+Sur le client, la configuration est beaucoup plus simple :
 \begin{itemize}
     \item activation des statistiques NTP;
     \item ajout du serveur local.
 \end{itemize}
+
+\begin{lstlisting}[language=bash]
+...
+
+# Adjust time server
+ntpdate 1.be.pool.ntp.org
+
+# File containing the average deviation.
+driftfile /var/lib/ntp/ntp.drift
+
+# Desired Statistics
+statistics loopstats peerstats clockstats
+filegen loopstats file loopstats type day enable
+filegen peerstats file peerstats type day enable
+filegen clockstats file clockstats type day enable
+
+# You do need to talk to an NTP server or two (or three).
+server 10.1.214.184 prefer
+
+...
+\end{lstlisting}
+
+\underline{Remarque :} l'adresse IP \emph{10.1.214.184} étant celle du serveur NTP.
 
 %%% Local Variables:
 %%% mode: latex

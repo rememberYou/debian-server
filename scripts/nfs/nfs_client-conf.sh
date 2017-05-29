@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Install NFS
+# Installation of NFS.
 apt-get install nfs-common -y
 
 # Create the share directory if doesn't exist yet.

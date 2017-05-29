@@ -32,7 +32,7 @@ echo "deb-src http://ftp.osuosl.org/pub/mariadb/repo/5.5/debian wheezy main" >> 
 # Retrieve the information APT needs to install MariaDB.
 apt-get update
 
-# Install MariaDB.
+# Installation of MariaDB.
 apt-get install mariadb-server -y
 
 # Secure the MariaDB server.

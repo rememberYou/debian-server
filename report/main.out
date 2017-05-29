@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 \BOOKMARK [1][-]{section.1}{Présentation générale du projet}{}% 1
 \BOOKMARK [2][-]{subsection.1.1}{Introduction}{section.1}% 2
 \BOOKMARK [2][-]{subsection.1.2}{Déontologie}{section.1}% 3
@@ -34,28 +33,3 @@
 \BOOKMARK [3][-]{subsubsection.3.9.1}{Sélection du DNS}{subsection.3.9}% 33
 \BOOKMARK [3][-]{subsubsection.3.9.2}{Mise\040en\040place}{subsection.3.9}% 34
 \BOOKMARK [1][-]{section*.2}{Références}{}% 35
-=======
-\BOOKMARK [1][-]{section.0.1}{Présentation générale du projet}{}% 1
-\BOOKMARK [2][-]{subsection.0.1.1}{Introduction}{section.0.1}% 2
-\BOOKMARK [2][-]{subsection.0.1.2}{Déontologie}{section.0.1}% 3
-\BOOKMARK [2][-]{subsection.0.1.3}{Sécurité}{section.0.1}% 4
-\BOOKMARK [1][-]{section.0.2}{Choix}{}% 5
-\BOOKMARK [2][-]{subsection.0.2.1}{Distribution}{section.0.2}% 6
-\BOOKMARK [2][-]{subsection.0.2.2}{Langue}{section.0.2}% 7
-\BOOKMARK [2][-]{subsection.0.2.3}{Noyau}{section.0.2}% 8
-\BOOKMARK [2][-]{subsection.0.2.4}{Partitionnement}{section.0.2}% 9
-\BOOKMARK [2][-]{subsection.0.2.5}{Quotas}{section.0.2}% 10
-\BOOKMARK [1][-]{section.0.3}{Sauvegardes}{}% 11
-\BOOKMARK [2][-]{subsection.0.3.1}{Horaire\040de\040sauvegarde}{section.0.3}% 12
-\BOOKMARK [2][-]{subsection.0.3.2}{Mise en œuvre}{section.0.3}% 13
-\BOOKMARK [1][-]{section.0.4}{Services}{}% 14
-\BOOKMARK [2][-]{subsection.0.4.1}{NTP}{section.0.4}% 15
-\BOOKMARK [2][-]{subsection.0.4.2}{SSH}{section.0.4}% 16
-\BOOKMARK [2][-]{subsection.0.4.3}{NFS}{section.0.4}% 17
-\BOOKMARK [2][-]{subsection.0.4.4}{Samba}{section.0.4}% 18
-\BOOKMARK [2][-]{subsection.0.4.5}{Base de données}{section.0.4}% 19
-\BOOKMARK [2][-]{subsection.0.4.6}{Serveur\040Web}{section.0.4}% 20
-\BOOKMARK [2][-]{subsection.0.4.7}{FTP}{section.0.4}% 21
-\BOOKMARK [2][-]{subsection.0.4.8}{DNS}{section.0.4}% 22
-\BOOKMARK [1][-]{section*.17}{Références}{}% 23
->>>>>>> 44a5ae37c9db867cd69d232a82e5594d80559b6b

@@ -1,16 +1,16 @@
 \subsection{SSH}
 \label{subsec:ssh}
 
-Le \emph{SSH} (\emph{Secure Shell}), est un protocole de communication
-sécurisé. Il impose un échange de clés de chiffrement en début de connexion.
+Le SSH (\emph{Secure Shell}), est un protocole de communication
+sécurisé. Celui-ci impose un échange de clés de chiffrement en début de
+connexion.
 
 \subsubsection{Type d'authentification}
 \label{subsubsec:type-authentification}
 
-Il existe plusieurs façons de s'authentifier sur le serveur via SSH.
+Il existe plusieurs manières de s'authentifier sur le serveur via SSH.
 
 Les deux plus utilisées sont :
-
 \begin{enumerate}
 \item L'authentification par mot de passe ;
 \item L'authentification par clés publique et privée du client.
@@ -18,8 +18,9 @@ Les deux plus utilisées sont :
 
 L'identification automatique par clés a été mise en place pour ce serveur. De ce
 fait, il est nul nécessaire d'entrer le mot de passe à chaque connexion à
-distance. \\ Cette méthode est plus complexe à mettre en place, mais elle
-surtout plus pratique.
+distance. \\
+Cette méthode est plus complexe à mettre en place, mais elle surtout plus
+pratique.
 
 On remarque rapidement son utilité si on se connecte fréquemment au serveur, car
 plus aucun mot de passe n'est demandé.
@@ -27,23 +28,79 @@ plus aucun mot de passe n'est demandé.
 \subsubsection{Implémentation}
 \label{subsubsec:implementation}
 
-Tout d'abord, le serveur a été configuré respectant ces critères :
-
+La majorité de l'implémentation se trouve dans le fichier
+\textit{/etc/ssh/sshd\_config}. \\
+Le serveur a été configuré respectant ces critères :
 \begin{itemize}
-    \item installation de \textit{openssh} ;
-    \item changement de port et passage à la version 2 de SSH pour plus de
-    sécurité ;
-    \item ajout d'une bannière ;
-    \item de la connexion en tant que \textbf{root} ;
-    \item déconnexion après 120 secondes d'inactivité ;
-    \item désactivation de la connexion par mot de passe, vu que l'authentification
-    passe par les clés RSA.
+\item installation de \textit{openssh} ;
+
+  \begin{lstlisting}[language=bash]
+    # Installation of OpenSSH.
+    apt-get install openssh-server -y
+  \end{lstlisting}
+
+\item changement de port et passage à la version 2 de SSH pour plus de sécurité;
+
+  \begin{lstlisting}[language=bash]
+    # Using port number 62000
+    Port 62000
+    # Using Protocol 2 of SSH
+    Protocol 2
+  \end{lstlisting}
+
+  \newpage
+
+\item ajout d'une bannière (disponible dans le fichier \textit{/etc/ssh-banner/banner});
+
+  \begin{lstlisting}[language=bash]
+    The debianThink server is for authorized personnel only.
+    WARNING! Access to this device is restricted to those
+    individuals with specific permissions. If you are not an
+    authorized user, disconnect now.  Any attempts to gain
+    unauthorized access will be prosecuted to the fullest
+    extent of the law.
+
+    All access and use may (not will) be monitored
+    and/or recorded.
+  \end{lstlisting}
+
+\item connexion en tant que \textbf{root} ;
+
+  \begin{lstlisting}[language=bash]
+    # Privilege separation for security
+    UsePrivilegeSeparation yes
+  \end{lstlisting}
+
+\item déconnexion après 120 secondes d'inactivité ;
+
+  \begin{lstlisting}[language=bash]
+    # Deactivation of the login in root and disconnection
+    # after 120 seconds if no connections
+    LoginGraceTime 120
+    PermitRootLogin no
+    StrictModes yes
+  \end{lstlisting}
+
+\item désactivation de la connexion par mot de passe, vu que l'authentification
+  passe par les clés RSA.
+
+  \begin{lstlisting}[language=bash]
+    # We deny the authentication by MDP.
+    PasswordAuthentication no
+  \end{lstlisting}
 \end{itemize}
 
-Ensuite, une génération de un chifrement d'une paire de clés publique / privée
-sur la machine client a été nécessaire. \\ Une fois cela fait, la clé publique a
-été enregistrée sur le serveur afin de l'accepter dans le futur.
+Ensuite, une génération et un chiffrement d'une paire de clés publique / privée
+sur la machine cliente a été nécessaire.
 
+\begin{lstlisting}[language=bash]
+  ssh-keygen -t rsa -b 4096 -C $email -f "/$USER/.ssh/id_rsa" \
+  -N ""
+\end{lstlisting}
+
+Une fois cela fait, la clé publique de celle-ci a été enregistrée sur le serveur
+dans le fichier \\
+\textit{/etc/ssh/ssh\_host\_rsa\_key} afin d'accepter sa connection au serveur.
 
 %%% Local Variables:
 %%% mode: latex

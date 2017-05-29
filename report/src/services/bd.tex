@@ -1,31 +1,58 @@
 \subsection{Base de données}
 \label{subsec:bd}
 
-\emph{MariaDB} est un fork communautaire de MySQL édité sous \textit{licence
-GPL}.
+Le serveur utilise MariaDB étant un fork communautaire de MySQL édité sous \\
+\emph{licence GPL}.
 
-\emph{MySQL} est un système de gestion de bases de données relationnelles. Il fait
+MySQL est un système de gestion de bases de données relationnelles. Il fait
 partie des logiciels de gestion de base de données les plus utilisés au monde,
 autant par le grand public que par des professionnels.
 
 \subsubsection{Mise en place}
 \label{subsubsec:mise-en-place}
 
+La totalité de l'implémentation se trouve dans le fichier
+\textit{/usr/bin/deepblue.sql}
+
 La base de données a été installée et configurée sur le serveur en différentes
 étapes :
-
 \begin{itemize}
-    \item installation de MariaDB par APT
-    (\emph{Advanced Package Tool});
-    \item configuration sécurisée de l'installation de MariaDB;
-    \item création de la base de données, nommée \textit{deepblue};
-    \item création de la table \og \textit{users} \fg contenant les
-    différents utilisateurs. \\
-\end{itemize}
+\item installation de MariaDB par APT
+  (\emph{Advanced Package Tool});
 
-\underline{Remarque :} le mot de passe de la base de données est formé de 10
-caractères et est composé de lettres \emph{(majuscules et minuscules)} et de
-chiffres, dans le but d'éviter les attaques par force brute et/ou par dictionnaire.
+  \begin{lstlisting}[language=bash]
+    apt-get install mariadb-server -y
+  \end{lstlisting}
+
+\item configuration sécurisée de l'installation de MariaDB;
+
+  \begin{lstlisting}[language=bash]
+    mysql_secure_installation
+  \end{lstlisting}
+
+\item création de la base de données, nommée \emph{deepblue};
+
+  \begin{lstlisting}[language=bash]
+        CREATE DATABASE IF NOT EXISTS deepblue
+        CHARACTER SET 'utf8'
+        COLLATE utf8_general_ci;
+      \end{lstlisting}
+
+    \item création de la table \og \textit{users} \fg contenant les
+      différents utilisateurs.
+
+      \begin{lstlisting}[language=bash]
+        USE deepblue;
+
+        CREATE TABLE IF NOT EXISTS users (
+            id INT NOT NULL AUTO_INCREMENT,
+            username VARCHAR(30) NOT NULL,
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            CONSTRAINT pk_users PRIMARY KEY(id)
+        ) ENGINE=InnoDB;
+      \end{lstlisting}
+\end{itemize}
 
 %%% Local Variables:
 %%% mode: latex

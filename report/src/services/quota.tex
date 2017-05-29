@@ -12,6 +12,32 @@ certain laps de temps.} de 400 Mo, lui sera attribué.
 \underline{Remarque :} lors du dépassement de la limite douce, l'utilisateur
 sera averti.
 
+\begin{lstlisting}[language=bash]
+  # Installation of quotatool, useful for scripts.
+  apt-get install quota quotatool
+  # Unmout the /home partition.
+  user -k /dev/mapper/VolGroup-LVhome
+  umount -l /dev/mapper/VolGroup-LVhome
+  # Unmout the /srv/share partition
+  user -k /srv/share
+  umount -l /srv/share
+
+  # Add this to /etc/fstab to the /home and /srv/share line
+  usrquota,grpquota
+
+  # Create the file 'aquota.user' and aquota.group' and
+  # initialize all the partitions that contains quotas.
+  quotacheck -cagumv
+
+  # Mount the /home partition.
+  mount /dev/mapper/VolGroup-LVhome
+  # Mount the srv/share partition.
+  mount /srv/share
+
+  # Activate quota.
+  quotaon -avug
+\end{lstlisting}
+
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: t

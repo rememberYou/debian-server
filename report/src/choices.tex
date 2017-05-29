@@ -6,7 +6,6 @@
 
 Le choix de la distribution s'est naturellement porté sur Debian, pour ses
 nombreux avantages. En voici quelques exemples :
-
 \begin{itemize}
 \item Large communauté : grâce à cela, les erreurs et problèmes rencontrés ont
   souvent plusieurs solutions connues et éprouvées.
@@ -29,13 +28,12 @@ nombreux avantages. En voici quelques exemples :
 
 \item Système de paquets : grâce au système de paquets, les distributions Linux
   ont la possibilité d'installer de nombreux logiciels par une seule ligne de
-  commande. Le système de paquets de Debian est l'outil central de mise à jour,
-  installation, suppression et recherche de paquets.
+  commande.
 \end{itemize}
 
 \begin{figure}[!h]
   \centering
-  \includegraphics[width=0.4\textwidth]
+  \includegraphics[width=0.75\textwidth]
   {textures/images/installation/DebianVsUbuntu.eps}
   \caption{Différences entre Debian et Ubuntu}
   \label{fig:diff-debian-ubuntu}
@@ -50,22 +48,20 @@ leadership depuis des années.
 Debian.
 
 La distribution Ubuntu n'a pas été choisi pour les raisons suivantes :
-
 \begin{itemize}
-\item C'est un dérivé de Debian : de ce fait, un administrateur sachant
-  configurer un serveur sous Debian pourra facilitement s'adapter aux serveur sous
-  Ubuntu.
+\item Dérivé de Debian : de ce fait, un administrateur sachant configurer un
+serveur sous Debian pourra facilitement s'adapter aux serveur sous Ubuntu.
 
-\item Il vise le grand public. De ce fait, est beaucoup moins utilisé dans le
-  milieu professionnel.
+\item Vise le grand public. Par conséquent, est beaucoup moins utilisé dans le
+milieu professionnel.
 
-\item Celui-ci est assez récent sur le marché du serveur.
+\item Assez récent sur le marché du serveur.
 
 \item Moins performant que Debian.
 \end{itemize}
 
 Concernant les autres distributions, CentOS est en baisse, mais reste au-dessus
-de Red Hat et de Fedora qui, lui, est en chute libre.
+de Red Hat et de Fedora qui sont en chute libre.
 
 \begin{figure}[h]
   \centering
@@ -87,18 +83,18 @@ les nouvelles mises à jour et de toucher un plus large public possible.
 \subsection{Noyau}
 \label{subsec:noyau}
 
-Un noyau (monolithique) modulaire a été choisi afin de gérer les
-modules. En effet, celui-ci facilite l'ajout et la suppression de modules à
-chaud. Ces modules, pas toujours indispensables, peuvent être la source de
-failles et de bugs.
+Un noyau (monolithique\footnote{Les fonctions du système et pilotes sont
+regroupés dans le kernel space généré à la compilation.}) modulaire a été choisi
+afin de gérer les modules. En effet, celui-ci facilite l'ajout et la suppression
+de modules à chaud. Ces modules, pas toujours indispensables, peuvent être la
+source de failles et de bugs.
 
 \subsection{Partitionnement}
 \label{subsec:partitionnement}
 
-Afin de posséder assez d'espace de stockage, deux disques de 20 Go en RAID 1 ont
-été utililisés. De surcroît, le partionnement du disque a été réalisé avec un
-partition racine, \textit{/boot}, et un groupe de volume LVM nommé
-\textit{VolGroup}.
+Le partionnement du disque a été réalisé avec une partition racine,
+\textit{/boot}, et un groupe de volume LVM nommé \textit{VolGroup}. De sucroît,
+deux disques de 10 Go en RAID 1 ont été utilisés.
 
 \begin{center}
   \begin{table}[h]
@@ -134,12 +130,10 @@ partition racine, \textit{/boot}, et un groupe de volume LVM nommé
       LVtmp (/tmp) & lvm & 1024 & ext4 \\
       \hline
     \end{tabularx}
-    \caption{Tableau du partitionnement \textit{(avec LVM)}}
+    \caption{Tableau du partitionnement \emph{(avec LVM)}}
     \label{tab:tableau-partitionnement}
   \end{table}
 \end{center}
-
-\newpage
 
 \subsection{Sauvegardes}
 \label{subsec:sauvegardes}
@@ -160,27 +154,30 @@ Afin de trouver un compromis, ces deux types de sauvegardes ont été utilisés 
 plus économe que la sauvegarde différentielle.
 \end{enumerate}
 
-Afin d'éviter de perturber l'accès au serveur, chaque jour à 2h du matin, une
+Dans le but d'éviter de perturber l'accès au serveur, tous les jours à deux heures du matin, une
 sauvegarde incrémentielle est lancée à l'aide d'un
 \emph{cron}\footnote{Gestionnaire des tâches sous Linux devant être exécutées à
-un moment précis.} dans le but d'enregistrer les données modifiées et créées en
+un moment précis.}, dans le but d'enregistrer les données modifiées et créées en
 cette journée.
 
 \begin{lstlisting}[language=bash]
 crontab -e 0 2 * * * /usr/bin/backup-make.sh -i
 \end{lstlisting}
 
-Quant à la sauvegarde différentielle, celle-ci s'opère uniquement le dimanche
-à 2h du matin.
+Quant à la sauvegarde différentielle, celle-ci s'opère uniquement le dimanche à
+2 heures du matin. Le dimanche étant un jour de congé pour la majorité du monde,
+ce qui aura un impact mineur sur les performances du serveur.
 
 \begin{lstlisting}[language=bash]
 crontab -e 0 2 * * 0 /usr/bin/backup-make.sh -d
 \end{lstlisting}
 
-\underline{Remarque :} à défault d'utiliser \textit{fcron} n'étant plus
+\underline{Remarque :} à défaut d'utiliser \textit{fcron} n'étant plus
 disponible sur Debian, le serveur doit être alimenté à l'heure de l'exécution du
 \textit{cron}. Néanmoins, cela ne pose pas de difficultés, vu que le rôle du
 serveur est de fournir une disponibilité permanente.
+
+Il est à noter que chacune de ces sauvegardes se fera sur un disque dur externe.
 
 %%% Local Variables:
 %%% mode: latex

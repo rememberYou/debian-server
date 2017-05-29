@@ -1,10 +1,10 @@
 \subsection{NFS}
 \label{subsec:nfs}
 
-Le \emph{NFS} (\textit{Network File System}, est un protocole qui permet à un
-ordinateur d'accéder à des fichiers distants via un réseau. \\ Ce système de
-fichiers en réseau permet de partager des données principalement entre systèmes
-UNIX.
+Le NFS (\emph{Network File System}), est un protocole qui permet à un ordinateur
+d'accéder à des fichiers distants via un réseau. \\
+Ce système de fichiers en réseau permet de partager des données principalement
+entre systèmes UNIX.
 
 \subsubsection{Constatation}
 \label{subsubsec:constatation}
@@ -12,22 +12,45 @@ UNIX.
 Avant de commencer, il est à remarquer que, quelle que soit sa version, NFS est
 a déployer dans un réseau local et n'a pas de vocation à être ouvert sur Internet. \\
 En effet, les données qui circulent sur le réseau ne sont pas chiffrées et les
-droits d'accès sont accordés en fonction de l'adresse IP du client
-\textit{(qui peut être usurpée)}.
+droits d'accès sont accordés en fonction de l'adresse IP du client (qui peut être usurpée).
 
 \subsubsection{Configuration côté serveur}
 \label{subsubsec:config-serveur}
 
-Voici les différentes étapes et options que nous avons effectuées :
+La totalité de l'implémentation se trouve dans le fichier
+\textit{/etc/exports}.
 
+Voici les différentes étapes et options que nous avons effectuées :
 \begin{itemize}
-    \item installation des différents services indispensables au NFS ;
-    \item création du dossier de partage, et ajout de droits
-    spécifiques ;
-    \item activation du partage sur le réseau local et configuration
-    dudit partage \emph{(autorise la lecture et l'écriture, retire les droit
-    \textbf{root} à distance et et désactivation de la vérification de sous-répertoires)};
-    \item mises à jour de la tables des systèmes de fichiers partagés.
+\item installation des différents services indispensables au NFS ;
+
+  \begin{lstlisting}[language=bash]
+    # Installation of NFS.
+    apt-get install nfs-kernel-server nfs-common -y
+  \end{lstlisting}
+
+\item création du dossier de partage, et ajout de droits
+  spécifiques ;
+
+  \begin{lstlisting}[language=bash]
+    mkdir /srv/share
+    chmod 777 /srv/share
+  \end{lstlisting}
+
+\item activation du partage sur le réseau local et configuration dudit
+  partage (autorise la lecture et l'écriture, retire les droit \textbf{root} à
+  distance et désactivation de la vérification de sous-répertoires);
+
+  \begin{lstlisting}[language=bash]
+    /srv/share  192.168.0.0/16(rw,no_subtree_check,root_squash)
+  \end{lstlisting}
+
+\item mises à jour de la tables des systèmes de fichiers partagés.
+
+  \begin{lstlisting}[language=bash]
+    # Update the table of exported file systems.
+    exportfs -av
+  \end{lstlisting}
 \end{itemize}
 
 \subsubsection{Configuration côté client}
@@ -36,13 +59,48 @@ Voici les différentes étapes et options que nous avons effectuées :
 Sur le client, la configuration est similaire :
 
 \begin{itemize}
-    \item installation des différents services indispensables au NFS;
+\item installation des différents services indispensables au NFS;
+
+  \begin{lstlisting}[language=bash]
+    # Installation of NFS.
+    apt-get install nfs-common -y
+  \end{lstlisting}
+
     \item création du dossier de partage, et ajout de droits
-    spécifiques;
-    \item installation d'\textit{AutoFS};
-    \item configuration d'AutoFS \textit{(création d'un point de
-    montage lors de l'accès au répertoire, durée d'activité après le dernier
-    accès au dossier partagé $\Rightarrow$ au moins 30 secondes pour un partage samba, etc.)}.
+      spécifiques;
+
+  \begin{lstlisting}[language=bash]
+    mkdir /mnt/share/users
+    chmod 777 /mnt/share/users
+  \end{lstlisting}
+
+\item installation d'AutoFS;
+
+  \begin{lstlisting}[language=bash]
+    # Installation of AutoFS.
+    apt-get install AutoFS
+  \end{lstlisting}
+
+\item configuration d'AutoFS
+
+  Contenu du fichier \textit{/etc/auto.master} :
+
+  \begin{lstlisting}[language=bash]
+    /mnt/share    /etc/auto.nfs    --ghost,timeout=30
+  \end{lstlisting}
+
+  Contenu du fichier \textit{/etc/auto.nfs} :
+
+  \begin{lstlisting}[language=bash]
+    users -noexec,nosuid,rw,ghost \
+    192.168.77.131:/srv/share/users
+  \end{lstlisting}
+
+  \underline{Remarque :} l'adresse IP \emph{192.168.77.131} étant celle du serveur NFS.
+
+  La configuration ci-dessus permet la création d'un point de montage lors de
+  l'accès au répertoire. La durée d'activité après le dernier accès au dossier
+  partagé $\Rightarrow$ au moins 30 secondes pour un partage samba, etc.).
 \end{itemize}
 
 

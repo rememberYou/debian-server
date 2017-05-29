@@ -10,6 +10,10 @@ if [ ! -f /etc/samba/smb.conf.bak ]; then
     cp /etc/samba/smb.conf /etc/samba/smb.conf.bak
 fi
 
+mkdir -p /srv/share/users/
+chown -R root:users /srv/share/users/
+chmod -R 775 /srv/share/users/
+
 # Create the configuration file.
 #
 # If you don't know the name of the workgroup
@@ -22,10 +26,6 @@ echo "netbios name = debian" >> /etc/samba/smb.conf
 echo "security = user" >> /etc/samba/smb.conf
 echo "map to guest = bad user" >> /etc/samba/smb.conf
 echo "dns proxy = no" >> /etc/samba/smb.conf
-
-mkdir -p /srv/share/users/
-chown -R root:users /srv/share/users/
-chmod -R 775 /srv/share/users/
 
 # Share that is accessible and writable for all members of "users" group.
 echo " " >> /etc/samba/smb.conf
