@@ -64,7 +64,7 @@ function create_serverPage() {
 	echo -e "\t<body>" >> "/srv/www/$username/www/index.html"
     echo -e "\t\t<div id=\"greetings\" style=\"width: 70%; margin: 0 auto; margin-top: 30vh; text-align: center;\">" >> "/srv/www/$username/www/index.html"
 	echo -e "\t\t\t<h1>Welcome $username!</h1>" >> "/srv/www/$username/www/index.html"
-    echo -e "\t\t\t<h2>This is your own server page!</h2>" >> "/srv/www/$username/www/index.html"
+    echo -e "\t\t\t<h2>This is your own server page.</h2>" >> "/srv/www/$username/www/index.html"
     echo -e "\t\t<\div>" >> "/srv/www/$username/www/index.html"
 	echo -e "\t</body>" >> "/srv/www/$username/www/index.html"
     echo "</html>" >> "/srv/www/$username/www/index.html"
