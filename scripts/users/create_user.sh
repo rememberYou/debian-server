@@ -40,9 +40,34 @@ function create_website() {
     echo -e "\tCustomLog /srv/www/$username.lan/logs/access.log combined" >> "/etc/apache2/sites-enabled/$username.lan.conf"
     echo "</VirtualHost>" >> "/etc/apache2/sites-enabled/$username.lan.conf"
 
+    echo "" >> "/etc/apache2/sites-enabled/$username.lan.conf"
+    echo "Alias /$username '/srv/www/$username/www'" >> "/etc/apache2/sites-enabled/$username.lan.conf"
+    echo -e "<Directory '/srv/www/$username/www'>" >> "/etc/apache2/sites-enabled/$username.lan.conf"
+    echo -e "\tOptions Indexes FollowSymLinks MultiViews" >> "/etc/apache2/sites-enabled/$username.lan.conf"
+    echo -e "\tAllowOverride All" >> "/etc/apache2/sites-enabled/$username.lan.conf"
+    echo -e "\tOrder deny,allow" >> "/etc/apache2/sites-enabled/$username.lan.conf"
+    echo -e "\tAllow from all" >> "/etc/apache2/sites-enabled/$username.lan.conf"
+    echo "</Directory>" >> "/etc/apache2/sites-enabled/$username.lan.conf"
+
     mkdir -p "/srv/www/$username/www"
     mkdir -p "/srv/www/$username.lan/logs/"
     chmod 755 "/srv/www/$username/www"
+}
+
+function create_serverPage() {
+    echo "<!DOCTYPE html>" > "/srv/www/$username/www/index.html"
+    echo "<html>" >> "/srv/www/$username/www/index.html"
+	echo -e "\t<head>" >> "/srv/www/$username/www/index.html"
+	echo -e "\t\t<meta charset=\"utf-8\">" >> "/srv/www/$username/www/index.html"
+	echo -e "\t\t<title>Server page</title>" >> "/srv/www/$username/www/index.html"
+	echo -e "\t</head>" >> "/srv/www/$username/www/index.html"
+	echo -e "\t<body>" >> "/srv/www/$username/www/index.html"
+    echo -e "\t\t<div id=\"greetings\" style=\"width: 70%; margin: 0 auto; margin-top: 30vh; text-align: center;\">" >> "/srv/www/$username/www/index.html"
+	echo -e "\t\t\t<h1>Welcome $username!</h1>" >> "/srv/www/$username/www/index.html"
+    echo -e "\t\t\t<h2>This is your own server page!</h2>" >> "/srv/www/$username/www/index.html"
+    echo -e "\t\t<\div>" >> "/srv/www/$username/www/index.html"
+	echo -e "\t</body>" >> "/srv/www/$username/www/index.html"
+    echo "</html>" >> "/srv/www/$username/www/index.html"
 }
 
 echo -e "Enter the name of the user: "
@@ -57,5 +82,8 @@ else
 
     echo -e "$username user has been successfully added."
     echo -e "The ${bold}www${normal} folder of the $username user has been succesfully created."
+    create_serverPage
     echo -e "\t The index.html page was created."
+    /etc/init.d/apache2 reload
+    #chown -R www-data:www-data /srv/www
 fi
