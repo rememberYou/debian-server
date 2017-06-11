@@ -5,6 +5,9 @@
 # Installation of packages
 apt-get install -y rsync cron
 
+# Places the backup scripts at the right Places
+cp backup-make.sh /usr/bin/backup-make.sh
+
 # Create the incremental backup directory if doesn't exist yet.
 if [[ ! -d /mnt/incremental ]]; then
     mkdir /mnt/incremental
@@ -28,9 +31,8 @@ fi
 chmod 700 /usr/bin/backup-make.sh
 
 # Create the crontab for the execution of the script.
-EDITOR=`which nano` crontab -e
-crontab -e 0 2 * * * /usr/bin/backup-make.sh -i
-crontab -e 0 2 * * 0 /usr/bin/backup-make.sh -d
+(crontab -l 2>/dev/null; echo "0 2 * * * /usr/bin/backup-make.sh -i") | crontab -
+(crontab -l 2>/dev/null; echo "0 2 * * 0 /usr/bin/backup-make.sh -d") | crontab -
 
 # Restart cron
 /etc/init.d/cron restart
