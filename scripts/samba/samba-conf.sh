@@ -3,7 +3,7 @@
 # SEE: https://www.howtoforge.com/tutorial/debian-samba-server/
 
 # Installation of Samba.
-apt-get install libcups2 samba samba-common cups
+apt-get install libcups2 samba samba-common cups -y
 
 # Create a backup of the configuration file.
 if [ ! -f /etc/samba/smb.conf.bak ]; then
