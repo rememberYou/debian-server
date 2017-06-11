@@ -114,6 +114,10 @@ mkdir -p /srv/www/example.lan/public_html
 # Create directories for the websites'logs.
 mkdir /srv/www/example.lan/logs
 
+# Sets the configuration file of Apache
+cp /etc/apache2/apache2.conf /etc/apache2/apache2.conf.bak
+cp apache2.conf /etc/apache2/apache2.conf
+
 # Enable the website.
 a2ensite example.lan.conf
 
