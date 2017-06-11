@@ -19,6 +19,8 @@ function create_acl_group() {
 function create_dns() {
     echo "" >> "/etc/bind/named.conf.options"
 
+    mkdir -p /var/cache/bind
+
     echo "options {" >> "/etc/bind/named.conf.options"
     echo "        directory \"/var/cache/bind\";" >> "/etc/bind/named.conf.options"
 

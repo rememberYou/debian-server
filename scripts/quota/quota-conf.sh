@@ -3,7 +3,7 @@
 # SEE: https://www.astuces-info.com/tag/quotatool/
 
 # Installation of quotatool, useful for scripts.
-apt-get install quota quotatool
+apt-get install quota quotatool -y
 
 # Unmout the /home partition.
 user -k /dev/mapper/VolGroup-LVhome
