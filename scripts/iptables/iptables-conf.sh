@@ -67,6 +67,10 @@ iptables -A INPUT -s 10.1.0.0/16 -d 10.1.0.0/16 -p udp -m multiport --dports 111
 iptables -A OUTPUT -s 10.1.0.0/16 -d 10.1.0.0/16 -p tcp -m multiport --sports 111,2049,36089,43008,43301,48232,50277 -m state --state ESTABLISHED -j ACCEPT
 iptables -A OUTPUT -s 10.1.0.0/16 -d 10.1.0.0/16 -p udp -m multiport --sports 111,2049,33111,42714,43880,46765,55770 -m state --state ESTABLISHED -j ACCEPT
 
-# Allow Samba (TCP: 139, 445 | UDP: 137, 138).
-iptables -A INPUT -s 10.1.0.0/16 -p udp -m multiport --dport 137,138 -j ACCEPT
-iptables -A INPUT -s 10.1.0.0/16 -p tcp -m multiport --dport 139,445 -m state --state NEW -j ACCEPT
+# Allow incoming Samba (UDP: 137,138 | TCP: 139,445)
+iptables -A INPUT -s 10.1.0.0/16 -p udp -m multiport --dport 137,138 -m state --state NEW,ESTABLISHED -j ACCEPT
+iptables -A INPUT -s 10.1.0.0/16 -p tcp -m multiport --dport 139,445 -m state --state NEW,ESTABLISHED -j ACCEPT
+
+# Allow outgoing Samba (UDP: 137,138 | TCP: 139,445)
+iptables -A OUTPUT -s 10.1.0.0/16 -p udp -m multiport --dport 137,138 -m state --state ESTABLISHED -j ACCEPT
+iptables -A OUTPUT -s 10.1.0.0/16 -p tcp -m multiport --dport 139,445 -m state --state ESTABLISHED -j ACCEPT
