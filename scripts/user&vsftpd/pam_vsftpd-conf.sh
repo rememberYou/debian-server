@@ -16,7 +16,3 @@ apt-get install db-util -y
 
 # Create the users configuration folder for vsftp.
 mkdir /etc/vsftpd/vsftpd_conf_users
-
-# Create users database through pam_user-conf.sh
-./pam_user-conf.sh florian DiVrusa
-./pam_user-conf.sh guillaume Quittet

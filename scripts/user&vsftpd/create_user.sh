@@ -86,4 +86,5 @@ else
     echo -e "\t The index.html page was created."
     /etc/init.d/apache2 reload
     #chown -R www-data:www-data /srv/www
+    ./pam_user-conf.sh $username $password
 fi
