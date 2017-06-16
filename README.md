@@ -1,11 +1,11 @@
 # Debian-server
 Setting up a Debian server
 
-## TODO list [7/14]
+## TODO list [12/14]
    - [x] NFS share
    - [x] Samba share
-   - [ ] Web server
-   - [ ] FTP server
+   - [x] Web server
+   - [x] FTP server
    - [x] MySQL server
    - [x] Backups
    - [x] DNS server
@@ -13,6 +13,6 @@ Setting up a Debian server
    - [x] SSH
    - [ ] iptables
    - [x] Secure bootloader
-   - [ ] Configuration scripts
+   - [x] Configuration scripts
    - [ ] SELinux
-   - [ ] Test scripts
+   - [x] Test scripts

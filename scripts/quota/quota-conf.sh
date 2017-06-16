@@ -7,7 +7,6 @@ apt-get install quota quotatool -y
 
 # Unmout the /home partition.
 fuser -k /dev/mapper/VolGroup-LVhome
-umount -l /dev/mapper/VolGroup-LVhome
 
 # Add this to /etc/fstab to the /home
 #usrquota,grpquota
@@ -18,8 +17,10 @@ umount -l /dev/mapper/VolGroup-LVhome
 quotacheck -cguvf /dev/mapper/VolGroup-LVhome
 quotacheck -vagum
 
-# Mount the /home partition.
-mount /dev/mapper/VolGroup-LVhome
+umount -l /dev/mapper/VolGroup-LVhome
 
 # Activate quota
 quotaon -avug
+
+# Mount the /home partition.
+mount /dev/mapper/VolGroup-LVhome

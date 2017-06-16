@@ -41,7 +41,7 @@ iptables -A OUTPUT -o eth0 -p tcp -m multiport --sports 80,443 \
 iptables -A INPUT -i eth0 -p tcp --dport 62000 \
          -m state --state NEW,ESTABLISHED -j ACCEPT
 iptables -A OUTPUT -o eth0 -p tcp --sport 62000 \
-         -m state --state ESTABLISHED -j ACCEP
+         -m state --state ESTABLISHED -j ACCEPT
 
 # Allow outgoing SSH (62000).
 iptables -A OUTPUT -o eth0 -p tcp --dport 62000 \
