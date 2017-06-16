@@ -3,6 +3,8 @@
 # SEE
 # http://www.thegeekstuff.com/scripts/iptables-rules
 # https://www.cyberciti.biz/faq/centos-ssh/
+#
+# Use "rpcinfo -p" to know which ports to block/allow
 
 # Flushing all rules from all tables.
 iptables -F ; iptables -X
@@ -57,6 +59,15 @@ iptables -A INPUT -p udp --sport 123 -j ACCEPT
 iptables -A INPUT -p udp --dport 123 -j ACCEPT
 iptables -A OUTPUT -p udp --sport 123 -j ACCEPT
 
+# Allow incomming NFS.
+iptables -A INPUT -s 10.1.0.0/16 -d 10.1.0.0/16 -p tcp -m multiport --dports 111,2049,36089,43008,43301,48232,50277 -m state --state NEW,ESTABLISHED -j ACCEPT
+iptables -A INPUT -s 10.1.0.0/16 -d 10.1.0.0/16 -p udp -m multiport --dports 111,2049,33111,42714,43880,46765,55770 -m state --state NEW,ESTABLISHED -j ACCEPT
+
+# Allow outgoing NFS.
+iptables -A OUTPUT -s 10.1.0.0/16 -d 10.1.0.0/16 -p tcp -m multiport --sports 111,2049,36089,43008,43301,48232,50277 -m state --state ESTABLISHED -j ACCEPT
+iptables -A OUTPUT -s 10.1.0.0/16 -d 10.1.0.0/16 -p udp -m multiport --sports 111,2049,33111,42714,43880,46765,55770 -m state --state ESTABLISHED -j ACCEPT
+
 # Allow Samba (TCP: 139, 445 | UDP: 137, 138).
-iptables -A INPUT -s 10.1.0.0/16 -p tcp -m multiport --dport 139,445 -j ACCEPT
+
+iptables -A INPUT -s 10.1.0.0/16 -p tcp -m multiport --dport 139,445 -m state --state NEW -j ACCEPT
 iptables -A INPUT -s 10.1.0.0/16 -p udp -m multiport --dport 137,138 -j ACCEPT

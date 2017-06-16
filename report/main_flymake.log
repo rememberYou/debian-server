@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2017.5.15)  29 MAY 2017 09:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2017.5.15)  30 MAY 2017 22:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1120,35 +1120,35 @@ File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))) (./main_flymake.aux)
 \openout1 = `main_flymake.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 95.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 95.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 92.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 92.
  (/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Info: Redefining \degres on input line 95.
-LaTeX Info: Redefining \dots on input line 95.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Info: Redefining \degres on input line 92.
+LaTeX Info: Redefining \dots on input line 92.
 Package frenchb.ldf Info: Setting StandardItemizeEnv=true for
 (frenchb.ldf)             compatibility with enumitem package,
-(frenchb.ldf)             reported on input line 95.
+(frenchb.ldf)             reported on input line 92.
 Package frenchb.ldf Info: Setting StandardEnumerateEnv=true for
 (frenchb.ldf)             compatibility with enumitem package,
-(frenchb.ldf)             reported on input line 95.
-LaTeX Info: Redefining \up on input line 95.
+(frenchb.ldf)             reported on input line 92.
+LaTeX Info: Redefining \up on input line 92.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1186,15 +1186,15 @@ LaTeX Info: Redefining \up on input line 95.
 
 \symgns@font=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/cmr/m/n --> TS1/cmr/bx/n on input line 95.
-Package gensymb Info: Math companion symbols declared on input line 95.
-LaTeX Info: Redefining \degree on input line 95.
-LaTeX Info: Redefining \celsius on input line 95.
+(Font)                  TS1/cmr/m/n --> TS1/cmr/bx/n on input line 92.
+Package gensymb Info: Math companion symbols declared on input line 92.
+LaTeX Info: Redefining \degree on input line 92.
+LaTeX Info: Redefining \celsius on input line 92.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 95.
-LaTeX Info: Redefining \ohm on input line 95.
-Package gensymb Info: Using \textohm for \ohm on input line 95.
-Package gensymb Info: Using \textmu for \micro on input line 95.
+erthousand on input line 92.
+LaTeX Info: Redefining \ohm on input line 92.
+Package gensymb Info: Using \textohm for \ohm on input line 92.
+Package gensymb Info: Using \textmu for \micro on input line 92.
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count150
@@ -1229,7 +1229,7 @@ e
 
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box41
-Package hyperref Info: Link coloring ON on input line 95.
+Package hyperref Info: Link coloring ON on input line 92.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1239,9 +1239,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count157
 )
-LaTeX Info: Redefining \ref on input line 95.
-LaTeX Info: Redefining \pageref on input line 95.
-LaTeX Info: Redefining \nameref on input line 95.
+LaTeX Info: Redefining \ref on input line 92.
+LaTeX Info: Redefining \pageref on input line 92.
+LaTeX Info: Redefining \nameref on input line 92.
 \@outlinefile=\write4
 \openout4 = `main_flymake.out'.
 
@@ -1325,9 +1325,9 @@ nput line 50.
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.101 \newpage
-               [1] (./src/blank.texpdfTeX warning (ext4): destination with the 
-same identifier (name{page.}) has been already used, duplicate ignored
+l.98 \newpage
+              [1] (./src/blank.texpdfTeX warning (ext4): destination with the s
+ame identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.5 \newpage
@@ -1356,7 +1356,7 @@ sed on input line 10.
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.105 \newpage
+l.102 \newpage
                [1] (./main_flymake.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 3.
@@ -1364,11 +1364,11 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 3.
- [1])
+)
 \tf@toc=\write5
 \openout5 = `main_flymake.toc'.
 
- [2] (./src/introduction.tex
+ [1] (./src/introduction.tex
 Overfull \hbox (17.91965pt too wide) in paragraph at lines 21--24
 []\T1/cmr/m/n/12 un ser-veur \T1/cmr/m/it/12 Web\T1/cmr/m/n/12 , \T1/cmr/m/it/1
 2 FTP\T1/cmr/m/n/12 , \T1/cmr/m/it/12 MySQL \T1/cmr/m/n/12 et \T1/cmr/m/it/12 D
@@ -1377,7 +1377,7 @@ NS \T1/cmr/m/n/12 qui per-met-tra un hÈ-ber-ge-ment multi-utilisateurs ;
 
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 24.
-[3]) [4] (./src/choices.tex
+[2]) [3] (./src/choices.tex
 Package epstopdf Info: Source file: <textures/images/installation/DebianVsUbunt
 u.eps>
 (epstopdf)                    date: 2017-05-28 16:47:29
@@ -1392,7 +1392,7 @@ ntu.eps>
 (epstopdf)             \includegraphics on input line 37.
 Package epstopdf Info: Output file is already uptodate.
 
-<textures/images/installation/DebianVsUbuntu-eps-converted-to.pdf, id=133, 670.
+<textures/images/installation/DebianVsUbuntu-eps-converted-to.pdf, id=101, 670.
 505pt x 329.23pt>
 File: textures/images/installation/DebianVsUbuntu-eps-converted-to.pdf Graphic 
 file (type pdf)
@@ -1401,7 +1401,7 @@ file (type pdf)
 Package pdftex.def Info: textures/images/installation/DebianVsUbuntu-eps-conver
 ted-to.pdf used on input line 37.
 (pdftex.def)             Requested size: 341.43307pt x 167.64886pt.
- [5]
+ [4]
 Package epstopdf Info: Source file: <textures/images/installation/distributions
 .eps>
 (epstopdf)                    date: 2017-05-28 16:47:41
@@ -1416,7 +1416,7 @@ s.eps>
 (epstopdf)             \includegraphics on input line 69.
 Package epstopdf Info: Output file is already uptodate.
 
-<textures/images/installation/distributions-eps-converted-to.pdf, id=141, 441.6
+<textures/images/installation/distributions-eps-converted-to.pdf, id=109, 441.6
 5pt x 292.09125pt>
 File: textures/images/installation/distributions-eps-converted-to.pdf Graphic f
 ile (type pdf)
@@ -1425,13 +1425,13 @@ ile (type pdf)
 Package pdftex.def Info: textures/images/installation/distributions-eps-convert
 ed-to.pdf used on input line 69.
 (pdftex.def)             Requested size: 364.19667pt x 240.87572pt.
- [6]
-[7]
+ [5]
+[6]
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 163.
 
  (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)) [8] (./src/services.tex
+)) [7] (./src/services.tex
 (./src/services/ntp.tex
 
 ./src/services/ntp.tex:5: Package inputenc Error: Unicode char ÃÅ (U+301)
@@ -1447,52 +1447,58 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[9]
+[8]
 Overfull \hbox (7.8179pt too wide) in paragraph at lines 87--89
 []\T1/cmr/m/n/12 Tout comme le ser-veur, la to-ta-litÈ de l'im-plÈ-men-ta-tion 
 se trouve dans le fi-chier \T1/cmr/m/it/12 /etc/ntp.conf 
  []
 
-[10]) [11] (./src/services/ssh.tex [12]) [13] (./src/services/nfs.tex
+[9]) [10] (./src/services/ssh.tex [11]) [12] (./src/services/nfs.tex
 Overfull \hbox (11.21817pt too wide) in paragraph at lines 45--46
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[14]) [15] (./src/services/samba.tex [16]) [17] (./src/services/quota.tex)
-[18] (./src/services/bd.tex) [19] (./src/services/srvWeb.tex) [20]
-(./src/services/ftp.tex) [21] (./src/services/dns.tex [22]
+[13]) [14] (./src/services/samba.tex [15]) [16] (./src/services/quota.tex)
+[17] (./src/services/bd.tex) [18] (./src/services/srvWeb.tex) [19]
+(./src/services/ftp.tex) [20] (./src/services/dns.tex [21]
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 73.
-) [23])
+) [22])
 (./src/references.tex
 No file main_flymake.bbl.
 ) (./src/blank.tex [0])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 119.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 119.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 116.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 116.
  (./main_flymake.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 119.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 119.
-Package rerunfilecheck Info: File `main_flymake.out' has not changed.
-(rerunfilecheck)             Checksum: F1CA65031A62022A973D3822F1A7C43D;2296.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 116.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 116.
 
+
+Package rerunfilecheck Warning: File `main_flymake.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main_flymake.out':
+(rerunfilecheck)             Before: F1CA65031A62022A973D3822F1A7C43D;2296
+(rerunfilecheck)             After:  05AFFAF4CCB78F7EC3B5C68BBE4BF4FE;1199.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 119.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 116.
  ) 
 Here is how much of TeX's memory you used:
- 21781 strings out of 493013
- 379274 string characters out of 6139317
- 475631 words of memory out of 5000000
- 24554 multiletter control sequences out of 15000+600000
+ 21778 strings out of 493013
+ 379237 string characters out of 6139317
+ 475667 words of memory out of 5000000
+ 24552 multiletter control sequences out of 15000+600000
  25555 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,11n,93p,982b,1358s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,11n,93p,982b,1353s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 pdfTeX warning: \pdfdraftmode enabled, not changing output pdf
 
 PDF statistics:
- 469 PDF objects out of 1000 (max. 8388607)
- 298 named destinations out of 1000 (max. 500000)
+ 451 PDF objects out of 1000 (max. 8388607)
+ 297 named destinations out of 1000 (max. 500000)
  48 words of extra memory for PDF output out of 10000 (max. 10000000)
 
