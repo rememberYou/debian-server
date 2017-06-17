@@ -2,12 +2,12 @@
 
 # Use the incremental backup for system restauration.
 function incremental() {
-    rsync -aAX --delete --info=progress2 --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/srv/share"} /mnt/incremental /
+    rsync -aAXu --delete --info=progress2 /mnt/incremental /
 }
 
 # Use the differential backup for system restauration.
 function differential() {
-    rsync -aAX --delete --info=progress2 --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/srv/share"} /mnt/differential /
+    rsync -aAXu --delete --info=progress2 /mnt/differential /
 }
 
 # Documentation of the program.

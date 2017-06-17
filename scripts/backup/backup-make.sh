@@ -2,12 +2,12 @@
 
 # Use the incremental backup to back up the system.
 function incremental() {
-    rsync -aAX --delete --info=progress2 --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/srv/share"} /mnt/incremental /
+    rsync -aAXu --delete --info=progress2 --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/srv/share"} / /mnt/incremental
 }
 
 # Use the differential backup to back up the system.
 function differential() {
-    rsync -aAX --delete --info=progress2 --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/srv/share"} /mnt/differential /
+    rsync -aAXu --delete --info=progress2 --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/srv/share"} / /mnt/differential
 }
 
 # Documentation of the program.
@@ -27,7 +27,7 @@ function help() {
     echo "      -d  differential backup for the system back up."
     echo -e "      -h  help to use the script.\n"
 
-    echo -e "    By default, -i' were specified.\n"
+    echo -e "    By default, -i were specified.\n"
 
     echo "    Exit Status:"
     echo "    Returns 0 unless an invalid option is given or the current directory"
