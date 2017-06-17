@@ -28,7 +28,7 @@ fi
 echo "/mnt/share    /etc/auto.nfs    --ghost,timeout=30" > /etc/auto.master
 
 # Main AutoFS file.
-echo  "users    -noexec,nosuid,rw,ghost    192.168.1.184:/srv/share/users" > /etc/auto.nfs
+echo  "users    -noexec,nosuid,rw,ghost    10.1.214.184:/srv/share/users" > /etc/auto.nfs
 
 # Restart AutoFS.
 /etc/init.d/autofs restart

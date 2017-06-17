@@ -9,7 +9,7 @@ function create_acl_group() {
     fi
 
     echo "acl goodclients {" > "/etc/bind/named.conf.options"
-    echo "        192.168.1.0/24;" >> "/etc/bind/named.conf.options"
+    echo "        10.1.0.0/16;" >> "/etc/bind/named.conf.options"
     echo "        localhost;" >> "/etc/bind/named.conf.options"
     echo "        localnets;" >> "/etc/bind/named.conf.options"
     echo "};" >> "/etc/bind/named.conf.options"

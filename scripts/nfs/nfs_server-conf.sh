@@ -18,7 +18,7 @@ fi
 echo "###### NFS SERVER CONFIGURATION ######" > /etc/exports
 echo " " >> /etc/exports
 
-echo "/srv/share  192.168.1.0/24(rw,sync,no_subtree_check,root_squash)" >> /etc/exports
+echo "/srv/share  10.1.0.0/16(rw,sync,no_subtree_check,root_squash)" >> /etc/exports
 
 # Update the table of exported file systems.
 exportfs -av
