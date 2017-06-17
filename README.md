@@ -11,7 +11,7 @@ Setting up a Debian server
    - [x] DNS server
    - [x] NTP
    - [x] SSH
-   - [ ] iptables
+   - [x] iptables
    - [x] Secure bootloader
    - [x] Configuration scripts
    - [ ] SELinux
