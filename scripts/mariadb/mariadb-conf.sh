@@ -8,7 +8,7 @@ apt-get update
 apt-get upgrade
 
 # Import the GPG key so that APT can verify the integrity of the packages it download.
-apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xcbcb082a1bb943db
+apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 0xcbcb082a1bb943db
 
 # Create a backup of the configuration file.
 if [ ! -f /etc/apt/sources.list.bak ]; then

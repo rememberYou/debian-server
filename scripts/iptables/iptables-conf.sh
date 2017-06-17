@@ -67,8 +67,7 @@ iptables -A INPUT -s 192.168.1.0/24 -d 192.168.1.0/24 -p udp -m multiport --dpor
 iptables -A OUTPUT -s 192.168.1.0/24 -d 192.168.1.0/24 -p tcp -m multiport --sports 111,2049,36089,43008,43301,48232,50277 -m state --state ESTABLISHED -j ACCEPT
 iptables -A OUTPUT -s 192.168.1.0/24 -d 192.168.1.0/24 -p udp -m multiport --sports 111,2049,33111,42714,43880,46765,55770 -m state --state ESTABLISHED -j ACCEPT
 
-#Samba
-iptables -A INPUT -s 192.168.1.0/24 -j ACCEPT
+# Samba
 iptables -A OUTPUT -d 192.168.1.0/24 -j ACCEPT
 iptables -A FORWARD -s 192.168.1.0/24 -j ACCEPT
 
