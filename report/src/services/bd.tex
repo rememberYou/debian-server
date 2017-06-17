@@ -1,12 +1,11 @@
 \subsection{Base de données}
 \label{subsec:bd}
 
-Le serveur utilise MariaDB, un fork communautaire de MySQL édité sous \\
-licence GPL.
+Le serveur utilise MariaDB, un fork communautaire de MySQL édité sous licence
+GPL.
 
 MySQL est un système de gestion de bases de données relationnelles. Il fait
-partie des logiciels de gestion de base de données les plus utilisés au monde,
-autant par le grand public que par des professionnels.
+partie des logiciels de gestion de base de données les plus utilisés au monde.
 
 \subsubsection{Mise en place}
 \label{subsubsec:mise-en-place}
@@ -33,25 +32,25 @@ La base de données a été installée et configurée sur le serveur en différe
 \item création de la base de données, nommée \emph{deepblue};
 
   \begin{lstlisting}[language=bash]
-        CREATE DATABASE IF NOT EXISTS deepblue
-        CHARACTER SET 'utf8'
-        COLLATE utf8_general_ci;
-      \end{lstlisting}
+    CREATE DATABASE IF NOT EXISTS deepblue
+    CHARACTER SET 'utf8'
+    COLLATE utf8_general_ci;
+  \end{lstlisting}
 
-    \item création de la table \og \textit{users} \fg contenant les
-      différents utilisateurs.
+\item création de la table \og \textit{users} \fg contenant les
+  différents utilisateurs.
 
-      \begin{lstlisting}[language=bash]
-        USE deepblue;
+  \begin{lstlisting}[language=bash]
+    USE deepblue;
 
-        CREATE TABLE IF NOT EXISTS users (
-            id INT NOT NULL AUTO_INCREMENT,
-            username VARCHAR(30) NOT NULL,
-            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-            updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-            CONSTRAINT pk_users PRIMARY KEY(id)
-        ) ENGINE=InnoDB;
-      \end{lstlisting}
+    CREATE TABLE IF NOT EXISTS users (
+    id INT NOT NULL AUTO_INCREMENT,
+    username VARCHAR(30) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    CONSTRAINT pk_users PRIMARY KEY(id)
+    ) ENGINE=InnoDB;
+  \end{lstlisting}
 \end{itemize}
 
 %%% Local Variables:

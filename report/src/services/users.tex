@@ -1,25 +1,23 @@
 \subsection{Utilisateurs}
 \label{subsec:users}
 
-Ce n'est pas un \emph{service} en tant que tel, mais, lors de la création d'un
-nouvel utilisateur, celui-ci passe par plusieurs étapes :
+Ce n'est pas un service en tant que tel, mais, lors de la création d'un nouvel
+utilisateur, celui-ci passe par plusieurs étapes :
+
 \begin{itemize}
-
-    \item il est ajouté à la base de données;
-    \item un site est créé au nom de l'utilisateur;
-    \item il est ajouté à la liste des utilisateurs de Samba;
+    \item il est ajouté à la base de données ;
+    \item un site est créé au nom de l'utilisateur ;
+    \item il est ajouté à la liste des utilisateurs de Samba ;
     \item il possède désormais un espace de stockage.
-
 \end{itemize}
 
-Ensuite, lors de la suppression de l'utilisateur, il faut supprimer ses données.
-
+Lors de la suppression de l'utilisateur, il est nécessaire de supprimer ses
+données.
 
 \subsubsection{Configuration}
 \label{subsubsec:configure}
 
 \begin{itemize}
-
     \item création de l'utilisateur
 
         \begin{lstlisting}[language=bash]
