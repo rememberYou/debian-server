@@ -34,7 +34,9 @@
 \contentsline {subsection}{\numberline {3.9}DNS}{24}{subsection.3.9}
 \contentsline {subsubsection}{\numberline {3.9.1}Sélection du DNS}{24}{subsubsection.3.9.1}
 \contentsline {subsubsection}{\numberline {3.9.2}Mise en place}{24}{subsubsection.3.9.2}
-\contentsline {subsection}{\numberline {3.10}iptables}{26}{subsection.3.10}
-\contentsline {subsubsection}{\numberline {3.10.1}Écriture du script}{26}{subsubsection.3.10.1}
-\contentsline {subsection}{\numberline {3.11}SELinux}{27}{subsection.3.11}
-\contentsline {section}{Références}{28}{section*.2}
+\contentsline {subsection}{\numberline {3.10}Utilisateurs}{26}{subsection.3.10}
+\contentsline {subsubsection}{\numberline {3.10.1}Configuration}{26}{subsubsection.3.10.1}
+\contentsline {subsection}{\numberline {3.11}iptables}{28}{subsection.3.11}
+\contentsline {subsubsection}{\numberline {3.11.1}Écriture du script}{28}{subsubsection.3.11.1}
+\contentsline {subsection}{\numberline {3.12}SELinux}{29}{subsection.3.12}
+\contentsline {section}{Références}{30}{section*.2}

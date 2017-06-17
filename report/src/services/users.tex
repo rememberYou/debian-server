@@ -1,0 +1,86 @@
+\subsection{Utilisateurs}
+\label{subsec:users}
+
+Ce n'est pas un \emph{service} en tant que tel, mais, lors de la création d'un
+nouvel utilisateur, celui-ci passe par plusieurs étapes :
+\begin{itemize}
+
+    \item il est ajouté à la base de données;
+    \item un site est créé au nom de l'utilisateur;
+    \item il est ajouté à la liste des utilisateurs de Samba;
+    \item il possède désormais un espace de stockage.
+
+\end{itemize}
+
+Ensuite, lors de la suppression de l'utilisateur, il faut supprimer ses données.
+
+
+\subsubsection{Configuration}
+\label{subsubsec:configure}
+
+\begin{itemize}
+
+    \item création de l'utilisateur
+
+        \begin{lstlisting}[language=bash]
+            # Creates an user.
+            useradd $username -m -G users -s /bin/bash
+            echo -e "$password\n$password" | (passwd $username)
+
+            quotatool -u $username -bq 400M -l 500M /home
+            smbpasswd -a $username
+            # Each user has access to the 'deepblue' database.
+        \end{lstlisting}
+
+    %\newpage
+    \item création du site dans le fichier \textit{/etc/apache2/sites-enabled/\$username.lan.conf}
+
+        \begin{lstlisting}[language=bash]
+            # Creates a website for a specific user.
+            <VirtualHost *:80>
+                ServerAdmin $username@$username.lan
+                ServerName $username.lan
+                ServerAlias www.$username.lan
+                DocumentRoot /srv/www/$username/www
+                ErrorLog /srv/www/$username.lan/logs/error.log
+                CustomLog /srv/www/$username.lan/logs/access.log
+                    combined
+            </VirtualHost>
+            Alias /$username '/srv/www/$username/www'
+            <Directory '/srv/www/$username/www'>
+                Options Indexes FollowSymLinks MultiViews
+                AllowOverride All
+                Order deny,allow
+                Allow from all
+            </Directory>
+
+            mkdir -p "/srv/www/$username/www"
+            mkdir -p "/srv/www/$username.lan/logs/"
+            chmod 755 "/srv/www/$username/www"
+        \end{lstlisting}
+
+    \item création de la page d'accueil du site \textit{/srv/www/\$username/www/index.html}
+
+        \begin{lstlisting}[language=bash]
+            <!DOCTYPE html>
+            <html>
+            	<head>
+                	<meta charset="utf-8">
+                	<title>Server page</title>
+                </head>
+                <body>
+                    <div id="greetings">
+                    	<h1>Welcome \$username!</h1>
+                        <h2>This is your own server page.</h2>
+                    </div>
+            	</body>
+            </html>
+        \end{lstlisting}
+
+\end{itemize}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
