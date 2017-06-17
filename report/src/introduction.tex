@@ -12,25 +12,27 @@ devra être justifié.
 
 Le serveur devra contenir :
 \begin{itemize}
-\item un partage \emph{NFS} qui permettra aux utilisateurs du réseaux local
-  d'y stocker des fichiers ;
+\item un partage NFS qui permettra aux utilisateurs du réseaux local d'y stocker
+des fichiers ;
 
-\item un partage \emph{Samba} qui permettra aux utilisateurs de Windows
-  d'accéder à ce même partage ;
+\item un partage Samba qui permettra aux utilisateurs de Windows d'accéder à ce
+même partage ;
 
-\item un serveur \emph{Web}, \emph{FTP}, \emph{MySQL} et \emph{DNS} qui
-  permettra un hébergement multi-utilisateurs ;
+\item un serveur Web, FTP, MySQL et DNS qui permettra un hébergement
+multi-utilisateurs ;
   \begin{itemize}
-  \item[\tiny$\bullet$] le FTP permettra à chaque utilisateur d'accéder à son dossier Web;
-  \item[\tiny$\bullet$] une zone contenu le DNS sera indispensable pour les
-sites Web de l'utilisateur.
-  \item[\tiny$\bullet$] le DNS fera également office de DNS cache pour le réseau local.
+  \item[\tiny$\bullet$] le serveur FTP permettra à chaque utilisateur d'accéder
+à son dossier Web ;
+  \item[\tiny$\bullet$] le serveur DNS contient une zone qui sera indispensable
+pour les sites Web de l'utilisateur ;
+  \item[\tiny$\bullet$] le serveur DNS fera également office de DNS cache pour
+le réseau local.
   \end{itemize}
 
-\item un \emph{serveur NTP} pour que les machines du
-  réseau local puissent se synchroniser ;
+\item un serveur NTP pour que les machines du réseau local puissent se
+synchroniser ;
 
-\item le support du module \emph{SSH}.
+\item le support du module SSH.
 \end{itemize}
 
 \newpage
@@ -45,7 +47,7 @@ règles telles que :
 \item l'automatisation des installations et configurations au travers de scripts;
 \item la sécurité : mise en place de mots de passe forts, du SSH, etc. ;
 \item la vigilance et la prévoyance, par exemple par la mise en place de
-  sauvegardes avant et après chaque changements sur le serveur ;
+  sauvegardes avant et après chaque changement sur le serveur ;
 \item le contrôle du bon fonctionnement de chaque élément.
 \end{itemize}
 
@@ -56,8 +58,7 @@ Du côté de la sécurité, quelques contraintes seront prises en compte :
 \begin{itemize}
 \item mise en place d'une politique utilisateur ;
 \item mise en place de quotas ;
-\item partitionnement et gestion du disque (\emph{LVM} et
-  \emph{RAID}) ;
+\item partitionnement et gestion du disque (LVM et RAID) ;
 \item mise en place d'une stratégie de sauvegarde ;
 \item désactivation des éléments inutiles et des mises à jours ;
 \item mise en place d'un antivirus, d'un firewall, etc.

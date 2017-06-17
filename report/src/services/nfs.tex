@@ -10,9 +10,10 @@ entre systèmes UNIX.
 \label{subsubsec:constatation}
 
 Avant de commencer, il est à remarquer que, quelle que soit sa version, NFS est
-a déployer dans un réseau local et n'a pas de vocation à être ouvert sur Internet. \\
-En effet, les données qui circulent sur le réseau ne sont pas chiffrées et les
-droits d'accès sont accordés en fonction de l'adresse IP du client (qui peut être usurpée).
+à déployer dans un réseau local et n'a pas de vocation à être ouvert sur
+Internet. \\ En effet, les données qui circulent sur le réseau ne sont pas
+chiffrées et les droits d'accès sont accordés en fonction de l'adresse IP du
+client qui peut être usurpée.
 
 \subsubsection{Configuration côté serveur}
 \label{subsubsec:config-serveur}
@@ -20,7 +21,7 @@ droits d'accès sont accordés en fonction de l'adresse IP du client (qui peut �
 La totalité de l'implémentation se trouve dans le fichier
 \textit{/etc/exports}.
 
-Voici les différentes étapes et options que nous avons effectuées :
+Voici les différentes étapes et options qui ont été effectuées :
 \begin{itemize}
 \item installation des différents services indispensables au NFS ;
 
@@ -96,13 +97,11 @@ Sur le client, la configuration est similaire :
     192.168.77.131:/srv/share/users
   \end{lstlisting}
 
-  \underline{Remarque :} l'adresse IP \emph{192.168.77.131} étant celle du serveur NFS.
+  \underline{Remarque :} l'adresse IP ``192.168.77.131'' étant celle du serveur NFS.
 
   La configuration ci-dessus permet la création d'un point de montage lors de
-  l'accès au répertoire. La durée d'activité après le dernier accès au dossier
-  partagé $\Rightarrow$ au moins 30 secondes pour un partage samba, etc.).
+  l'accès au répertoire.
 \end{itemize}
-
 
 %%% Local Variables:
 %%% mode: latex

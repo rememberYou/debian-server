@@ -47,12 +47,12 @@ Voici les différentes étapes et options qui ont été effectuées :
 \begin{lstlisting}[language=bash]
 ...
 
-# Adjust time server
+# Adjust time server.
 ntpdate 1.be.pool.ntp.org
 
 driftfile /var/lib/ntp/ntp.drift
 
-# Statistics loopstats peerstats clockstats
+# Statistics loopstats peerstats clockstats.
 filegen loopstats file loopstats type day enable
 filegen peerstats file peerstats type day enable
 filegen clockstats file clockstats type day enable
@@ -78,8 +78,9 @@ broadcast 10.1.255.255
 ...
 \end{lstlisting}
 
-\underline{Remarque :} l'adresse de diffusion (broadcast) a été adapté en
-fonction du réseau.
+\underline{Remarque :} l'adresse de diffusion (\textit{broadcast}) a été adapté
+en fonction du réseau.
+
 
 \subsubsection{Configuration du client}
 \label{subsubsec:configuration-client}
@@ -96,13 +97,13 @@ Sur le client, la configuration est beaucoup plus simple :
 \begin{lstlisting}[language=bash]
 ...
 
-# Adjust time server
+# Adjust time server.
 ntpdate 1.be.pool.ntp.org
 
 # File containing the average deviation.
 driftfile /var/lib/ntp/ntp.drift
 
-# Desired Statistics
+# Desired Statistics.
 statistics loopstats peerstats clockstats
 filegen loopstats file loopstats type day enable
 filegen peerstats file peerstats type day enable
@@ -114,7 +115,7 @@ server 10.1.214.184 prefer
 ...
 \end{lstlisting}
 
-\underline{Remarque :} l'adresse IP \emph{10.1.214.184} étant celle du serveur NTP.
+\underline{Remarque :} l'adresse IP ``10.1.214.184'' étant celle du serveur NTP.
 
 %%% Local Variables:
 %%% mode: latex
