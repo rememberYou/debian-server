@@ -2,7 +2,7 @@
 \label{subsec:quotas}
 
 Dans le but de mieux gérer l'espace personnel de chaque utilisateur, des quotas
-ont été mis en place sur les partitions \textit{/home} et \textit{/share}.
+ont été mis en place sur la partition \textit{/home}.
 
 À la création de chaque utilisateur, un quota avec une limite
 dure\footnote{Limite que nul ne peut dépasser.} de 500 Mo et une limite
@@ -15,27 +15,25 @@ sera averti.
 \begin{lstlisting}[language=bash]
   # Installation of quotatool, useful for scripts.
   apt-get install -y quota quotatool
-  # Unmout the /home partition.
-  user -k /dev/mapper/VolGroup-LVhome
-  umount -l /dev/mapper/VolGroup-LVhome
-  # Unmout the /srv/share partition.
-  user -k /srv/share
-  umount -l /srv/share
-
-  # Add this to /etc/fstab to the /home and /srv/share line.
+  
+  # Add this to /etc/fstab to the /home line.
   usrquota,grpquota
 
+  fuser -k /dev/mapper/VolGroup-LVhome
   # Create the file 'aquota.user' and aquota.group' and
-  # initialize all the partitions that contains quotas.
-  quotacheck -cagumv
-
-  # Mount the /home partition.
-  mount /dev/mapper/VolGroup-LVhome
-  # Mount the srv/share partition.
-  mount /srv/share
+  # initialize all the partition that contains quotas.
+  quotacheck -cguvf /dev/mapper/VolGroup-LVhome
+  quotacheck -vagum
+  
+  # Unmout the /home partition.
+  umount -l /dev/mapper/VolGroup-LVhome
 
   # Activate quota.
   quotaon -avug
+  
+  # Mount the /home partition.
+  mount /dev/mapper/VolGroup-LVhome
+  
 \end{lstlisting}
 
 %%% Local Variables:

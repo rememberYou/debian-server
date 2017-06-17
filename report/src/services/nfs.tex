@@ -43,7 +43,7 @@ Voici les différentes étapes et options qui ont été effectuées :
   distance et désactivation de la vérification de sous-répertoires);
 
   \begin{lstlisting}[language=bash]
-    /srv/share  192.168.0.0/16(rw,no_subtree_check,root_squash)
+    /srv/share  10.1.0.0/16(rw,no_subtree_check,root_squash)
   \end{lstlisting}
 
 \item mises à jour de la tables des systèmes de fichiers partagés.
@@ -94,10 +94,10 @@ Sur le client, la configuration est similaire :
 
   \begin{lstlisting}[language=bash]
     users -noexec,nosuid,rw,ghost \
-    192.168.77.131:/srv/share/users
+    10.1.214.184:/srv/share/users
   \end{lstlisting}
 
-  \underline{Remarque :} l'adresse IP ``192.168.77.131'' étant celle du serveur NFS.
+  \underline{Remarque :} l'adresse IP ``10.1.214.184'' étant celle du serveur NFS.
 
   La configuration ci-dessus permet la création d'un point de montage lors de
   l'accès au répertoire.
