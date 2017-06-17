@@ -11,33 +11,33 @@
 \contentsline {subsection}{\numberline {2.5}Sauvegardes}{7}{subsection.2.5}
 \contentsline {subsection}{\numberline {2.6}Sécurité des mots de passe}{8}{subsection.2.6}
 \contentsline {section}{\numberline {3}Services}{9}{section.3}
-\contentsline {subsection}{\numberline {3.1}NTP}{9}{subsection.3.1}
-\contentsline {subsubsection}{\numberline {3.1.1}Principe}{9}{subsubsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.2}Configuration du serveur}{9}{subsubsection.3.1.2}
-\contentsline {subsubsection}{\numberline {3.1.3}Configuration du client}{11}{subsubsection.3.1.3}
-\contentsline {subsection}{\numberline {3.2}SSH}{12}{subsection.3.2}
-\contentsline {subsubsection}{\numberline {3.2.1}Type d'authentification}{12}{subsubsection.3.2.1}
-\contentsline {subsubsection}{\numberline {3.2.2}Implémentation}{12}{subsubsection.3.2.2}
-\contentsline {subsection}{\numberline {3.3}NFS}{14}{subsection.3.3}
-\contentsline {subsubsection}{\numberline {3.3.1}Constatation}{14}{subsubsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.2}Configuration côté serveur}{14}{subsubsection.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.3}Configuration côté client}{15}{subsubsection.3.3.3}
-\contentsline {subsection}{\numberline {3.4}Samba}{16}{subsection.3.4}
-\contentsline {subsubsection}{\numberline {3.4.1}Configuration}{16}{subsubsection.3.4.1}
-\contentsline {subsection}{\numberline {3.5}Quotas}{18}{subsection.3.5}
-\contentsline {subsection}{\numberline {3.6}Base de données}{19}{subsection.3.6}
-\contentsline {subsubsection}{\numberline {3.6.1}Mise en place}{19}{subsubsection.3.6.1}
-\contentsline {subsection}{\numberline {3.7}Serveur Web}{20}{subsection.3.7}
-\contentsline {subsubsection}{\numberline {3.7.1}Configuration côté serveur}{20}{subsubsection.3.7.1}
-\contentsline {subsection}{\numberline {3.8}FTP}{22}{subsection.3.8}
-\contentsline {subsubsection}{\numberline {3.8.1}Choix du serveur}{22}{subsubsection.3.8.1}
-\contentsline {subsubsection}{\numberline {3.8.2}Configuration}{22}{subsubsection.3.8.2}
-\contentsline {subsection}{\numberline {3.9}DNS}{25}{subsection.3.9}
-\contentsline {subsubsection}{\numberline {3.9.1}Sélection du DNS}{25}{subsubsection.3.9.1}
-\contentsline {subsubsection}{\numberline {3.9.2}Mise en place}{25}{subsubsection.3.9.2}
-\contentsline {subsection}{\numberline {3.10}Utilisateurs}{27}{subsection.3.10}
-\contentsline {subsubsection}{\numberline {3.10.1}Configuration}{27}{subsubsection.3.10.1}
-\contentsline {subsection}{\numberline {3.11}iptables}{29}{subsection.3.11}
-\contentsline {subsubsection}{\numberline {3.11.1}Écriture du script}{29}{subsubsection.3.11.1}
-\contentsline {subsection}{\numberline {3.12}SELinux}{30}{subsection.3.12}
-\contentsline {section}{Références}{31}{section*.2}
+\contentsline {subsection}{\numberline {3.1}Base de données}{9}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Mise en place}{9}{subsubsection.3.1.1}
+\contentsline {subsection}{\numberline {3.2}DNS}{11}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Sélection du DNS}{11}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Mise en place}{11}{subsubsection.3.2.2}
+\contentsline {subsection}{\numberline {3.3}FTP}{13}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Choix du serveur}{13}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Configuration}{13}{subsubsection.3.3.2}
+\contentsline {subsection}{\numberline {3.4}iptables}{16}{subsection.3.4}
+\contentsline {subsubsection}{\numberline {3.4.1}Écriture du script}{16}{subsubsection.3.4.1}
+\contentsline {subsection}{\numberline {3.5}NFS}{20}{subsection.3.5}
+\contentsline {subsubsection}{\numberline {3.5.1}Constatation}{20}{subsubsection.3.5.1}
+\contentsline {subsubsection}{\numberline {3.5.2}Configuration côté serveur}{20}{subsubsection.3.5.2}
+\contentsline {subsubsection}{\numberline {3.5.3}Configuration côté client}{21}{subsubsection.3.5.3}
+\contentsline {subsection}{\numberline {3.6}NTP}{22}{subsection.3.6}
+\contentsline {subsubsection}{\numberline {3.6.1}Principe}{22}{subsubsection.3.6.1}
+\contentsline {subsubsection}{\numberline {3.6.2}Configuration du serveur}{22}{subsubsection.3.6.2}
+\contentsline {subsubsection}{\numberline {3.6.3}Configuration du client}{24}{subsubsection.3.6.3}
+\contentsline {subsection}{\numberline {3.7}Quotas}{25}{subsection.3.7}
+\contentsline {subsection}{\numberline {3.8}Samba}{26}{subsection.3.8}
+\contentsline {subsubsection}{\numberline {3.8.1}Configuration}{26}{subsubsection.3.8.1}
+\contentsline {subsection}{\numberline {3.9}SELinux}{28}{subsection.3.9}
+\contentsline {subsection}{\numberline {3.10}Serveur Web}{29}{subsection.3.10}
+\contentsline {subsubsection}{\numberline {3.10.1}Configuration côté serveur}{29}{subsubsection.3.10.1}
+\contentsline {subsection}{\numberline {3.11}SSH}{31}{subsection.3.11}
+\contentsline {subsubsection}{\numberline {3.11.1}Type d'authentification}{31}{subsubsection.3.11.1}
+\contentsline {subsubsection}{\numberline {3.11.2}Implémentation}{31}{subsubsection.3.11.2}
+\contentsline {subsection}{\numberline {3.12}Utilisateurs}{33}{subsection.3.12}
+\contentsline {subsubsection}{\numberline {3.12.1}Configuration}{33}{subsubsection.3.12.1}
+\contentsline {section}{Références}{35}{section*.2}
