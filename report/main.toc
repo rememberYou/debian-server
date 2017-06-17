@@ -27,10 +27,11 @@
 \contentsline {subsection}{\numberline {3.6}Base de données}{18}{subsection.3.6}
 \contentsline {subsubsection}{\numberline {3.6.1}Mise en place}{18}{subsubsection.3.6.1}
 \contentsline {subsection}{\numberline {3.7}Serveur Web}{19}{subsection.3.7}
-\contentsline {subsection}{\numberline {3.8}FTP}{20}{subsection.3.8}
-\contentsline {subsubsection}{\numberline {3.8.1}Choix du serveur}{20}{subsubsection.3.8.1}
-\contentsline {subsubsection}{\numberline {3.8.2}Configuration}{20}{subsubsection.3.8.2}
-\contentsline {subsection}{\numberline {3.9}DNS}{21}{subsection.3.9}
-\contentsline {subsubsection}{\numberline {3.9.1}Sélection du DNS}{21}{subsubsection.3.9.1}
-\contentsline {subsubsection}{\numberline {3.9.2}Mise en place}{21}{subsubsection.3.9.2}
-\contentsline {section}{Références}{23}{section*.2}
+\contentsline {subsubsection}{\numberline {3.7.1}Configuration côté serveur}{19}{subsubsection.3.7.1}
+\contentsline {subsection}{\numberline {3.8}FTP}{21}{subsection.3.8}
+\contentsline {subsubsection}{\numberline {3.8.1}Choix du serveur}{21}{subsubsection.3.8.1}
+\contentsline {subsubsection}{\numberline {3.8.2}Configuration}{21}{subsubsection.3.8.2}
+\contentsline {subsection}{\numberline {3.9}DNS}{22}{subsection.3.9}
+\contentsline {subsubsection}{\numberline {3.9.1}Sélection du DNS}{22}{subsubsection.3.9.1}
+\contentsline {subsubsection}{\numberline {3.9.2}Mise en place}{22}{subsubsection.3.9.2}
+\contentsline {section}{Références}{24}{section*.2}

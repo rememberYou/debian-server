@@ -82,7 +82,7 @@ function configure_apache() {
 }
 
 # Installation of Apache 2.
-apt-get install apache2 apache2-doc apache2-utils -y
+apt-get install -y apache2 apache2-doc apache2-utils
 
 # If you choose to keep the event module enabled, these settings are suggested
 # for a 2GB Linode.
@@ -103,7 +103,7 @@ configure_event_module
 # Restart Apache.
 systemctl restart apache2
 
-# Configure Apache.
+# Configuration Apache.
 configure_apache
 
 # Hide the version of PHP for users.
@@ -121,7 +121,7 @@ a2ensite example.lan.conf
 systemctl restart apache2
 
 # Install PHP support.
-apt-get install php5 php-pear -y
+apt-get install -y php5 php-pear
 
 # To test the configuration
 apachectl configtest

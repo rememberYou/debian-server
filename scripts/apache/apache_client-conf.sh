@@ -11,6 +11,3 @@ function create_website() {
     echo -e "\tCustomLog /srv/www/$username.lan/logs/access.log combined" >> "/etc/apache2/sites-enabled/$username.lan.conf"
     echo "</VirtualHost>" >> "/etc/apache2/sites-enabled/$username.lan.conf"
 }
-
-#<Directory "srv/web/$1/www">
-#</Directory>

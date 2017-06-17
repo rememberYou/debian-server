@@ -1,8 +1,91 @@
 \subsection{Serveur Web}
 \label{subsec:serveur-web}
 
+Pour la création du serveur Web, Apache a été utilisé.
 
+\subsubsection{Configuration côté serveur}
+\label{subsubsec:config-serveur}
 
+La totalité de l'implémentation se trouve dans les fichiers \\
+\textit{/etc/apache2/mods-available/mpm\_prefork.conf} \\
+\textit{/etc/apache2/mods-available/mpm\_event.conf}
+
+Voici les différentes étapes et options qui ont été effectuées :
+\begin{itemize}
+\item installation de la version 2 d'Apache ;
+
+  \begin{lstlisting}[language=bash]
+    # Installation of Apache 2.
+    apt-get install -y apache2 apache2-doc apache2-utils
+  \end{lstlisting}
+
+\item configuration des modules multiprocessus (MPMs) ;
+
+  \begin{lstlisting}[language=bash]
+    # prefork MPM.
+    <IfModule mpm_prefork_module>
+            StartServers               4
+            MinSpareServers            20
+            MaxSpareServers            40
+            MaxRequestWorkers          200
+            MaxConnectionsPerChild     4500
+    </IfModule>
+  \end{lstlisting}
+
+\item désactivation du module d'évenement et activation de divers modules ;
+
+  \begin{lstlisting}[language=bash]
+    # On Debian 8, the event module is enabled by default.
+    # This will need to be disabled, and the prefork
+    # module enabled.
+    a2dismod mpm_event
+    a2enmod mpm_prefork
+    a2enmod userdir
+    a2enmod rewrite
+  \end{lstlisting}
+
+\item configuration du module d'évenement ;
+
+  \begin{lstlisting}[language=bash]
+    # event MPM.
+    <IfModule mpm_event_module>
+            StartServers               2
+            MinSpareServers            25
+            MaxSpareServers            75
+            ThreadLimit                64
+            ThreadsPerChild            25
+            MaxRequestWorkers          150
+            MaxConnectionsPerChild     3000
+    </IfModule>
+  \end{lstlisting}
+
+\item configuration du serveur Apache ;
+
+  \begin{lstlisting}[language=bash]
+    # Disable the default Apache virtual host.
+    a2dissite 000-default.conf
+
+    # Creation of the Web folder.
+    mkdir -p /srv/www/example/www
+  \end{lstlisting}
+
+\item masquage de la version de PHP pour les utilisateurs ;
+
+  \begin{lstlisting}[language=bash]
+    # Hide the version of PHP for users.
+    min_info
+  \end{lstlisting}
+
+\item installation du support PHP.
+
+  \begin{lstlisting}[language=bash]
+    # Install PHP support.
+    apt-get install -y php5 php-pear
+  \end{lstlisting}
+
+\underline{Remarque :} les dossiers des sites Web ainsi que des logs sont créés
+lors de l'ajout d'un utilisateur.
+\end{itemize}
 
 %%% Local Variables:
 %%% mode: latex

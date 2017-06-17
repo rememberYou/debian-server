@@ -9,7 +9,6 @@ function create_user() {
     echo -e "$password\n$password" | (passwd $username)
 
     quotatool -u $username -bq 400M -l 500M /home
-    #quotatool -u $username -bq 400M -l 500M /srv/share
 
     smbpasswd -a $username
 
