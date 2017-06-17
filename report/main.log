@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.6.5)  17 JUN 2017 17:45
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.6.5)  17 JUN 2017 17:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -979,55 +979,55 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 73.
 ) [25] (./src/services/iptables.tex)
 [26] (./src/services/selinux.tex) [27]) (./src/references.tex (./main.bbl
-Underfull \hbox (badness 2318) in paragraph at lines 35--40
+Underfull \hbox (badness 2318) in paragraph at lines 42--47
 []\T1/lmr/m/sc/12 Krout, E.  \T1/lmr/m/n/12 Apache Web Ser-ver on De-bian 8 (Je
 s-sie), Site, [en ligne].
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--47
+Underfull \hbox (badness 10000) in paragraph at lines 49--54
 []\T1/lmr/m/sc/12 La Com-mu-nauté de Wi-ki-pé-dia\T1/lmr/m/n/12 .  Ma-riaDB, Si
 te, [en ligne].
  []
 
 
-Underfull \hbox (badness 1210) in paragraph at lines 49--54
+Underfull \hbox (badness 1210) in paragraph at lines 56--61
 []\T1/lmr/m/sc/12 La Com-mu-nauté de Wi-ki-pé-dia\T1/lmr/m/n/12 .  Net-work Fil
 e Sys-tem, Site, [en ligne].
  []
 
 
-Underfull \hbox (badness 1142) in paragraph at lines 56--61
+Underfull \hbox (badness 1142) in paragraph at lines 63--68
 []\T1/lmr/m/sc/12 La Com-mu-nauté de Wi-ki-pé-dia\T1/lmr/m/n/12 .  Samba (in-fo
 r-ma-tique), Site, [en ligne].
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--68
+Underfull \hbox (badness 10000) in paragraph at lines 70--75
 []\T1/lmr/m/sc/12 La Com-mu-nauté de Wi-ki-pé-dia\T1/lmr/m/n/12 .  Se-cure Shel
 l, Site, [en ligne].
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--88
+Underfull \hbox (badness 10000) in paragraph at lines 90--95
 []\T1/lmr/m/sc/12 La Com-mu-nauté de Wi-ki-pé-dia\T1/lmr/m/n/12 .  Ser-veur FTP
 , Site, [en ligne].
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--95
+Underfull \hbox (badness 10000) in paragraph at lines 97--102
 []\T1/lmr/m/sc/12 La Com-mu-nauté de Wi-ki-pé-dia\T1/lmr/m/n/12 .  VsFTPd, Site
 , [en ligne].
  []
 
 [28]
-Underfull \hbox (badness 1803) in paragraph at lines 109--114
+Underfull \hbox (badness 1803) in paragraph at lines 116--121
 []\T1/lmr/m/sc/12 ruchi\T1/lmr/m/n/12 .  NTP Ser-ver and Client Confi-gu-ra-tio
 n in de-bian, Site, [en ligne].
  []
 
 
-Underfull \hbox (badness 5607) in paragraph at lines 130--135
+Underfull \hbox (badness 5607) in paragraph at lines 137--142
 []\T1/lmr/m/sc/12 The De-bian Sup-port\T1/lmr/m/n/12 .  Confi-gu-ra-tion ser-ve
 ur NTP, Site, [en ligne].
  []
@@ -1041,10 +1041,10 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 116.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 116.
  ) 
 Here is how much of TeX's memory you used:
- 23601 strings out of 493005
- 410242 string characters out of 6134597
+ 23602 strings out of 493005
+ 410259 string characters out of 6134597
  498150 words of memory out of 5000000
- 27108 multiletter control sequences out of 15000+600000
+ 27109 multiletter control sequences out of 15000+600000
  65491 words of font info for 52 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  55i,11n,93p,909b,1958s stack positions out of 5000i,500n,10000p,200000b,80000s
