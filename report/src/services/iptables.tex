@@ -1,0 +1,51 @@
+\subsection{iptables}
+\label{subsec:iptables}
+
+iptables permet de configurer les règles du pare-feu en IPv4.
+
+\subsubsection{Écriture du script}
+\label{subsubsec:ecriture-script}
+
+Le script est \textit{/bin/script/iptables/iptables-conf.sh}.
+
+Voici comment il est structuré :
+\begin{itemize}
+    \item \textit{suppression des règles par défaut}
+
+        \begin{lstlisting}[language=bash]
+            # Flushing all rules from all tables.
+            iptables -F ; iptables -X
+            iptables -t nat -F ; iptables -t nat -X
+            iptables -t mangle -F ; iptables -t mangle -X
+            iptables -t raw -F ; iptables -t raw -X
+        \end{lstlisting}
+
+    \item mise en place de règles par défaut
+
+        \begin{lstlisting}[language=bash]
+            # Setting default filter policy.
+            iptables -P INPUT DROP
+            iptables -P OUTPUT DROP
+            iptables -P FORWARD DROP
+
+            # Allow loopback access.
+            iptables -A INPUT -i lo -j ACCEPT
+            iptables -A OUTPUT -o lo -j ACCEPT
+        \end{lstlisting}
+
+    \item acceptation des différents services tels que les \emph{ping}, le
+    \emph{DNS}, \emph{HTTP(S)}, \emph{NTP}, \emph{NFS}, \emph{Samba} et \emph{SSH}.
+    Voici la configuration du DNS :
+
+        \begin{lstlisting}[language=bash]
+            # Allow DNS (53)
+            iptables -A OUTPUT -p udp -o eth0 --dport 53 -j ACCEPT
+            iptables -A INPUT -p udp -i eth0 --sport 53 -j ACCEPT
+        \end{lstlisting}
+
+\end{itemize}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

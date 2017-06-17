@@ -31,7 +31,10 @@
 \contentsline {subsection}{\numberline {3.8}FTP}{21}{subsection.3.8}
 \contentsline {subsubsection}{\numberline {3.8.1}Choix du serveur}{21}{subsubsection.3.8.1}
 \contentsline {subsubsection}{\numberline {3.8.2}Configuration}{21}{subsubsection.3.8.2}
-\contentsline {subsection}{\numberline {3.9}DNS}{22}{subsection.3.9}
-\contentsline {subsubsection}{\numberline {3.9.1}Sélection du DNS}{22}{subsubsection.3.9.1}
-\contentsline {subsubsection}{\numberline {3.9.2}Mise en place}{22}{subsubsection.3.9.2}
-\contentsline {section}{Références}{24}{section*.2}
+\contentsline {subsection}{\numberline {3.9}DNS}{24}{subsection.3.9}
+\contentsline {subsubsection}{\numberline {3.9.1}Sélection du DNS}{24}{subsubsection.3.9.1}
+\contentsline {subsubsection}{\numberline {3.9.2}Mise en place}{24}{subsubsection.3.9.2}
+\contentsline {subsection}{\numberline {3.10}iptables}{26}{subsection.3.10}
+\contentsline {subsubsection}{\numberline {3.10.1}Écriture du script}{26}{subsubsection.3.10.1}
+\contentsline {subsection}{\numberline {3.11}SELinux}{27}{subsection.3.11}
+\contentsline {section}{Références}{28}{section*.2}
