@@ -40,4 +40,5 @@
 \contentsline {subsubsection}{\numberline {3.11.2}Implémentation}{29}{subsubsection.3.11.2}
 \contentsline {subsection}{\numberline {3.12}Utilisateurs}{31}{subsection.3.12}
 \contentsline {subsubsection}{\numberline {3.12.1}Configuration}{31}{subsubsection.3.12.1}
-\contentsline {section}{Références}{33}{section*.2}
+\contentsline {section}{\numberline {4}Conclusion du projet}{33}{section.4}
+\contentsline {section}{Références}{34}{section*.2}
