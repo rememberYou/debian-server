@@ -10,7 +10,7 @@ entre systèmes UNIX.
 \label{subsubsec:constatation}
 
 Avant de commencer, il est à remarquer que, quelle que soit sa version, NFS est
-à déployer dans un réseau local et n'a pas de vocation à être ouvert sur
+à déployer dans un réseau local, celui-ci n'a pas de vocation à être ouvert sur
 Internet. \\ En effet, les données qui circulent sur le réseau ne sont pas
 chiffrées et les droits d'accès sont accordés en fonction de l'adresse IP du
 client qui peut être usurpée.
@@ -19,7 +19,7 @@ client qui peut être usurpée.
 \label{subsubsec:config-serveur}
 
 La totalité de l'implémentation se trouve dans le fichier
-\textit{/etc/exports}.
+\textit{/etc/exports}
 
 Voici les différentes étapes et options qui ont été effectuées :
 \begin{itemize}
@@ -27,7 +27,7 @@ Voici les différentes étapes et options qui ont été effectuées :
 
   \begin{lstlisting}[language=bash]
     # Installation of NFS.
-    apt-get install nfs-kernel-server nfs-common -y
+    apt-get install -y nfs-kernel-server nfs-common
   \end{lstlisting}
 
 \item création du dossier de partage, et ajout de droits
@@ -64,7 +64,7 @@ Sur le client, la configuration est similaire :
 
   \begin{lstlisting}[language=bash]
     # Installation of NFS.
-    apt-get install nfs-common -y
+    apt-get install -y nfs-common
   \end{lstlisting}
 
     \item création du dossier de partage, et ajout de droits

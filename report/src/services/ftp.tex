@@ -16,18 +16,22 @@ risques de piratage.
 Dans sa configuration par défaut, VsFTPd est très restrictif :
 
 \begin{itemize}
-    \item Seul le compte anonyme est autorisé à se connecter au serveur, et en
+    \item seul le compte anonyme est autorisé à se connecter au serveur, et en
       lecture seule;
 
-    \item Les utilisateurs ne peuvent accéder qu'à leur compte.
+    \item les utilisateurs ne peuvent accéder qu'à leur compte.
 \end{itemize}
 
 \subsubsection{Configuration}
 \label{subsubsec:config}
 
-La totalité de l'implémentation se trouve dans les fichiers \\
-\textit{/etc/vsftpd.conf} \\
-\textit{/etc/pam.d/vsftpd}
+La totalité de l'implémentation se trouve dans les fichiers :
+
+\begin{itemize}
+\item \textit{/etc/vsftpd.conf}
+
+\item \textit{/etc/pam.d/vsftpd}
+\end{itemize}
 
 Voici les différentes étapes et options qui ont été effectuées :
 \begin{itemize}
@@ -35,16 +39,16 @@ Voici les différentes étapes et options qui ont été effectuées :
 
         \begin{lstlisting}[language=bash]
             # Installation of vsftpd.
-            apt-get install vsftpd -y
+            apt-get install -y vsftpd
         \end{lstlisting}
 
     \item choix du port et du monitoring
 
         \begin{lstlisting}[language=bash]
-            # Change the number of port to transmit:
+            # Change the number of port to transmi.
             listen_port=52152
 
-            # Basic monitoring
+            # Basic monitoring.
             setproctitle_enable=YES
         \end{lstlisting}
 
@@ -54,36 +58,27 @@ Voici les différentes étapes et options qui ont été effectuées :
         \begin{lstlisting}[language=bash]
             # Set vsftpd in standalone mode.
             listen=YES
-
             # Block the not allowed users.
             anonymous_enable=NO
-
             # Allow the local connections
             local_enable=YES
             write_enable=YES
             local_umask=022
-
             # Allow connection for guests users.
             guest_enable=YES
-
             # Default user for connections.
             guest_username=apache
-
             # Avoid local users go to /root.
             chroot_local_user=YES
-
             # Send virtual users into the default folder.
             local_root=/srv/www/
-
             # PAM manages the authentifications of the system.
             # We can set a login and a password to all the systems.
             pam_service_name=vsftpd
-
             # Create a default folder for users.
             user_config_dir=/etc/vsftpd/vsftpd_conf_users
         \end{lstlisting}
 
-    \newpage
     \item configuration de PAM ;
 
         \begin{lstlisting}[language=bash]

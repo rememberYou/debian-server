@@ -8,7 +8,34 @@ d'accès à différents éléments du système d'exploitation. Ces éléments pe
 Dans le cadre de la mise en place d'un serveur conséquent, il aurait fallu
 implémenter ce type de service.
 
-Pour ce projet, il a été fait abstraction de ce service.
+Pour ce projet, un début d'implémentation a été fait, mais vu que l'ensemble des
+services n'était pas encore répertorié, il a été décidé de faire abstraction de
+ce service afin d'éviter que certains services se retrouvent bloqués.
+
+  \begin{lstlisting}[language=bash]
+    # Installation of SELinux.
+    apt-get install -y selinux-basics selinux-policy-default
+                       auditd
+
+    # Configure GRUB and PAM and create /.autorelabel
+    selinux-activate
+    # Reboot the system.
+    reboot
+    # Check that everything has been setup correctly and
+    # catch common SELinux problems.
+    check-selinux-installation
+    # You can see all would-be denials since the last reboot.
+    audit2why -al
+    # SELinux, enable enforcing mode temporarily by running:
+    setenforce 1
+    # To enable enforcing mode permanently, you need to add it to
+    # the kernel command.
+    echo "enforcing=1" >> /etc/default/grub
+    # Reboot the system.
+    reboot
+    # Some of the PAM config files need to have "session required
+    # pam_selinux.so multiple"
+  \end{lstlisting}
 
 %%% Local Variables:
 %%% mode: latex

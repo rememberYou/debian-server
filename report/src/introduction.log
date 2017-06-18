@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2017.5.15)  17 JUN 2017 14:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2017.5.15)  18 JUN 2017 07:13
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -334,23 +334,6 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 13--14
 []
  []
 
-
-./introduction.tex:15: LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.15 \begin{itemize}
-                    
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (20.0pt too wide) in paragraph at lines 15--15
-[] 
- []
-
 Missing character: There is no u in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no p in font nullfont!
@@ -576,10 +559,10 @@ Missing character: There is no u in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no ; in font nullfont!
-./introduction.tex:25: Undefined control sequence.
+./introduction.tex:24: Undefined control sequence.
 <argument> \tiny 
                  $\bullet $
-l.25   \item[\tiny$\bullet$]
+l.24   \item[\tiny$\bullet$]
                              le serveur FTP permettra à chaque utilisateur ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -588,9 +571,9 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 25.
+(Font)              <7> on input line 24.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 25.
+(Font)              <5> on input line 24.
 Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
@@ -657,11 +640,11 @@ Missing character: There is no W in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no b in font nullfont!
 Missing character: There is no ; in font nullfont!
-./introduction.tex:27: Undefined control sequence.
+./introduction.tex:26: Undefined control sequence.
 <argument> \tiny 
                  $\bullet $
-l.27   \item[\tiny$\bullet$]
-                             le serveur DNS contient une zone qui sera indis...
+l.26   \item[\tiny$\bullet$]
+                             le serveur DNS contiendra une zone qui sera
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -687,7 +670,9 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
-Missing character: There is no t in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no e in font nullfont!
@@ -745,7 +730,6 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no r in font nullfont!
-Missing character: There is no . in font nullfont!
 Missing character: There is no ; in font nullfont!
 ./introduction.tex:29: Undefined control sequence.
 <argument> \tiny 
@@ -1331,7 +1315,6 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no s in font nullfont!
-Missing character: There is no s in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -1574,20 +1557,17 @@ Missing character: There is no q in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no ( in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no M in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no t in font nullfont!
+Missing character: There is no R in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no D in font nullfont!
 Missing character: There is no ) in font nullfont!
 Missing character: There is no ; in font nullfont!
-
-Overfull \hbox (21.64986pt too wide) in paragraph at lines 62--64
-\OT1/cmr/m/it/10 LVM
- []
-
-
-Overfull \hbox (27.07343pt too wide) in paragraph at lines 62--64
-\OT1/cmr/m/it/10 RAID 
- []
-
 Missing character: There is no m in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no s in font nullfont!
@@ -1730,11 +1710,11 @@ Missing character: There is no . in font nullfont!
 
  
 Here is how much of TeX's memory you used:
- 17 strings out of 493013
- 275 string characters out of 6139317
+ 15 strings out of 493013
+ 254 string characters out of 6139317
  55646 words of memory out of 5000000
- 3658 multiletter control sequences out of 15000+600000
- 3986 words of font info for 15 fonts, out of 8000000 for 9000
+ 3657 multiletter control sequences out of 15000+600000
+ 3640 words of font info for 14 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  22i,4n,16p,123b,146s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!

@@ -9,6 +9,7 @@
     "subsec:noyau"
     "subsec:partitionnement"
     "tab:tableau-partitionnement"
-    "subsec:sauvegardes"))
+    "subsec:sauvegardes"
+    "subsec:securite-mdps"))
  :latex)
 
