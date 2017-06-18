@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.6.5)  18 JUN 2017 18:53
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.6.5)  18 JUN 2017 18:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1001,12 +1001,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--6
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21--22
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--30
+Underfull \hbox (badness 10000) in paragraph at lines 23--29
 
  []
 
