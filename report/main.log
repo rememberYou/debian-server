@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.6.5)  21 JUN 2017 15:49
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.6.5)  21 JUN 2017 16:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -984,9 +984,7 @@ Overfull \hbox (4.54141pt too wide) in paragraph at lines 89--90
  []
 
 ) [13] (./src/services/iptables.tex [14] [15] [16]) [17]
-(./src/services/nfs.tex [18]) [19] (./src/services/ntp.tex
-Missing character: There is no ́ in font ec-lmr12!
- [20]
+(./src/services/nfs.tex [18]) [19] (./src/services/ntp.tex [20]
 Overfull \hbox (7.47748pt too wide) in paragraph at lines 88--90
 []\T1/lmr/m/n/12 Tout comme le ser-veur, la to-ta-lité de l'im-plé-men-ta-tion 
 se trouve dans le fi-chier \T1/lmr/m/it/12 /etc/ntp.conf 
