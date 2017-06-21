@@ -17,7 +17,7 @@ Les deux authentifications les plus utilisées sont :
 \end{enumerate}
 
 L'identification automatique par clés a été mise en place pour ce serveur. De ce
-fait, il est nul nécessaire d'entrer le mot de passe à chaque connexion à
+fait, il n'est plus nécessaire d'entrer le mot de passe à chaque connexion à
 distance. \\
 Cette méthode est plus complexe à mettre en place, mais elle est surtout plus
 pratique.
@@ -30,7 +30,7 @@ plus aucun mot de passe n'est demandé.
 
 La majorité de l'implémentation se trouve dans le fichier
 \textit{/etc/ssh/sshd\_config}. \\
-Le serveur a été configuré respectant ces critères :
+Le serveur a été configuré en respectant ces critères :
 \begin{itemize}
 \item installation de \textit{openssh} ;
 
@@ -91,7 +91,7 @@ Le serveur a été configuré respectant ces critères :
 \end{itemize}
 
 Ensuite, une génération et un chiffrement d'une paire de clés publique / privée
-sur la machine cliente a été nécessaire.
+sur la machine cliente ont été nécessaires.
 
 \begin{lstlisting}[language=bash]
   ssh-keygen -t rsa -b 4096 -C $email -f "/$USER/.ssh/id_rsa" \
