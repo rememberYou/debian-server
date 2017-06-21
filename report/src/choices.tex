@@ -41,23 +41,23 @@ mises à jour liées au matériel.
 
 \newpage
 
-De même, la distribution Debian est plus professionnel et celle-ci possède le
+De même, la distribution Debian est plus professionnelle et celle-ci possède le
 \textit{leadership} depuis des années.
 
 \underline{Remarque :} depuis mai 2016, Ubuntu a les mêmes parts de marché que
 Debian.
 
-La distribution Ubuntu n'a pas été choisi pour les raisons suivantes :
+La distribution Ubuntu n'a pas été choisie pour les raisons suivantes :
 \begin{itemize}
-\item Dérivé de Debian : de ce fait, un administrateur sachant configurer un
+\item Dérivée de Debian : de ce fait, un administrateur sachant configurer un
 serveur sous Debian pourra facilement s'adapter aux serveur sous Ubuntu.
 
 \item Vise le grand public. Par conséquent, est beaucoup moins utilisé dans le
 milieu professionnel.
 
-\item Assez récent sur le marché du serveur.
+\item Assez récente sur le marché du serveur.
 
-\item Moins performant que Debian.
+\item Moins performante que Debian.
 \end{itemize}
 
 Concernant les autres distributions, CentOS est en baisse, mais reste au-dessus
@@ -78,13 +78,13 @@ de Red Hat et de Fedora qui sont en chute libre.
 Pour le choix de la langue lors de l'installation, il a été préféré d'utiliser
 l'anglais vu que la majorité des documentations et forums sont disponibles dans
 cette langue. De plus, cela permet d'éviter une mauvaise traduction concernant
-les nouvelles mises à jour et de toucher un plus large public possible.
+les nouvelles mises à jour et de toucher un large public le plus large possible.
 
 \subsection{Noyau}
 \label{subsec:noyau}
 
 Un noyau (monolithique\footnote{Les fonctions du système et pilotes sont
-regroupées dans le kernel space généré à la compilation.}) modulaire a été
+regroupés dans le kernel space généré à la compilation.}) modulaire a été
 choisi afin de gérer les modules. En effet, celui-ci facilite l'ajout et la
 suppression de modules à chaud. Ces modules, pas toujours indispensables,
 peuvent être la source de failles et de bugs.
@@ -93,7 +93,7 @@ peuvent être la source de failles et de bugs.
 \label{subsec:partitionnement}
 
 Le partionnement du disque a été réalisé avec une partition racine,
-\textit{/boot}, et un groupe de volume LVM nommé \textit{VolGroup}. De sucroît,
+\textit{/boot}, et un groupe de volume LVM nommé \textit{VolGroup}. De surcroit,
 deux disques de 10 Go en RAID 1 ont été utilisés.
 
 \begin{center}
@@ -139,7 +139,7 @@ deux disques de 10 Go en RAID 1 ont été utilisés.
 \label{subsec:sauvegardes}
 
 Dans le milieu de l'entreprise, deux types de sauvegarde sont principalement
-utilisées : incrémentielle\footnote{Sauvegarde exclusivement les données
+utilisés : incrémentielle\footnote{Sauvegarde exclusivement les données
 modifiées ou ajoutées depuis la précédente sauvegarde.} et différentielle
 \footnote{Sauvegarde les données modifiées ou ajoutées en référence à la
 dernière sauvegarde complète.}.
