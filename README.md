@@ -22,7 +22,7 @@ Example for installing Samba:
 	
 Don't forget to change the IPv4 address of your server and of your client for the scripts.
 
-## Services supporting [13/14]
+## Services supporting [9/9]
    - [x] NFS share
    - [x] Samba share
    - [x] Web server
