@@ -74,7 +74,7 @@ read username
 if id "$username" >/dev/null 2>&1; then
     echo "user already exists!"
 else
-    echo -e "Enter the password associted with this account: "
+    echo -e "Enter the password associated with this account: "
     read password
 
     create_user $username $password
