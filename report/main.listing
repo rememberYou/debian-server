@@ -1,1 +1,0 @@
-crontab -e 0 2 * * 0 /usr/bin/backup-make.sh -d
