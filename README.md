@@ -6,7 +6,9 @@ For education purpose, this project was to give a try to configure a Debian serv
 implementing the various services in terms of security and good manners
 that a sysadmin should have.
 
-Free to use our code for your own server and contribuate to this repository if
+For the French community, a report about the project is available on `report`.
+
+Feel free to use our code for your own server and contribuate to this repository if
 you notice any mistakes.
 
 ## Usage
