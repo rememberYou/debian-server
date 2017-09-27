@@ -42,7 +42,6 @@ echo "StrictModes yes" >> /etc/ssh/sshd_config
 echo " " >> /etc/ssh/sshd_config
 
 echo "# Enabling RSA Authentication" >> /etc/ssh/sshd_config
-echo "RSAAuthentication yes" >> /etc/ssh/sshd_config
 echo "PubkeyAuthentication yes" >> /etc/ssh/sshd_config
 echo "AuthorizedKeysFile        %h/.ssh/authorized_keys" >> /etc/ssh/sshd_config
 echo " " >> /etc/ssh/sshd_config
