@@ -8,7 +8,7 @@ that a sysadmin should have.
 
 For the French community, a report about the project is available on `report`.
 
-Feel free to use our code for your own server and contribuate to this repository if
+Feel free to use our code for your own server and contribute to this repository if
 you notice any mistakes.
 
 ## Usage
