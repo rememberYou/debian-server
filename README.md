@@ -1,6 +1,5 @@
-# Debian Server
-
-## About
+![Debian Logo](assets/logo.png "Debian logo") Debian Server
+===============================
 
 For education purpose, this project was to give a try to configure a Debian server, by
 implementing the various services in terms of security and good manners
@@ -11,7 +10,9 @@ For the French community, a report about the project is available on `report`.
 Feel free to use our code for your own server and contribute to this repository if
 you notice any mistakes.
 
-## Usage
+--------------------
+
+### Usage ###
 
 After installing a Debian server, execute the server and/or the client configuration.
 
@@ -24,7 +25,9 @@ Example for installing Samba:
 	
 Don't forget to change the IPv4 address of your server and of your client for the scripts.
 
-## Services supporting [9/9]
+--------------------
+
+### Services supporting [9/9] ###
    - [x] NFS share
    - [x] Samba share
    - [x] Web server
@@ -35,7 +38,9 @@ Don't forget to change the IPv4 address of your server and of your client for th
    - [x] NTP
    - [x] SSH
 
-## Good idea for improvements
+--------------------
+
+### Good idea for improvements ###
    - [ ] SELinux
    - [ ] Make a backup system with [borg](https://borgbackup.readthedocs.io/en/stable/)
    - [ ] Fix the vsftpd problem
